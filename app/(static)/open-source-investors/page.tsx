@@ -66,18 +66,19 @@ export type Fields = {
 };
 
 const getInvestors = async () => {
-  const response = await fetch(
-    "https://api.airtable.com/v0/appAxYMTCbZ1hGTmg/tblvBs5aqTt8qkb6h?fields%5B%5D=name&fields%5B%5D=title&fields%5B%5D=company&fields%5B%5D=checkSize&fields%5B%5D=openSourceInvestments&fields%5B%5D=twitterUrl&fields%5B%5D=websiteUrl&fields%5B%5D=twitterImageUrl&filterByFormula=AND(%7Bpublished%7D%3D1%2C%7Btype%7D%3D%22Angel%22)",
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
-      },
-    },
-  );
-  if (!response.ok) {
-    throw new Error("Network response was not ok " + response.statusText);
-  }
-  const data = await response.json();
+  // const response = await fetch(
+  //   "https://api.airtable.com/v0/appAxYMTCbZ1hGTmg/tblvBs5aqTt8qkb6h?fields%5B%5D=name&fields%5B%5D=title&fields%5B%5D=company&fields%5B%5D=checkSize&fields%5B%5D=openSourceInvestments&fields%5B%5D=twitterUrl&fields%5B%5D=websiteUrl&fields%5B%5D=twitterImageUrl&filterByFormula=AND(%7Bpublished%7D%3D1%2C%7Btype%7D%3D%22Angel%22)",
+  //   {
+  //     headers: {
+  //       Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
+  //     },
+  //   },
+  // );
+  // if (!response.ok) {
+  //   throw new Error("Network response was not ok " + response.statusText);
+  // }
+  // const data = await response.json();
+  const data = { records: [] };
   return data;
 };
 
@@ -94,8 +95,8 @@ const InvestorFallback = ({ allInvestors }: { allInvestors: Investor[] }) => {
   return (
     <>
       <Stats angelsLength={allInvestors.length} />
-      <div className="mt-4 flex-col justify-between sm:flex md:flex-row">
-        <span className="isolate mt-5 inline-flex w-fit rounded-md shadow-sm">
+      <div className="flex-col justify-between mt-4 sm:flex md:flex-row">
+        <span className="inline-flex mt-5 rounded-md shadow-sm isolate w-fit">
           {checkSizes.map((checkSize) => (
             <Link
               href={
@@ -116,7 +117,7 @@ const InvestorFallback = ({ allInvestors }: { allInvestors: Investor[] }) => {
           ))}
         </span>
       </div>
-      <div className="mt-8 flex flex-col">
+      <div className="flex flex-col mt-8">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full px-6 py-2 align-middle lg:px-8">
             <div className="overflow-hidden rounded-lg md:shadow md:ring-1 md:ring-black md:ring-opacity-5">
@@ -135,10 +136,10 @@ export default async function HomePage() {
 
   return (
     <>
-      <div className="mx-auto mb-10 max-w-6xl pt-4">
-        <div className="mx-auto max-w-6xl px-4 pt-8 text-gray-600 sm:pt-16 md:px-8">
-          <div className="mx-auto max-w-4xl space-y-5 text-center">
-            <h1 className="mx-auto max-w-3xl text-3xl font-extrabold tracking-tighter text-gray-800 sm:text-6xl">
+      <div className="max-w-6xl pt-4 mx-auto mb-10">
+        <div className="max-w-6xl px-4 pt-8 mx-auto text-gray-600 sm:pt-16 md:px-8">
+          <div className="max-w-4xl mx-auto space-y-5 text-center">
+            <h1 className="max-w-3xl mx-auto text-3xl font-extrabold tracking-tighter text-gray-800 sm:text-6xl">
               Find the next angel investor for your open-source project
             </h1>
           </div>
