@@ -41,11 +41,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
   if (
     (process.env.NODE_ENV === "development" && host?.includes(".local")) ||
     (process.env.NODE_ENV !== "development" &&
-      !(
-        host?.includes("localhost") ||
-        host?.includes("papermark.io") ||
-        host?.endsWith(".vercel.app")
-      ))
+      !(host?.includes("localhost") || host?.includes("deck3.xyz")))
   ) {
     return DomainMiddleware(req);
   }
