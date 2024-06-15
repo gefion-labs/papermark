@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   Body,
   Button,
@@ -14,7 +12,7 @@ import {
 } from "@react-email/components";
 
 export default function EmailVerification({
-  verificationURL = "papermark.io",
+  verificationURL = "deck3.xyz",
   email = "test@test.com",
 }: {
   verificationURL: string;
@@ -25,12 +23,12 @@ export default function EmailVerification({
       <Head />
       <Preview>Verify your email to view the document</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 w-[465px] p-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
-              <span className="font-bold tracking-tighter">Papermark</span>
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
-            <Text className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
+            <Text className="p-0 mx-0 text-xl font-semibold text-center text-black my-7">
               Please verify your email
             </Text>
             <Text className="text-sm leading-6 text-black">
@@ -38,7 +36,7 @@ export default function EmailVerification({
             </Text>
             <Section className="my-8 text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
                 href={verificationURL}
                 style={{ padding: "12px 20px" }}
               >
@@ -48,7 +46,7 @@ export default function EmailVerification({
             <Text className="text-sm leading-6 text-black">
               or copy and paste this URL into your browser:
             </Text>
-            <Text className="max-w-sm flex-wrap break-words font-medium text-purple-600 no-underline">
+            <Text className="flex-wrap max-w-sm font-medium text-purple-600 no-underline break-words">
               {verificationURL.replace(/^https?:\/\//, "")}
             </Text>
             <Hr />
@@ -56,11 +54,11 @@ export default function EmailVerification({
               <Text className="text-xs">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   className="text-gray-400 no-underline visited:text-gray-400 hover:text-gray-400"
                   target="_blank"
                 >
-                  papermark.io
+                  deck3.xyz
                 </a>
               </Text>
               <Text className="text-xs">

@@ -20,7 +20,7 @@ export default async function DomainMiddleware(req: NextRequest) {
     url.pathname = `/view/domains/${host}${path}`;
     return NextResponse.rewrite(url, PAPERMARK_HEADERS);
   } else {
-    // redirect plain custom domain to papermark.io, eventually to it's own landing page
-    return NextResponse.redirect(new URL("https://www.papermark.io", req.url));
+    // redirect plain custom domain to deck3.xyz, eventually to it's own landing page
+    return NextResponse.redirect(new URL("https://deck3.xyz", req.url));
   }
 }

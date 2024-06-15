@@ -5,7 +5,7 @@ export const stripe = new Stripe(
   {
     apiVersion: "2023-10-16",
     appInfo: {
-      name: "Papermark.io",
+      name: "Deck3",
       version: "0.1.0",
     },
   },

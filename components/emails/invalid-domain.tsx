@@ -5,17 +5,17 @@ import {
   Button,
   Container,
   Head,
-  Text,
   Hr,
   Html,
   Link,
   Preview,
   Section,
   Tailwind,
+  Text,
 } from "@react-email/components";
 
 export default function InvalidDomain({
-  domain = "papermark.io",
+  domain = "deck3.xyz",
   invalidDays = 14,
 }: {
   domain: string;
@@ -26,32 +26,32 @@ export default function InvalidDomain({
       <Head />
       <Preview>Invalid Domain Configuration</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 w-[465px] p-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
-              <span className="font-bold tracking-tighter">Papermark</span>
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
-            <Text className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
+            <Text className="p-0 mx-0 text-xl font-semibold text-center text-black my-7">
               {invalidDays >= 14
                 ? `Invalid Domain Configuration`
                 : `Finish configuring your domain`}
             </Text>
             <Text className="text-sm leading-6 text-black">
               Your domain <code className="text-purple-600">{domain}</code> for
-              your Papermark account{" "}
+              your Deck3 account{" "}
               {invalidDays >= 14
                 ? `has been invalid for ${invalidDays} days.`
                 : `is still unconfigured.`}
             </Text>
             <Text className="text-sm leading-6 text-black">
               If your domain remains unconfigured for 30 days, it will be
-              automatically deleted from Papermark. Please click the link below
-              to configure your domain.
+              automatically deleted from Deck3. Please click the link below to
+              configure your domain.
             </Text>
             <Section className="my-8 text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
-                href={`https://www.papermark.io/settings/domains`}
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
+                href={`https://deck3.xyz/settings/domains`}
                 style={{ padding: "12px 20px" }}
               >
                 Configure domain
@@ -60,7 +60,7 @@ export default function InvalidDomain({
             <Text className="text-sm leading-6 text-black">
               If you do not want to keep this domain on Papermark, you can{" "}
               <Link
-                href={`https://www.papermark.io/settings/domains`}
+                href={`https://deck3.xyz/settings/domains`}
                 className="font-medium text-blue-600 no-underline"
               >
                 delete it
@@ -82,11 +82,11 @@ export default function InvalidDomain({
               <Text className="text-xs">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   className="text-gray-400 no-underline visited:text-gray-400 hover:text-gray-400"
                   target="_blank"
                 >
-                  papermark.io
+                  deck3.xyz
                 </a>
               </Text>
               <Text className="text-xs">

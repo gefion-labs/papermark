@@ -11,7 +11,7 @@ const data = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.papermark.io"),
+  metadataBase: new URL("https://deck3.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {
@@ -44,7 +44,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Navbar />
 
       <div className="mt-8">
-        {/* <div className="relative isolate overflow-hidden bg-white">
+        {/* <div className="relative overflow-hidden bg-white isolate">
           <div
             className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
             aria-hidden="true"

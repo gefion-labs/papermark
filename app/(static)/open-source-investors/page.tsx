@@ -1,14 +1,23 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+
+
 import { Suspense } from "react";
+
+
 
 import Stats from "@/components/investors/stats";
 import InvestorTable from "@/components/investors/table";
 
+
+
 import { cn } from "@/lib/utils";
 
+
+
 import Dashboard from "./ClientPage";
+
 
 export const revalidate = 3600; // revalidate the data at most every 24 hours
 
@@ -20,7 +29,7 @@ const data = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.papermark.io"),
+  metadataBase: new URL("https://deck3.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {

@@ -14,7 +14,7 @@ import {
 } from "@react-email/components";
 
 export default function DomainDeleted({
-  domain = "papermark.io",
+  domain = "deck3.xyz",
 }: {
   domain: string;
 }) {
@@ -23,27 +23,27 @@ export default function DomainDeleted({
       <Head />
       <Preview>Domain Deleted</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 w-[465px] p-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
-              <span className="font-bold tracking-tighter">Papermark</span>
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
-            <Text className="font-seminbold mx-0 mb-8 mt-4 p-0 text-center text-xl">
+            <Text className="p-0 mx-0 mt-4 mb-8 text-xl text-center font-seminbold">
               Domain Deleted
             </Text>
             <Text className="text-sm leading-6 text-black">
               Your domain <code className="text-purple-600">{domain}</code> for
-              your Papermark account has been invalid for 30 days. As a result,
-              it has been deleted from Papermark.
+              your Deck3 account has been invalid for 30 days. As a result, it
+              has been deleted from Deck3.
             </Text>
             <Text className="text-sm leading-6 text-black">
               If you would like to restore the domain, you can easily create it
-              again on Papermark with the link below.
+              again on Deck3 with the link below.
             </Text>
             <Section className="my-8 text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
-                href={`https://www.papermark.io/settings/domains`}
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
+                href={`https://deck3.xyz/settings/domains`}
                 style={{ padding: "12px 20px" }}
               >
                 Set up your custom domain
@@ -58,11 +58,11 @@ export default function DomainDeleted({
               <Text className="text-xs">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   className="text-gray-400 no-underline visited:text-gray-400 hover:text-gray-400"
                   target="_blank"
                 >
-                  papermark.io
+                  deck3.xyz
                 </a>
               </Text>
               <Text className="text-xs">

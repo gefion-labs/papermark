@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { MutableRefObject } from "react";
-import React from "react";
+import React, { MutableRefObject } from "react";
 
 import { Brand, DataroomBrand } from "@prisma/client";
 import {
@@ -98,10 +97,10 @@ export default function Nav({
         backgroundColor: brand && brand.brandColor ? brand.brandColor : "black",
       }}
     >
-      <div className="mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-          <div className="flex flex-1 items-center justify-start">
-            <div className="relative flex h-16 w-36 flex-shrink-0 items-center">
+      <div className="px-2 mx-auto sm:px-6 lg:px-8">
+        <div className="relative flex items-center justify-between h-16">
+          <div className="flex items-center justify-start flex-1">
+            <div className="relative flex items-center flex-shrink-0 h-16 w-36">
               {brand && brand.logo ? (
                 <Image
                   className="object-contain"
@@ -113,7 +112,7 @@ export default function Nav({
                 />
               ) : (
                 <Link
-                  href={`https://www.papermark.io?utm_campaign=navbar&utm_medium=navbar&utm_source=papermark-${linkId}`}
+                  href={`https://deck3.xyz?utm_campaign=navbar&utm_medium=navbar&utm_source=deck3-${linkId}`}
                   target="_blank"
                   className="text-2xl font-bold tracking-tighter text-white"
                 >
@@ -126,7 +125,7 @@ export default function Nav({
                 <BreadcrumbList>
                   <BreadcrumbItem>
                     <BreadcrumbLink
-                      className="cursor-pointer underline underline-offset-4 hover:font-medium"
+                      className="underline cursor-pointer underline-offset-4 hover:font-medium"
                       onClick={() => setDocumentData(null)}
                       style={{
                         color:
@@ -158,11 +157,11 @@ export default function Nav({
               </Breadcrumb>
             ) : null}
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center space-x-4 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 space-x-4 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {embeddedLinks && embeddedLinks.length > 0 ? (
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className="bg-gray-900 text-sm font-medium text-white hover:bg-gray-900/80">
+                  <Button className="text-sm font-medium text-white bg-gray-900 hover:bg-gray-900/80">
                     Links on Page
                   </Button>
                 </DropdownMenuTrigger>
@@ -176,7 +175,7 @@ export default function Nav({
                       rel="noopener noreferrer"
                       key={index}
                     >
-                      <DropdownMenuItem className="group h-10">
+                      <DropdownMenuItem className="h-10 group">
                         <span className="w-[200px] truncate group-focus:overflow-x-auto group-focus:text-clip">
                           {link}
                         </span>
@@ -192,7 +191,7 @@ export default function Nav({
             {assistantEnabled ? (
               <Link href={`/view/${linkId}/chat`}>
                 <Button
-                  className="m-1 bg-gray-900 text-white hover:bg-gray-900/80"
+                  className="m-1 text-white bg-gray-900 hover:bg-gray-900/80"
                   variant={"special"}
                   size={"icon"}
                   style={{
@@ -200,18 +199,18 @@ export default function Nav({
                   }}
                   title="Open AI Document Assistant"
                 >
-                  <PapermarkSparkle className="h-5 w-5" />
+                  <PapermarkSparkle className="w-5 h-5" />
                 </Button>
               </Link>
             ) : null}
             {allowDownload ? (
               <Button
                 onClick={downloadFile}
-                className="m-1 bg-gray-900 text-white hover:bg-gray-900/80"
+                className="m-1 text-white bg-gray-900 hover:bg-gray-900/80"
                 size="icon"
                 title="Download document"
               >
-                <Download className="h-5 w-5" />
+                <Download className="w-5 h-5" />
               </Button>
             ) : null}
             {documentRefs ? (
@@ -220,26 +219,26 @@ export default function Nav({
                   onClick={() =>
                     documentRefs.current[pageNumber! - 1]?.zoomIn()
                   }
-                  className=" bg-gray-900 text-white hover:bg-gray-900/80"
+                  className="text-white bg-gray-900 hover:bg-gray-900/80"
                   size="icon"
                   title="Zoom in"
                 >
-                  <ZoomInIcon className="h-5 w-5" />
+                  <ZoomInIcon className="w-5 h-5" />
                 </Button>
                 <Button
                   onClick={() =>
                     documentRefs.current[pageNumber! - 1]?.zoomOut()
                   }
-                  className=" bg-gray-900 text-white hover:bg-gray-900/80"
+                  className="text-white bg-gray-900 hover:bg-gray-900/80"
                   size="icon"
                   title="Zoom out"
                 >
-                  <ZoomOutIcon className="h-5 w-5" />
+                  <ZoomOutIcon className="w-5 h-5" />
                 </Button>
               </div>
             ) : null}
             {pageNumber && numPages ? (
-              <div className="flex h-10 items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white">
+              <div className="flex items-center h-10 px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-md">
                 <span style={{ fontVariantNumeric: "tabular-nums" }}>
                   {pageNumber}
                 </span>

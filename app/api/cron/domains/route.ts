@@ -1,15 +1,16 @@
 import { NextResponse } from "next/server";
 
+
+
 import { receiver } from "@/lib/cron";
-import {
-  getConfigResponse,
-  getDomainResponse,
-  verifyDomain,
-} from "@/lib/domains";
+import { getConfigResponse, getDomainResponse, verifyDomain } from "@/lib/domains";
 import prisma from "@/lib/prisma";
 import { log } from "@/lib/utils";
 
+
+
 import { handleDomainUpdates } from "./utils";
+
 
 /**
  * Cron to check if domains are verified.
@@ -38,7 +39,7 @@ export async function POST(req: Request) {
       where: {
         slug: {
           // exclude domains that belong to us
-          notIn: ["papermark.io"],
+          notIn: ["deck3.xyz"],
         },
       },
       select: {

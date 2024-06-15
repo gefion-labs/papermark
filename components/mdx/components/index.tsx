@@ -15,11 +15,8 @@ export const mdxComponents: MDXComponents = {
   a: ({ children, ...props }) => {
     // check if external links
     let isExternal = false;
-    // if the link is not from papermark.io, it's external
-    if (
-      props.href?.startsWith("http") ||
-      !props.href?.includes("papermark.io")
-    ) {
+    // if the link is not from deck3.xyz, it's external
+    if (props.href?.startsWith("http") || !props.href?.includes("deck3.xyz")) {
       isExternal = true;
     }
 
@@ -44,11 +41,8 @@ export const mdxComponents: MDXComponents = {
   Button: ({ children, ...props }) => {
     // check if external links
     let isExternal = false;
-    // if the link is not from papermark.io, it's external
-    if (
-      props.href?.startsWith("http") ||
-      !props.href?.includes("papermark.io")
-    ) {
+    // if the link is not from deck3.xyz, it's external
+    if (props.href?.startsWith("http") || !props.href?.includes("deck3.xyz")) {
       isExternal = true;
     }
 

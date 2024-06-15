@@ -46,14 +46,10 @@ export default function App({
         />
         <meta
           property="og:image"
-          content="https://www.papermark.io/_static/meta-image.png"
+          content="https://deck3.xyzo/_static/meta-image.png"
           key="og-image"
         />
-        <meta
-          property="og:url"
-          content="https://www.papermark.io"
-          key="og-url"
-        />
+        <meta property="og:url" content="https://deck3.xyz" key="og-url" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@papermarkio" />
@@ -75,7 +71,7 @@ export default function App({
         <PostHogCustomProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <PlausibleProvider
-              domain="papermark.io"
+              domain="deck3.xyz"
               enabled={process.env.NEXT_PUBLIC_VERCEL_ENV === "production"}
             >
               <main className={inter.className}>

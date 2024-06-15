@@ -27,7 +27,7 @@ const Progress = React.forwardRef<
       {...props}
     >
       <ProgressPrimitive.Indicator
-        className="h-full w-full flex-1 bg-primary transition-all"
+        className="flex-1 w-full h-full transition-all bg-primary"
         style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
       />
       {text && !error ? (
@@ -45,9 +45,9 @@ const Progress = React.forwardRef<
       ) : null}
       {text && error ? (
         <div className="absolute inset-0 flex items-center justify-center py-2">
-          <div className="absolute inset-0 flex items-center justify-center gap-x-2 overflow-hidden bg-destructive text-destructive-foreground">
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden gap-x-2 bg-destructive text-destructive-foreground">
             <span className="text-xs">{text}</span>
-            <a href="mailto:support@papermark.io" title="Contact Support">
+            <a href="mailto:support@deck3.xyz" title="Contact Support">
               <HelpCircleIcon className="size-4" />
             </a>
           </div>

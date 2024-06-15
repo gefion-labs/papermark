@@ -5,41 +5,41 @@ import {
   Button,
   Container,
   Head,
-  Text,
   Html,
   Preview,
   Section,
   Tailwind,
+  Text,
 } from "@react-email/components";
 
 const VerificationLinkEmail = ({
-  url = "https://www.papermark.io",
+  url = "https://deck3.xyz",
 }: {
   url: string;
 }) => {
   return (
     <Html>
       <Head />
-      <Preview>Your Papermark Login Link</Preview>
+      <Preview>Your Deck3 Login Link</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 max-w-[500px] rounded border border-solid border-gray-200 px-10 py-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
-              <span className="font-bold tracking-tighter">Papermark</span>
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
-            <Text className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
-              Your Papermark Login Link
+            <Text className="p-0 mx-0 text-xl font-semibold text-center text-black my-7">
+              Your Deck3 Login Link
             </Text>
 
             <Text className="text-sm leading-6 text-black">
-              Welcome to Papermark!
+              Welcome to Deck3!
             </Text>
             <Text className="text-sm leading-6 text-black">
               Please click the magic link below to sign in to your account.
             </Text>
             <Section className="my-8 text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
                 href={url}
                 style={{ padding: "12px 20px" }}
               >
@@ -49,7 +49,7 @@ const VerificationLinkEmail = ({
             <Text className="text-sm leading-6 text-black">
               or copy and paste this URL into your browser:
             </Text>
-            <Text className="max-w-sm flex-wrap break-words font-medium text-purple-600 no-underline">
+            <Text className="flex-wrap max-w-sm font-medium text-purple-600 no-underline break-words">
               {url.replace(/^https?:\/\//, "")}
             </Text>
           </Container>

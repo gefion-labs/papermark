@@ -87,7 +87,7 @@ export default function AgreementSheet({
         const linkId = document.links[0].id;
         setData((prevData) => ({
           ...prevData,
-          link: "https://www.papermark.io/view/" + linkId,
+          link: "https://deck3.xyz/view/" + linkId,
         }));
       }
     } catch (error) {
@@ -150,7 +150,7 @@ export default function AgreementSheet({
           </SheetDescription>
         </SheetHeader>
 
-        <form className="flex grow flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col grow" onSubmit={handleSubmit}>
           <div className="flex-grow space-y-6">
             <div className="w-full space-y-2">
               <Label htmlFor="name">Name</Label>
@@ -185,7 +185,7 @@ export default function AgreementSheet({
                   required
                   autoComplete="off"
                   data-1p-ignore
-                  placeholder="https://www.papermark.io/nda"
+                  placeholder="https://deck3.xyz/nda"
                   value={data.link || ""}
                   onChange={(e) =>
                     setData({
@@ -202,7 +202,7 @@ export default function AgreementSheet({
               </div>
 
               <div className="space-y-12">
-                <div className="space-y-2 pb-6">
+                <div className="pb-6 space-y-2">
                   <Label>Or upload an agreement</Label>
                   <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                     <DocumentUpload
