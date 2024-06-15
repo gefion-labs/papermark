@@ -124,11 +124,11 @@ export function UpgradePlanModal({
           }}
           initial="hidden"
           animate="show"
-          className="flex flex-col items-center justify-center space-y-3 border-b border-border py-8 sm:px-12"
+          className="flex flex-col items-center justify-center py-8 space-y-3 border-b border-border sm:px-12"
         >
           <motion.div variants={STAGGER_CHILD_VARIANTS}>
             <p className="text-2xl font-bold tracking-tighter text-foreground">
-              Papermark
+              Deck3
             </p>
           </motion.div>
           <motion.h3
@@ -138,14 +138,14 @@ export function UpgradePlanModal({
             Upgrade to {plan}
           </motion.h3>
           <motion.p
-            className="text-center text-sm text-muted-foreground"
+            className="text-sm text-center text-muted-foreground"
             variants={STAGGER_CHILD_VARIANTS}
           >
             Enjoy higher limits and extra features with our {plan} plan.
           </motion.p>
         </motion.div>
 
-        <div className="bg-background pb-8 text-left sm:px-8">
+        <div className="pb-8 text-left bg-background sm:px-8">
           <Tabs className="pb-4" defaultValue={plan}>
             <TabsList className="grid w-full grid-cols-3">
               <TabsTrigger value="Pro" onClick={() => setPlan("Pro")}>
@@ -169,7 +169,7 @@ export function UpgradePlanModal({
             animate="show"
           >
             <div className="mb-4">
-              <div className="mb-4 flex items-center justify-between">
+              <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
                   <h4 className="font-medium text-foreground">
                     {plan} {capitalize(period)}
@@ -190,7 +190,7 @@ export function UpgradePlanModal({
                   onClick={() => {
                     setPeriod(period === "monthly" ? "yearly" : "monthly");
                   }}
-                  className="text-xs text-muted-foreground underline underline-offset-4 transition-colors hover:text-gray-800 hover:dark:text-muted-foreground/80"
+                  className="text-xs underline transition-colors text-muted-foreground underline-offset-4 hover:text-gray-800 hover:dark:text-muted-foreground/80"
                 >
                   {period === "monthly"
                     ? ["Business", "Data Rooms"].includes(plan)
@@ -215,7 +215,7 @@ export function UpgradePlanModal({
                   <motion.div
                     key={i}
                     variants={STAGGER_CHILD_VARIANTS}
-                    className="flex items-center gap-x-3 text-sm text-muted-foreground"
+                    className="flex items-center text-sm gap-x-3 text-muted-foreground"
                   >
                     <CheckIcon
                       className="h-5 w-5 flex-none text-[#fb7a00]"
@@ -260,7 +260,7 @@ export function UpgradePlanModal({
               {plan === "Business" ? (
                 <DataroomTrialModal>
                   <button
-                    className="text-center text-xs text-muted-foreground underline-offset-4 transition-all hover:text-gray-800 hover:underline hover:dark:text-muted-foreground/80"
+                    className="text-xs text-center transition-all text-muted-foreground underline-offset-4 hover:text-gray-800 hover:underline hover:dark:text-muted-foreground/80"
                     onClick={() => analytics.capture("Dataroom Trial Clicked")}
                   >
                     Looking for a dataroom trial?
@@ -270,9 +270,9 @@ export function UpgradePlanModal({
                 <a
                   href="https://cal.com/marcseitz/papermark"
                   target="_blank"
-                  className="text-center text-xs text-muted-foreground underline-offset-4 transition-all hover:text-gray-800 hover:underline hover:dark:text-muted-foreground/80"
+                  className="text-xs text-center transition-all text-muted-foreground underline-offset-4 hover:text-gray-800 hover:underline hover:dark:text-muted-foreground/80"
                 >
-                  Looking for Papermark Enterprise?
+                  Looking for Deck3 Enterprise?
                 </a>
               )}
             </div>

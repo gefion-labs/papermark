@@ -17,7 +17,7 @@ export function ChatList({ messages, status }: ChatList) {
   }
 
   return (
-    <div className="relative mx-auto max-w-2xl px-4">
+    <div className="relative max-w-2xl px-4 mx-auto">
       {messages.map((message, index) => (
         <div key={index}>
           <ChatMessage message={message} />
@@ -31,18 +31,16 @@ export function ChatList({ messages, status }: ChatList) {
           <Separator className="my-4 bg-background" />
           <div
             key={"loading-message"}
-            className="group relative mb-4 ml-5 flex items-start whitespace-pre-wrap"
+            className="relative flex items-start mb-4 ml-5 whitespace-pre-wrap group"
           >
-            <div className="flex h-8 w-8 shrink-0 select-none items-center justify-center rounded-md border bg-primary text-primary-foreground shadow">
+            <div className="flex items-center justify-center w-8 h-8 border rounded-md shadow select-none shrink-0 bg-primary text-primary-foreground">
               <PapermarkSparkle />
             </div>
-            <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">
-              <div className="select-none font-semibold">
-                Papermark Assistant
-              </div>
-              <Skeleton className="h-4 w-64" />
-              <Skeleton className="h-4 w-48" />
-              <Skeleton className="h-4 w-24" />
+            <div className="flex-1 px-1 ml-4 space-y-2 overflow-hidden">
+              <div className="font-semibold select-none">Deck3 Assistant</div>
+              <Skeleton className="w-64 h-4" />
+              <Skeleton className="w-48 h-4" />
+              <Skeleton className="w-24 h-4" />
             </div>
           </div>
         </>

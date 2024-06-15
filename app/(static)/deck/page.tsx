@@ -1,20 +1,23 @@
-"use client"; // Ensures this component is rendered on the client side
+"use client";
 
+// Ensures this component is rendered on the client side
 import { useEffect, useRef, useState } from "react";
+
+import LoadingDots from "@/components/ui/loading-dots";
+
+import { BudgetCounter } from "./components/BudgetCounter";
+import { Community } from "./components/Community";
+import { Community1 } from "./components/Community1";
 import { Company } from "./components/Company";
 import { Description } from "./components/Description";
+import { Email } from "./components/Email";
+import { Metric2 } from "./components/Metric2";
+import { Mrr } from "./components/Mrr";
 import { Problem } from "./components/Problem";
 import { Solution } from "./components/Solution";
-import { BudgetCounter } from "./components/BudgetCounter";
-import { Mrr } from "./components/Mrr";
-import { Metric2 } from "./components/Metric2";
-import { Users } from "./components/Users";
-import { Community1 } from "./components/Community1";
-import { Community } from "./components/Community";
-import { Special2 } from "./components/Special2";
 import { Special1 } from "./components/Special1";
-import { Email } from "./components/Email";
-import LoadingDots from "@/components/ui/loading-dots";
+import { Special2 } from "./components/Special2";
+import { Users } from "./components/Users";
 
 const DeckPage = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -55,7 +58,7 @@ const DeckPage = () => {
   const setItem = (key: string, value: string) => {
     iframeRef.current?.contentWindow?.postMessage(
       { type: "set", key, value },
-      "https://shared.papermark.io",
+      "https://shared.deck3.xyz",
     );
   };
 
@@ -83,7 +86,7 @@ const DeckPage = () => {
     setTimeout(() => {
       setLoading(false);
 
-      window.location.href = "https://deck.papermark.io/loading";
+      window.location.href = "https://deck.deck3.xyz/loading";
     }, 2000);
   };
 
@@ -114,7 +117,7 @@ const DeckPage = () => {
     <>
       <iframe
         ref={iframeRef}
-        src="https://shared.papermark.io"
+        src="https://shared.deck3.xyz"
         style={{
           width: 0,
           height: 0,
@@ -123,25 +126,25 @@ const DeckPage = () => {
         }}
       />
       <div>
-        <section className="py-10 lg:py-36 bg-white">
+        <section className="py-10 bg-white lg:py-36">
           {/* bg-[url('/image1.svg')] */}
           <div className="px-4 0">
-            <div className="max-w-5xl mx-auto ">
-              <div className="w-full mx-auto ">
-                <div className="flex flex-col md:flex-row w-full md:space-x-20 ">
-                  <div className="flex flex-col w-full  md:w-1/2 mt-4 md:mt-0 ">
-                    <h1 className="text-5xl md:text-7xl text-balance">
+            <div className="max-w-5xl mx-auto">
+              <div className="w-full mx-auto">
+                <div className="flex flex-col w-full md:flex-row md:space-x-20">
+                  <div className="flex flex-col w-full mt-4 md:mt-0 md:w-1/2">
+                    <h1 className="text-5xl text-balance md:text-7xl">
                       Pitch Deck AI Generator
                     </h1>
 
-                    <p className="text-2xl mt-2 text-balance max-w-3xl">
+                    <p className="max-w-3xl mt-2 text-2xl text-balance">
                       Instantly create pitch deck and share via trackable link
                     </p>
 
-                    <p className="text-sm mt-2 text-balance max-w-3xl text-gray-500">
+                    <p className="max-w-3xl mt-2 text-sm text-gray-500 text-balance">
                       Inspired by the coolest
                       <button
-                        className="ml-2 bg-gray-100 text-black px-2 py-1 rounded-3xl hover:bg-gray-200"
+                        className="px-2 py-1 ml-2 text-black bg-gray-100 rounded-3xl hover:bg-gray-200"
                         onClick={() =>
                           window.open(
                             "https://midday.ai/pitch",
@@ -154,7 +157,7 @@ const DeckPage = () => {
                       </button>
                     </p>
 
-                    {/* <h2 className="text-lg font-normal mt-3 mb-4 text-pink-600">
+                    {/* <h2 className="mt-3 mb-4 text-lg font-normal text-pink-600">
                       Deck example link
                       <br />
                     </h2> */}
@@ -163,16 +166,16 @@ const DeckPage = () => {
                     {/* <div className="my-4">
                       <Link
                         href={"/"}
-                        className="bg-pink-600 font-medium text-xs rounded-md w-full text-pink-700 px-4 py-2 hover:bg-purple-400 disabled:bg-purple-500 bg-opacity-20"
+                        className="w-full px-4 py-2 text-xs font-medium text-pink-700 bg-pink-600 rounded-md hover:bg-purple-400 disabled:bg-purple-500 bg-opacity-20"
                       >
                         See wedding plan example
                       </Link>
                     </div> */}
                   </div>
 
-                  <div className="flex flex-col w-full md:w-1/2 mt-4 md:mt-0 ">
-                    <div className="bg-white p-4 md:p-6 shadow rounded-lg">
-                      <p className="text-sm my-2 mx-1 font-normal text-balance max-w-3xl">
+                  <div className="flex flex-col w-full mt-4 md:mt-0 md:w-1/2">
+                    <div className="p-4 bg-white rounded-lg shadow md:p-6">
+                      <p className="max-w-3xl mx-1 my-2 text-sm font-normal text-balance">
                         Fill quick steps in 1 minute
                       </p>
                       {/* Fields and buttons based on the step */}
@@ -180,7 +183,7 @@ const DeckPage = () => {
                         {Array.from({ length: 5 }).map((_, index) => (
                           <div
                             key={index}
-                            className={`w-1/4 h-2 mx-1 rounded-full overflow-hidden ${
+                            className={`mx-1 h-2 w-1/4 overflow-hidden rounded-full ${
                               index < step ? "bg-orange-500" : "bg-gray-300"
                             }`}
                           />
@@ -188,11 +191,11 @@ const DeckPage = () => {
                       </div>
                       {step === 1 && (
                         <>
-                          <h3 className="mt-6 font-semibold text-gray-700 text-base">
+                          <h3 className="mt-6 text-base font-semibold text-gray-700">
                             What is your startup name?
                           </h3>
 
-                          <div className="w-full my-1  mx-auto">
+                          <div className="w-full mx-auto my-1">
                             <div className="flex justify-between space-x-2">
                               <div className="grow">
                                 <Company
@@ -202,10 +205,10 @@ const DeckPage = () => {
                               </div>
                             </div>
                           </div>
-                          <h3 className="mt-4  py-1 font-semibold text-gray-700 text-base">
+                          <h3 className="py-1 mt-4 text-base font-semibold text-gray-700">
                             What is one line description?
                           </h3>
-                          <div className="w-full my-1  mx-auto">
+                          <div className="w-full mx-auto my-1">
                             <div className="flex justify-between space-x-2">
                               <div className="grow">
                                 <Description
@@ -219,7 +222,7 @@ const DeckPage = () => {
                           <div className="my-4">
                             <button
                               onClick={handleNextClick}
-                              className="bg-black text-base rounded-md w-full text-white px-4 py-2 hover:bg-orange-600"
+                              className="w-full px-4 py-2 text-base text-white bg-black rounded-md hover:bg-orange-600"
                             >
                               To step 2 →
                             </button>
@@ -228,12 +231,12 @@ const DeckPage = () => {
                       )}
                       {step === 2 && (
                         <>
-                          <div className="w-full mt-6 mx-auto">
-                            <h3 className="text-sm my-1 font-semibold text-gray-700">
+                          <div className="w-full mx-auto mt-6">
+                            <h3 className="my-1 text-sm font-semibold text-gray-700">
                               What problem you solve?
                             </h3>
 
-                            <div className="w-full my-1 mx-auto">
+                            <div className="w-full mx-auto my-1">
                               <div className="flex justify-between space-x-2">
                                 <div className="grow">
                                   <Problem
@@ -244,7 +247,7 @@ const DeckPage = () => {
                               </div>
                             </div>
 
-                            <h3 className="text-sm mt-4 py-1 font-semibold text-gray-700">
+                            <h3 className="py-1 mt-4 text-sm font-semibold text-gray-700">
                               How this solutions helps to solve the problem?
                             </h3>
 
@@ -257,7 +260,7 @@ const DeckPage = () => {
                           <div className="my-4">
                             <button
                               onClick={handleNextClick}
-                              className="bg-black text-base rounded-md w-full text-white px-4 py-2 hover:bg-orange-600"
+                              className="w-full px-4 py-2 text-base text-white bg-black rounded-md hover:bg-orange-600"
                             >
                               To step 3
                             </button>
@@ -266,13 +269,13 @@ const DeckPage = () => {
                       )}
                       {step === 3 && (
                         <>
-                          <h3 className="text-sm  mt-4  py-1 font-semibold text-gray-700">
+                          <h3 className="py-1 mt-4 text-sm font-semibold text-gray-700">
                             What are your current metrics?
                           </h3>
-                          <h3 className="text-xs  mt-1  py-1 font-normal text-gray-500">
+                          <h3 className="py-1 mt-1 text-xs font-normal text-gray-500">
                             Revenue/MRR
                           </h3>
-                          <div className="w-full  mx-auto">
+                          <div className="w-full mx-auto">
                             <div className="flex justify-between space-x-2">
                               <div className="grow">
                                 <BudgetCounter
@@ -282,15 +285,15 @@ const DeckPage = () => {
                               </div>
                             </div>
                           </div>
-                          <div className=" ">
+                          <div className="">
                             {" "}
                             <Mrr mrr={mrr} setMrr={setMrr} />
                           </div>
 
-                          <h3 className="text-xs  mt-4  py-1 font-normal text-gray-500">
+                          <h3 className="py-1 mt-4 text-xs font-normal text-gray-500">
                             Users
                           </h3>
-                          <div className="w-full  mx-auto">
+                          <div className="w-full mx-auto">
                             <div className="flex justify-between space-x-2">
                               <div className="grow">
                                 <Metric2
@@ -301,7 +304,7 @@ const DeckPage = () => {
                             </div>
                           </div>
 
-                          <div className="w-full  mx-auto">
+                          <div className="w-full mx-auto">
                             <div className="flex justify-between space-x-2">
                               <div className="grow">
                                 <Users users={users} setUsers={setUsers} />
@@ -311,7 +314,7 @@ const DeckPage = () => {
                           <div className="my-4">
                             <button
                               onClick={handleNextClick}
-                              className="bg-black text-base rounded-md w-full text-white px-4 py-2 hover:bg-orange-600"
+                              className="w-full px-4 py-2 text-base text-white bg-black rounded-md hover:bg-orange-600"
                             >
                               To step 3 →
                             </button>
@@ -320,10 +323,10 @@ const DeckPage = () => {
                       )}
                       {step === 4 && (
                         <>
-                          <h3 className="text-sm  mt-4  py-1 font-semibold text-gray-700">
+                          <h3 className="py-1 mt-4 text-sm font-semibold text-gray-700">
                             Two more please
                           </h3>
-                          <h3 className="text-xs  mt-1  py-1 font-normal text-gray-500">
+                          <h3 className="py-1 mt-1 text-xs font-normal text-gray-500">
                             Community
                           </h3>
 
@@ -345,10 +348,10 @@ const DeckPage = () => {
                             />
                           </div>
 
-                          <h3 className="text-xs  mt-4  py-1 font-normal text-gray-500">
+                          <h3 className="py-1 mt-4 text-xs font-normal text-gray-500">
                             Your core metric specific to your businness
                           </h3>
-                          <div className="w-full  mx-auto">
+                          <div className="w-full mx-auto">
                             <div className="flex justify-between space-x-2">
                               <div className="w-1/3 pr-2">
                                 {/* This div takes 1/3 of the space */}
@@ -357,7 +360,7 @@ const DeckPage = () => {
                                   setSpecial2={setSpecial2}
                                 />
                               </div>
-                              <div className="w-2/3 ">
+                              <div className="w-2/3">
                                 {" "}
                                 {/* This div takes 2/3 of the space */}
                                 <Special1
@@ -371,7 +374,7 @@ const DeckPage = () => {
                           <div className="my-4">
                             <button
                               onClick={handleNextClick}
-                              className="bg-black text-base rounded-md w-full text-white px-4 py-2 hover:bg-orange-600"
+                              className="w-full px-4 py-2 text-base text-white bg-black rounded-md hover:bg-orange-600"
                             >
                               To last step →
                             </button>
@@ -380,12 +383,12 @@ const DeckPage = () => {
                       )}
                       {step === 5 && (
                         <>
-                          <h3 className="mt-6 font-semibold text-gray-700 text-base">
+                          <h3 className="mt-6 text-base font-semibold text-gray-700">
                             What email to contact on the deck? (we not saving
                             your email)
                           </h3>
 
-                          <div className="w-full my-1  mx-auto">
+                          <div className="w-full mx-auto my-1">
                             <div className="flex justify-between space-x-2">
                               <div className="grow">
                                 <Email email={email} setEmail={setEmail} />
@@ -399,7 +402,7 @@ const DeckPage = () => {
                             <button
                               disabled={loading}
                               onClick={saveData}
-                              className="bg-black text-base rounded-md w-full text-white px-4 py-2 hover:bg-orange-600"
+                              className="w-full px-4 py-2 text-base text-white bg-black rounded-md hover:bg-orange-600"
                             >
                               {loading && <LoadingDots color="white" />}
                               {!loading && `Get my pitch deck`}

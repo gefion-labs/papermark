@@ -24,7 +24,7 @@ export const generateMetadata = async ({
   const { metatitle, metadescription } = page || {};
 
   return constructMetadata({
-    title: metatitle ? `${metatitle} - Papermark` : undefined,
+    title: metatitle ? `${metatitle} - Deck3` : undefined,
     description: metadescription ?? undefined,
   });
 };
@@ -38,10 +38,10 @@ export default async function PagePage({
   if (!page) return notFound();
 
   return (
-    <div className="flex flex-1 flex-col justify-center bg-white text-black">
-      <div className="mx-auto w-full max-w-5xl px-4 text-center md:px-8">
+    <div className="flex flex-col justify-center flex-1 text-black bg-white">
+      <div className="w-full max-w-5xl px-4 mx-auto text-center md:px-8">
         <div className="pt-32">
-          {/* <div className=" pb-4">
+          {/* <div className="pb-4 ">
                 <img
                   src={page.imageUrl}
                   alt="App screenshot"
@@ -50,22 +50,22 @@ export default async function PagePage({
                   height={50}
                 />
               </div> */}
-          {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-black ring-black/10  hover:ring-white/20 text-balance">
+          {/* <div className="relative px-3 py-1 text-sm leading-6 text-black rounded-full ring-black/10 hover:ring-white/20 text-balance">
             Join 1000s happy users
           </div> */}
-          <h1 className="text-balance text-6xl">{page.title}</h1>
-          <p className="mx-auto mt-8 max-w-3xl text-balance text-xl md:text-2xl">
+          <h1 className="text-6xl text-balance">{page.title}</h1>
+          <p className="max-w-3xl mx-auto mt-8 text-xl text-balance md:text-2xl">
             {page.description}
           </p>
-          <div className="space-x-2 pt-8">
+          <div className="pt-8 space-x-2">
             <Link href="/login">
-              <Button className="justify-center text-balance rounded-3xl bg-gray-900 text-white hover:bg-gray-800">
+              <Button className="justify-center text-white bg-gray-900 text-balance rounded-3xl hover:bg-gray-800">
                 {page.button}
               </Button>
             </Link>
           </div>
         </div>
-        <div className="mx-auto mt-24 w-full">
+        <div className="w-full mx-auto mt-24">
           <video
             width="100%"
             id="video1"
@@ -85,33 +85,33 @@ export default async function PagePage({
         </div>
       </div>
 
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="py-24 overflow-hidden bg-white sm:py-32">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
             <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-                <h2 className="mt-2 text-balance text-3xl text-gray-900 sm:text-4xl">
+              <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-lg">
+                <h2 className="mt-2 text-3xl text-gray-900 text-balance sm:text-4xl">
                   {page.subtitle1}
                 </h2>
-                <p className="mt-6 text-balance text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-lg leading-8 text-gray-600 text-balance">
                   {page.description1}
                 </p>
               </div>
-              <div className="space-x-2 pt-8">
+              <div className="pt-8 space-x-2">
                 <Link href="/login">
-                  <Button className="justify-center text-balance rounded-3xl bg-gray-900 text-white hover:bg-gray-800">
+                  <Button className="justify-center text-white bg-gray-900 text-balance rounded-3xl hover:bg-gray-800">
                     {page.button}
                   </Button>
                 </Link>
               </div>
             </div>
             <div className="sm:px-6 lg:px-0">
-              <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+              <div className="relative px-6 pt-8 overflow-hidden bg-gray-900 isolate sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
                 <div
                   className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-orange-200 opacity-20 ring-1 ring-inset ring-white"
                   aria-hidden="true"
                 />
-                <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+                <div className="max-w-2xl mx-auto sm:mx-0 sm:max-w-none">
                   <img
                     src={
                       page.image1 ??
@@ -124,7 +124,7 @@ export default async function PagePage({
                   />
                 </div>
                 <div
-                  className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl"
+                  className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-black/10 sm:rounded-3xl"
                   aria-hidden="true"
                 />
               </div>
@@ -133,16 +133,16 @@ export default async function PagePage({
         </div>
       </div>
 
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="py-24 overflow-hidden bg-white sm:py-32">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
             <div className="sm:px-6 lg:px-0">
-              <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-8 sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
+              <div className="relative px-6 pt-8 overflow-hidden bg-gray-900 isolate sm:mx-auto sm:max-w-2xl sm:rounded-3xl sm:pl-16 sm:pr-0 sm:pt-16 lg:mx-0 lg:max-w-none">
                 <div
                   className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-orange-200 opacity-20 ring-1 ring-inset ring-white"
                   aria-hidden="true"
                 />
-                <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+                <div className="max-w-2xl mx-auto sm:mx-0 sm:max-w-none">
                   <img
                     src={
                       page.image2 ??
@@ -155,23 +155,23 @@ export default async function PagePage({
                   />
                 </div>
                 <div
-                  className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 sm:rounded-3xl"
+                  className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-black/10 sm:rounded-3xl"
                   aria-hidden="true"
                 />
               </div>
             </div>
             <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-                <h2 className="mt-2 text-balance text-3xl text-gray-900 sm:text-4xl">
+              <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-lg">
+                <h2 className="mt-2 text-3xl text-gray-900 text-balance sm:text-4xl">
                   {page.subtitle2}
                 </h2>
-                <p className="mt-6 text-balance text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-lg leading-8 text-gray-600 text-balance">
                   {page.description2}
                 </p>
               </div>
-              <div className="space-x-2 pt-8">
+              <div className="pt-8 space-x-2">
                 <Link href="/login">
-                  <Button className="justify-center text-balance rounded-3xl bg-gray-900 text-white hover:bg-gray-800">
+                  <Button className="justify-center text-white bg-gray-900 text-balance rounded-3xl hover:bg-gray-800">
                     {page.button}
                   </Button>
                 </Link>
@@ -186,10 +186,10 @@ export default async function PagePage({
 
       {/* CTA */}
       <div className="bg-[#fb7a00]">
-        <div className="mx-auto w-full max-w-5xl px-4 py-32 md:px-8">
-          <h2 className="text-balance text-4xl  ">{page.cta}</h2>
+        <div className="w-full max-w-5xl px-4 py-32 mx-auto md:px-8">
+          <h2 className="text-4xl text-balance">{page.cta}</h2>
 
-          <div className="space-x-2 pt-8">
+          <div className="pt-8 space-x-2">
             <Link href="/login">
               <Button className="text-balance rounded-3xl">
                 Start for free

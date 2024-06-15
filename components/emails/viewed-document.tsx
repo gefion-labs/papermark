@@ -27,12 +27,12 @@ export default function ViewedDocument({
       <Head />
       <Preview>See who visited your document</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 w-[465px] p-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
-              <span className="font-bold tracking-tighter">Papermark</span>
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
-            <Text className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
+            <Text className="p-0 mx-0 text-xl font-semibold text-center text-black my-7">
               New Document Visitor
             </Text>
             <Text className="text-sm leading-6 text-black">
@@ -46,30 +46,30 @@ export default function ViewedDocument({
             </Text>
             <Text className="text-sm leading-6 text-black">
               You can get the detailed engagement insights like time-spent per
-              page and total duration for this document on Papermark.
+              page and total duration for this document on Deck3.
             </Text>
             <Section className="my-8 text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
-                href={`https://www.papermark.io/documents/${documentId}`}
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
+                href={`https://deck3.xyz/documents/${documentId}`}
                 style={{ padding: "12px 20px" }}
               >
                 See my document insights
               </Button>
             </Section>
             <Text className="text-sm leading-6 text-black">
-              Stay informed, stay ahead with Papermark.
+              Stay informed, stay ahead with Deck3.
             </Text>
             <Hr />
             <Section className="mt-8 text-gray-400">
               <Text className="text-xs">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   className="text-gray-400 no-underline visited:text-gray-400 hover:text-gray-400"
                   target="_blank"
                 >
-                  papermark.io
+                  deck3.xyz
                 </a>
               </Text>
               <Text className="text-xs">

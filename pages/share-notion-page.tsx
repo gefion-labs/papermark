@@ -114,18 +114,18 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.papermark.io/_static/notion.png"
+          content="https://deck3.xyz/_static/notion.png"
         />
-        <meta property="og:url" content="https://www.papermark.io" />
+        <meta property="og:url" content="https://deck3.xyz" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar />
 
       <main>
         {/* Hero section */}
-        <div className="relative isolate overflow-hidden bg-white pb-16 pt-14 dark:bg-black sm:pb-20">
+        <div className="relative pb-16 overflow-hidden bg-white isolate pt-14 dark:bg-black sm:pb-20">
           <div
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            className="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
             aria-hidden="true"
           >
             <div
@@ -136,10 +136,10 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl py-12 sm:py-12 lg:py-32 ">
+          <div className="px-6 mx-auto max-w-7xl lg:px-8">
+            <div className="max-w-2xl py-12 mx-auto sm:py-12 lg:py-32">
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-black ring-1 ring-black/10 hover:ring-white/20 dark:text-white dark:ring-white/10">
+                <div className="relative px-3 py-1 text-sm leading-6 text-black rounded-full ring-1 ring-black/10 hover:ring-white/20 dark:text-white dark:ring-white/10">
                   Papermark for Notion ✍️
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function Home() {
                   Custom domain, Password protection, Email capture, Advanced
                   analytics
                 </p>
-                <div className="mt-10 flex items-center justify-center gap-x-6">
+                <div className="flex items-center justify-center mt-10 gap-x-6">
                   <Link
                     className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-white dark:text-black"
                     href="/login"
@@ -161,7 +161,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className=" mx-auto w-full max-w-5xl">
+            <div className="w-full max-w-5xl mx-auto">
               <video
                 width="100%"
                 id="video1"
@@ -180,7 +180,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial section */}
-            <div className="relative z-10 mt-32 bg-white pb-20 dark:bg-gray-900 sm:mt-56 sm:pb-24 xl:pb-0">
+            <div className="relative z-10 pb-20 mt-32 bg-white dark:bg-gray-900 sm:mt-56 sm:pb-24 xl:pb-0">
               <div
                 className="absolute inset-0 overflow-hidden"
                 aria-hidden="true"
@@ -195,24 +195,24 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-                <div className="-mt-8 flex w-full max-w-2xl items-center justify-center xl:-mb-8 xl:w-96 xl:flex-none">
-                  <div className="relative h-64 w-64">
+              <div className="flex flex-col items-center px-6 mx-auto max-w-7xl gap-x-8 gap-y-10 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
+                <div className="flex items-center justify-center w-full max-w-2xl -mt-8 xl:-mb-8 xl:w-96 xl:flex-none">
+                  <div className="relative w-64 h-64">
                     {" "}
                     <img
-                      className="absolute inset-0 rounded-2xl bg-gray-800 object-cover  shadow-2xl"
+                      className="absolute inset-0 object-cover bg-gray-800 shadow-2xl rounded-2xl"
                       src="https://pbs.twimg.com/profile_images/1506792347840888834/dS-r50Je_400x400.jpg"
                       alt=""
                     />
                   </div>
                 </div>
                 <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
-                  <figure className="relative isolate pt-6 sm:pt-12">
+                  <figure className="relative pt-6 isolate sm:pt-12">
                     <svg
                       viewBox="0 0 162 128"
                       fill="none"
                       aria-hidden="true"
-                      className="absolute left-0 top-0 -z-10 h-32 stroke-white/20"
+                      className="absolute top-0 left-0 h-32 -z-10 stroke-white/20"
                     >
                       <path
                         id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb"
@@ -244,8 +244,8 @@ export default function Home() {
             </div>
 
             {/* FAQ section */}
-            <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:px-8">
-              <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+            <div className="px-6 mx-auto mt-24 max-w-7xl sm:mt-32 lg:px-8">
+              <div className="max-w-4xl mx-auto divide-y divide-gray-900/10">
                 <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
                   Frequently asked questions
                 </h2>
@@ -255,26 +255,26 @@ export default function Home() {
                       {({ open }) => (
                         <>
                           <dt>
-                            <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900 dark:text-gray-200">
+                            <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900 dark:text-gray-200">
                               <span className="text-base font-semibold leading-7">
                                 {faq.question}
                               </span>
-                              <span className="ml-6 flex h-7 items-center">
+                              <span className="flex items-center ml-6 h-7">
                                 {open ? (
                                   <MinusSmallIcon
-                                    className="h-6 w-6"
+                                    className="w-6 h-6"
                                     aria-hidden="true"
                                   />
                                 ) : (
                                   <PlusSmallIcon
-                                    className="h-6 w-6"
+                                    className="w-6 h-6"
                                     aria-hidden="true"
                                   />
                                 )}
                               </span>
                             </Disclosure.Button>
                           </dt>
-                          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                          <Disclosure.Panel as="dd" className="pr-12 mt-2">
                             <p className="text-base leading-7 text-gray-500">
                               {faq.answer}
                             </p>

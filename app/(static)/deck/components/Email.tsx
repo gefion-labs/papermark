@@ -13,8 +13,8 @@ export const Email = ({ email, setEmail }: EmailProps) => {
         maxLength={20}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="support@papermark.io"
-        className="text-black w-full p-2 text-s bg-white border border-gray-300 rounded-md font-light"
+        placeholder="support@deck3.xyz"
+        className="w-full p-2 font-light text-black bg-white border border-gray-300 rounded-md text-s"
       />
     </div>
   );

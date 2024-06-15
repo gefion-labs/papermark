@@ -25,10 +25,9 @@ export default function Banner() {
           }}
         />
       </div>
-      <div className="flex items-center  justify-center gap-x-4 gap-y-2">
+      <div className="flex items-center justify-center gap-x-4 gap-y-2">
         <p className="text-sm leading-6 text-white">
-          <strong className="font-semibold">Papermark AI</strong> on Product
-          Hunt
+          <strong className="font-semibold">Deck3 AI</strong> on Product Hunt
           {/* <svg
             viewBox="0 0 2 2"
             className="mx-2 inline h-0.5 w-0.5 fill-current"
@@ -39,7 +38,7 @@ export default function Banner() {
           {/* 04.12-08.12 */}
         </p>
         {/* <a
-          href="https://www.papermark.io/launch-week"
+          href="https://deck3.xyz/launch-week"
           className="flex-none rounded-md bg-green-600 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-green-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Follow this madness <span aria-hidden="true"></span>
@@ -50,20 +49,20 @@ export default function Banner() {
         >
           <img
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=427633&theme=light"
-            alt="Papermark&#0032;AI - Open&#0032;source&#0032;AI&#0032;document&#0032;assistant | Product Hunt"
+            alt="Deck3&#0032;AI - Open&#0032;source&#0032;AI&#0032;document&#0032;assistant | Product Hunt"
             style={{ width: "200px", height: "54px" }}
             width="200"
             height="54"
           />
         </a>
       </div>
-      <div className="flex flex-1 justify-end">
+      <div className="flex justify-end flex-1">
         <button
           type="button"
           className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
         >
           {/* <span className="sr-only">Dismiss</span> */}
-          {/* <XMarkIcon className="h-5 w-5 text-gray-900" aria-hidden="true" /> */}
+          {/* <XMarkIcon className="w-5 h-5 text-gray-900" aria-hidden="true" /> */}
         </button>
       </div>
     </div>

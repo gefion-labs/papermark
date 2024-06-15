@@ -7,7 +7,7 @@ interface ToolFeature {
 
 const tools: ToolFeature[] = [
   {
-    name: "Papermark Business Plan",
+    name: "Deck3 Business Plan",
     features: {
       docs: "✔️",
       folders: "✔️",
@@ -32,7 +32,7 @@ const tools: ToolFeature[] = [
   },
 
   {
-    name: "Papermark Data Rooms Plan",
+    name: "Deck3 Data Rooms Plan",
     features: {
       docs: "✔️",
       folders: "✔️",
@@ -58,7 +58,7 @@ const tools: ToolFeature[] = [
 
   // data room,whitelabelling
   {
-    name: "Papermark Custom Plan",
+    name: "Deck3 Custom Plan",
     features: {
       docs: "✔️",
       folders: "✔️",
@@ -82,7 +82,7 @@ const tools: ToolFeature[] = [
     },
   },
   {
-    name: "Papermark Self-Hosted Plan",
+    name: "Deck3 Self-Hosted Plan",
 
     features: {
       docs: "✔️",
@@ -150,7 +150,7 @@ export default function ComparisonTable() {
     } else {
       return (
         <MinusIcon
-          className="h-6 w-6 flex-none text-black"
+          className="flex-none w-6 h-6 text-black"
           aria-hidden="true"
         />
       );
@@ -160,21 +160,21 @@ export default function ComparisonTable() {
 
   return (
     <div className="">
-      {/* <div className="mt-20 px-6 py-12 sm:px-6 sm:py-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+      {/* <div className="px-6 py-12 mt-20 sm:px-6 sm:py-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Compare best Docsend alternatives based on core features
             <br />
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
+          <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-600">
             Check all the features you need to securely share documents
           </p>
         </div>
       </div> */}
-      <div className="mt-6 flow-root">
-        <div className="overflow-x-auto rounded-lg border border-gray-300 bg-gray-100 ">
+      <div className="flow-root mt-6">
+        <div className="overflow-x-auto bg-gray-100 border border-gray-300 rounded-lg">
           <div className="inline-block min-w-full align-middle">
-            <table className="min-w-full divide-y divide-gray-300 border border-gray-300  ">
+            <table className="min-w-full border border-gray-300 divide-y divide-gray-300">
               <thead>
                 <tr>
                   <th className="text-balance px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
@@ -190,17 +190,17 @@ export default function ComparisonTable() {
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200 border border-gray-300 bg-white ">
+              <tbody className="bg-white border border-gray-300 divide-y divide-gray-200">
                 {featuresList.map((feature) => (
                   <tr key={feature}>
-                    <td className="text-balance border border-gray-300 px-3 py-4 text-sm font-semibold text-gray-900 ">
+                    <td className="px-3 py-4 text-sm font-semibold text-gray-900 border border-gray-300 text-balance">
                       {featureDisplayNames[feature]}
                     </td>
                     {tools.map((tool) => (
                       <td
                         key={tool.name}
-                        className={`px-3 py-4 text-sm  ${
-                          tool.name === "Papermark"
+                        className={`px-3 py-4 text-sm ${
+                          tool.name === "Deck3"
                             ? "text-balance bg-green-50 font-semibold text-green-700"
                             : ""
                         }`} // Consistent text color, conditional background color

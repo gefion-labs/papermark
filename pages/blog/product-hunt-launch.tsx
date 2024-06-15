@@ -26,14 +26,14 @@ function BlogPost() {
           property="og:image"
           content="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fejivoe3vst4rsdzjblo.png"
         />
-        <meta property="og:url" content="https://www.papermark.io" />
+        <meta property="og:url" content="https://deck3.xyz" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar />
 
-      <div className="mt-16 bg-gray-100 p-8">
-        <div className="mx-auto max-w-3xl space-y-6 rounded-lg bg-white p-6 text-black shadow-md">
-          <h1 className="text-4xl font-bold ">
+      <div className="p-8 mt-16 bg-gray-100">
+        <div className="max-w-3xl p-6 mx-auto space-y-6 text-black bg-white rounded-lg shadow-md">
+          <h1 className="text-4xl font-bold">
             How to launch Open Source project on Product Hunt?
           </h1>
           <p className="mb-4">
@@ -62,7 +62,7 @@ function BlogPost() {
           <h2 className="mb-4 text-2xl font-bold">
             In this article you will find:
           </h2>
-          <ul className="mb-4 list-inside list-disc">
+          <ul className="mb-4 list-disc list-inside">
             <li className="font-bold">Before launch preparation</li>
             <li className="font-bold">Launch Day</li>
             <li className="font-bold">Special to Open Source launch</li>
@@ -78,7 +78,7 @@ function BlogPost() {
             I like to have 2-4 versions of it, so I can select best for
             different places.
           </p>
-          <blockquote className="my-4 border-l-4 border-gray-500 pl-4">
+          <blockquote className="pl-4 my-4 border-l-4 border-gray-500">
             <p>Because launch is a test.</p>
             <p>
               So I use the opportunity to test messaging in different groups.
@@ -125,7 +125,7 @@ function BlogPost() {
             my friends in twitter and linkedin who could be interested in the
             launch.
           </p>
-          <blockquote className="my-4 border-l-4 border-gray-500 pl-4">
+          <blockquote className="pl-4 my-4 border-l-4 border-gray-500">
             <p>Quality over quantity</p>
           </blockquote>
           <p>
@@ -186,7 +186,7 @@ function BlogPost() {
           <p>
             We started preparing <strong>1 week</strong> before launch.
           </p>
-          <h2 className="mb-4 pt-6 text-2xl font-bold">
+          <h2 className="pt-6 mb-4 text-2xl font-bold">
             During the launch day
           </h2>
           <p>
@@ -198,7 +198,7 @@ function BlogPost() {
             src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4ri6ggskhpwzm2xjrmxa.gif"
             alt="Pareto principle"
           />
-          <blockquote className="my-4 border-l-4 border-gray-500 pl-4">
+          <blockquote className="pl-4 my-4 border-l-4 border-gray-500">
             <p>20% of efforts bring 80% of result. Pareto also works here</p>
           </blockquote>
           <p>
@@ -264,7 +264,7 @@ function BlogPost() {
               Here are my 10 tips from other launches
             </a>
           </p>
-          <h2 className="mb-4 pt-8 text-2xl font-bold">
+          <h2 className="pt-8 mb-4 text-2xl font-bold">
             Open source projects launch tips ⭐️
           </h2>
           <p>If your product is open source, where to look for support?</p>
@@ -303,7 +303,7 @@ function BlogPost() {
           <p>
             <strong>Go Open Source</strong>🚀🚀🚀
           </p>
-          <h2 className="mb-4 pt-8 text-2xl font-bold">
+          <h2 className="pt-8 mb-4 text-2xl font-bold">
             Top 🥇 Open Source launches in 2022-23
           </h2>
           <p>
@@ -448,7 +448,7 @@ function BlogPost() {
             src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vx2966hpmjmi17k58rhz.png"
             alt="Sources of visitors"
           />
-          <h3 className="mb-2 pt-8 text-xl font-semibold">
+          <h3 className="pt-8 mb-2 text-xl font-semibold">
             Amount of impressions on other platforms:
           </h3>
           <ul>
@@ -465,7 +465,7 @@ function BlogPost() {
             I think it is best if you connect with people in advance and build
             meaningful connections.
           </p>
-          <h3 className="mb-2 pt-8 text-xl font-semibold">
+          <h3 className="pt-8 mb-2 text-xl font-semibold">
             My guesses on how votes distributed:
           </h3>
           <ul>

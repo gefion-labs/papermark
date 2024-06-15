@@ -52,17 +52,17 @@ export default async function InvestorPage({
           />
           <meta
             property="og:image"
-            content="https://www.papermark.io/_static/meta-image.png"
+            content="https://deck3.xyz/_static/meta-image.png"
           />
-          <meta property="og:url" content="https://www.papermark.io" />
+          <meta property="og:url" content="https://deck3.xyz" />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
 
         {/* Hero section */}
-        <div className="flex flex-1 flex-col justify-center bg-white text-black">
-          <div className="mx-auto w-full max-w-5xl px-4 text-center md:px-8">
+        <div className="flex flex-col justify-center flex-1 text-black bg-white">
+          <div className="w-full max-w-5xl px-4 mx-auto text-center md:px-8">
             <div className="pt-32">
-              {/* <div className=" pb-4">
+              {/* <div className="pb-4 ">
                 <img
                   src={investor.imageUrl}
                   alt="App screenshot"
@@ -71,19 +71,19 @@ export default async function InvestorPage({
                   height={50}
                 />
               </div> */}
-              <div className="relative my-4 inline-block rounded-full ">
-                <span className="text-balance rounded-full border border-green-200 bg-green-100 px-3 py-1 text-sm leading-6 text-green-600">
+              <div className="relative inline-block my-4 rounded-full">
+                <span className="px-3 py-1 text-sm leading-6 text-green-600 bg-green-100 border border-green-200 rounded-full text-balance">
                   Active
                 </span>
               </div>
 
-              <h1 className="text-balance text-6xl">{investor.name}</h1>
-              <p className="mx-auto mt-8 max-w-3xl text-balance  text-xl md:text-2xl">
+              <h1 className="text-6xl text-balance">{investor.name}</h1>
+              <p className="max-w-3xl mx-auto mt-8 text-xl text-balance md:text-2xl">
                 Venture capital and investor firm
               </p>
-              <div className="space-x-2 pt-8">
+              <div className="pt-8 space-x-2">
                 <Link href={investor.website || "/investors"}>
-                  <Button className="justify-center rounded-3xl bg-gray-800 text-white hover:bg-gray-500">
+                  <Button className="justify-center text-white bg-gray-800 rounded-3xl hover:bg-gray-500">
                     {investor.name} website link
                   </Button>
                 </Link>
@@ -92,24 +92,24 @@ export default async function InvestorPage({
           </div>
 
           {/* Comparison section */}
-          <div className="mx-auto w-full max-w-5xl px-4 md:px-8"></div>
-          <div className="bg-white py-16">
-            <div className="mx-auto max-w-5xl px-4 md:px-8">
-              <div className="isolate grid grid-cols-1 overflow-hidden rounded-xl border border-black md:grid-cols-2">
+          <div className="w-full max-w-5xl px-4 mx-auto md:px-8"></div>
+          <div className="py-16 bg-white">
+            <div className="max-w-5xl px-4 mx-auto md:px-8">
+              <div className="grid grid-cols-1 overflow-hidden border border-black isolate rounded-xl md:grid-cols-2">
                 {/* First hardcoded tier */}
                 <div className="flex flex-col justify-between border-r-0 border-black md:odd:border-r xl:last:!border-r-0 xl:even:border-r">
                   <div>
-                    <div className="border-b border-black bg-gray-100 p-6">
-                      <h3 className="text-balance text-xl leading-8 text-gray-800">
+                    <div className="p-6 bg-gray-100 border-b border-black">
+                      <h3 className="text-xl leading-8 text-gray-800 text-balance">
                         Rounds {investor.name} invests
                       </h3>
                     </div>
                     <div className="p-6">
-                      <p className="mt-4 text-balance text-sm leading-6 text-gray-500">
+                      <p className="mt-4 text-sm leading-6 text-gray-500 text-balance">
                         Investor stage information
                       </p>
-                      <p className="mt-6 flex items-baseline gap-x-1">
-                        <span className="text-balance text-4xl font-medium text-gray-800">
+                      <p className="flex items-baseline mt-6 gap-x-1">
+                        <span className="text-4xl font-medium text-gray-800 text-balance">
                           {investor.round}
                         </span>
                       </p>
@@ -133,17 +133,17 @@ export default async function InvestorPage({
                 {/* Second hardcoded tier */}
                 <div className="flex flex-col justify-between border-black">
                   <div>
-                    <div className="border-b border-black bg-gray-100 p-6">
-                      <h3 className="text-balance text-xl leading-8 text-gray-800">
+                    <div className="p-6 bg-gray-100 border-b border-black">
+                      <h3 className="text-xl leading-8 text-gray-800 text-balance">
                         Location {investor.name} invests
                       </h3>
                     </div>
                     <div className="p-6">
-                      <p className="mt-4 text-balance text-sm leading-6 text-gray-500">
+                      <p className="mt-4 text-sm leading-6 text-gray-500 text-balance">
                         Investor primarily location but not limited
                       </p>
-                      <p className="mt-6 flex items-baseline gap-x-1">
-                        <span className="text-balance text-4xl font-medium text-gray-800">
+                      <p className="flex items-baseline mt-6 gap-x-1">
+                        <span className="text-4xl font-medium text-gray-800 text-balance">
                           {investor.location}
                         </span>
                       </p>
@@ -165,20 +165,20 @@ export default async function InvestorPage({
                 </div>
               </div>
 
-              <div className="isolate my-8  overflow-hidden rounded-xl border border-black">
+              <div className="my-8 overflow-hidden border border-black isolate rounded-xl">
                 <div className="flex flex-col justify-between">
                   <div>
-                    <div className="border-b border-black bg-gray-100 p-6">
-                      <h3 className="text-balance text-xl leading-8 text-gray-800">
+                    <div className="p-6 bg-gray-100 border-b border-black">
+                      <h3 className="text-xl leading-8 text-gray-800 text-balance">
                         Sector {investor.name} invests
                       </h3>
                     </div>
                     <div className="p-6">
-                      <p className="mt-4 text-balance text-sm leading-6 text-gray-500">
+                      <p className="mt-4 text-sm leading-6 text-gray-500 text-balance">
                         Sectors primarily invested in
                       </p>
-                      <p className="mt-6 flex items-baseline gap-x-1">
-                        <span className="text-balance text-4xl font-medium text-gray-800">
+                      <p className="flex items-baseline mt-6 gap-x-1">
+                        <span className="text-4xl font-medium text-gray-800 text-balance">
                           {investor.sector}
                         </span>
                       </p>
@@ -202,10 +202,10 @@ export default async function InvestorPage({
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-5xl px-4 md:px-8 ">
+          <div className="w-full max-w-5xl px-4 mx-auto md:px-8">
             <div className="mx-auto rounded-3xl bg-[#fb7a00] px-6 py-12">
-              <div className="item-center flex flex-col justify-between space-y-10 lg:flex-row lg:space-y-0">
-                <h2 className="text-nowrap text-3xl">
+              <div className="flex flex-col justify-between space-y-10 item-center lg:flex-row lg:space-y-0">
+                <h2 className="text-3xl text-nowrap">
                   Looking for more investors? <br />
                   <p className="my-2 text-xl text-gray-800">
                     Access our investor database with 10k+ venture capital firms
@@ -218,7 +218,7 @@ export default async function InvestorPage({
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button className="rounded-3xl bg-black text-base text-gray-200 hover:bg-gray-900">
+                    <Button className="text-base text-gray-200 bg-black rounded-3xl hover:bg-gray-900">
                       Full investor database
                     </Button>
                   </Link>
@@ -229,11 +229,11 @@ export default async function InvestorPage({
 
           {/* /* Feature Section*/}
           <div
-            className="mx-auto w-full max-w-5xl px-4 py-20 md:px-8"
+            className="w-full max-w-5xl px-4 py-20 mx-auto md:px-8"
             id="features"
           >
-            <h2 className="max-w-3xl text-balance pb-20 pt-12 text-4xl">
-              Powered by Papermark{" "}
+            <h2 className="max-w-3xl pt-12 pb-20 text-4xl text-balance">
+              Powered by Deck3{" "}
               <span className="text-gray-500">
                 Open Source DocSend alternative to share your pitchdeck and
                 create a Data Room
@@ -242,28 +242,28 @@ export default async function InvestorPage({
 
             {/* Testimonial section */}
             <div
-              className="mx-auto w-full max-w-5xl rounded-3xl bg-gray-100 px-4 py-20 md:px-8"
+              className="w-full max-w-5xl px-4 py-20 mx-auto bg-gray-100 rounded-3xl md:px-8"
               id="features"
             >
-              <div className="mx-auto flex flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-                <div className="my-6 -mt-8 flex w-full max-w-2xl items-center justify-center xl:-mb-8 xl:w-96 xl:flex-none">
-                  <div className="relative h-64 w-64">
+              <div className="flex flex-col items-center px-6 mx-auto gap-x-8 gap-y-10 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
+                <div className="flex items-center justify-center w-full max-w-2xl my-6 -mt-8 xl:-mb-8 xl:w-96 xl:flex-none">
+                  <div className="relative w-64 h-64">
                     {" "}
                     <img
-                      className="absolute inset-0 rounded-2xl bg-gray-800 object-cover  shadow-2xl"
-                      src="https://www.papermark.io/_static/testimonials/jaski.jpeg"
+                      className="absolute inset-0 object-cover bg-gray-800 shadow-2xl rounded-2xl"
+                      src="https://deck3.xyz/_static/testimonials/jaski.jpeg"
                       alt=""
                     />
                   </div>
                 </div>
 
                 <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-12 xl:py-16">
-                  <figure className="relative isolate pt-6 sm:pt-12">
+                  <figure className="relative pt-6 isolate sm:pt-12">
                     <svg
                       viewBox="0 0 162 128"
                       fill="none"
                       aria-hidden="true"
-                      className="absolute left-0 top-0 -z-10 h-32 stroke-white/20"
+                      className="absolute top-0 left-0 h-32 -z-10 stroke-white/20"
                     >
                       <path
                         id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb"
@@ -274,15 +274,15 @@ export default async function InvestorPage({
                         x={86}
                       />
                     </svg>
-                    <blockquote className="text-balance text-xl font-medium leading-8 text-black text-gray-800 sm:text-2xl sm:leading-9">
+                    <blockquote className="text-xl font-medium leading-8 text-black text-gray-800 text-balance sm:text-2xl sm:leading-9">
                       <p>
-                        Papermark solved a big pain point for me. DocSend
-                        monopoly will end soon!
+                        Deck3 solved a big pain point for me. DocSend monopoly
+                        will end soon!
                       </p>
                     </blockquote>
-                    <figcaption className="mt-8 text-balance ">
-                      <div className="font-semibold text-black ">Jaski</div>
-                      <div className="my-6 mt-1 text-gray-500 ">
+                    <figcaption className="mt-8 text-balance">
+                      <div className="font-semibold text-black">Jaski</div>
+                      <div className="my-6 mt-1 text-gray-500">
                         Founder in web3 space
                       </div>
                     </figcaption>

@@ -50,7 +50,7 @@ export default function DomainDeleted({
               </Button>
             </Section>
             <Text className="text-sm leading-6 text-black">
-              If you did not want to keep using this domain on Papermark anyway,
+              If you did not want to keep using this domain on Deck3 anyway,
               you can simply ignore this email.
             </Text>
             <Hr />

@@ -1,20 +1,20 @@
 export default function TermsPage() {
   return (
-    <div className="relative mx-auto bg-white px-4  pb-14 pt-48 text-black lg:px-8">
-      <article className="prose prose-slate mx-auto">
+    <div className="relative px-4 pt-48 mx-auto text-black bg-white pb-14 lg:px-8">
+      <article className="mx-auto prose prose-slate">
         <h1>Terms of Service</h1>
         <p>Effective date: 26/04/2024</p>
 
         <p>
-          These Terms of Service (“Terms”) constitute an agreement between
-          Papermark (“Papermark,” “us,” “we” or “our”) and the party agreeing to
-          these terms (“Customer,” “you,” or “your”). These Terms govern your
-          access to and use of the Services. By accessing or using the Services,
-          you accept these Terms, acknowledge that you have read and understand
-          these Terms, and agree to be bound by these Terms. Please note that
-          the Papermark Terms of Service, Papermark Business Agreement, the
-          Papermark Privacy Policy, and any other terms found on the Papermark
-          website do not apply to the Papermark Services.
+          These Terms of Service (“Terms”) constitute an agreement between Deck3
+          (Deck3,” “us,” “we” or “our”) and the party agreeing to these terms
+          (“Customer,” “you,” or “your”). These Terms govern your access to and
+          use of the Services. By accessing or using the Services, you accept
+          these Terms, acknowledge that you have read and understand these
+          Terms, and agree to be bound by these Terms. Please note that the
+          Deck3 Terms of Service, Deck3 Business Agreement, the Deck3 Privacy
+          Policy, and any other terms found on the Deck3 website do not apply to
+          the Deck3 Services.
         </p>
         <p>
           If you are entering into these Terms for use of the Services by an
@@ -31,19 +31,18 @@ export default function TermsPage() {
         </p>
         <h3>1.2 Modifications</h3>
         <p>
-          Papermark may update the Services from time to time. If Papermark
-          changes the Services in a manner that materially reduces their
-          functionality, Papermark will notify Customer at the email address
-          associated with the account, and Customer may provide notice within
-          thirty days of the change to terminate the Terms. This termination
-          right will not apply to updates made to features provided on a beta or
-          evaluation basis.
+          Deck3 may update the Services from time to time. If Deck3 changes the
+          Services in a manner that materially reduces their functionality,
+          Deck3 will notify Customer at the email address associated with the
+          account, and Customer may provide notice within thirty days of the
+          change to terminate the Terms. This termination right will not apply
+          to updates made to features provided on a beta or evaluation basis.
         </p>
         <h3>1.3 Software</h3>
         <p>
           <strong>a. Generally.</strong> Some of the Services may allow Customer
           and End Users to download Software that may update automatically.
-          Papermark hereby grants to Customer during the Term a limited
+          Deck3 hereby grants to Customer during the Term a limited
           non-exclusive license to use the Software solely in connection with
           the Services and in accordance with the Terms. This license is
           non-transferable (subject to Section 16.2), irrevocable (except as set
@@ -52,7 +51,7 @@ export default function TermsPage() {
         </p>
         <p>
           <strong>b. Open Source.</strong> If any component of the Software is
-          offered under an open source license, Papermark will make the license
+          offered under an open source license, Deck3 will make the license
           available to Customer and to the extent the provisions of that license
           grant Customer additional rights, those provisions will expressly
           override some provisions of the Terms solely with respect to that
@@ -73,10 +72,10 @@ export default function TermsPage() {
         </p>
         <h3>1.5 Reference Materials</h3>
         <p>
-          Papermark may make certain reference Materials, including without
+          Deck3 may make certain reference Materials, including without
           limitation an NDA, available through the Services. Such Materials are
-          for informational purposes only and Papermark makes no representations
-          or warranties as to their validity, reliability or sufficiency. The
+          for informational purposes only and Deck3 makes no representations or
+          warranties as to their validity, reliability or sufficiency. The
           Materials, including the NDA, are not intended to (a) constitute legal
           advice or (b) create an attorney-client relationship. Customer
           acknowledges and agrees that each situation is highly fact-specific
@@ -84,37 +83,37 @@ export default function TermsPage() {
           party should seek legal advice from a licensed attorney in the
           relevant jurisdictions.
         </p>
-        <h3>1.6 Papermark Rights</h3>
+        <h3>1.6 Deck3 Rights</h3>
         <p>
-          Papermark reserves the right to access Customer’s account as necessary
-          in order to provide the Services. Further, Customer agrees that we
-          may, but are not required to: (a) monitor the Services or Customer
-          Data for violations of these Terms and for compliance with our
-          policies; (b) refuse, restrict access to or the availability of, or
-          remove or disable access to the Materials or Customer Data or any
-          portion thereof, without prior notice to Customer, at any time for any
-          reason (including upon receipt of claims or allegations from third
-          parties or authorities relating to Customer Data), or for no reason at
-          all; (c) report to law enforcement authorities and/or take legal
-          action against anyone who violates these Terms; or (d) manage the
-          Services in a manner designed to protect our and third parties’ rights
-          and property or to facilitate the proper functioning of the Service.
+          Deck3 reserves the right to access Customer’s account as necessary in
+          order to provide the Services. Further, Customer agrees that we may,
+          but are not required to: (a) monitor the Services or Customer Data for
+          violations of these Terms and for compliance with our policies; (b)
+          refuse, restrict access to or the availability of, or remove or
+          disable access to the Materials or Customer Data or any portion
+          thereof, without prior notice to Customer, at any time for any reason
+          (including upon receipt of claims or allegations from third parties or
+          authorities relating to Customer Data), or for no reason at all; (c)
+          report to law enforcement authorities and/or take legal action against
+          anyone who violates these Terms; or (d) manage the Services in a
+          manner designed to protect our and third parties’ rights and property
+          or to facilitate the proper functioning of the Service.
         </p>
         <h3>1.7 Third Party Services and Materials</h3>
         <p>
           The Services may contain links to Third Party Services and Third Party
-          Materials. Papermark does not own, or operate these Third Party
-          Services, and we do not endorse any Third Party Services or Third
-          Party Materials. If Customer accesses or uses any Third Party Services
-          or Third Party Materials: (a) Customer is solely responsible for this
-          access and use; (b) Papermark is not responsible for any act or
-          omission of the third party or the availability, accuracy, the related
-          content, products or services of Third Party Services or Third Party
-          Materials; and (c) these Terms do not apply to the Third Party
-          Services. Before accessing or using a Third Party Service, you should
-          review the Third Party Service’s terms and conditions, privacy policy,
-          and all of Third Party Service’s other documents, and inform yourself
-          of the terms, policies, and practices of the Third Party Service.
+          Materials. Deck3 does not own, or operate these Third Party Services,
+          and we do not endorse any Third Party Services or Third Party
+          Materials. If Customer accesses or uses any Third Party Services or
+          Third Party Materials: (a) Customer is solely responsible for this
+          access and use; (b) Deck3 is not responsible for any act or omission
+          of the third party or the availability, accuracy, the related content,
+          products or services of Third Party Services or Third Party Materials;
+          and (c) these Terms do not apply to the Third Party Services. Before
+          accessing or using a Third Party Service, you should review the Third
+          Party Service’s terms and conditions, privacy policy, and all of Third
+          Party Service’s other documents, and inform yourself of the terms,
+          policies, and practices of the Third Party Service.
         </p>
         <h2>2. Customer Obligations</h2>
         <h3>2.1 Registration</h3>
@@ -124,7 +123,7 @@ export default function TermsPage() {
           authenticate following the authentication protocols provided by
           Customer. Account information must be accurate, current, and complete,
           and Customer agrees to keep this information up-to-date. Account
-          information will be governed by Papermark Privacy Policy for the
+          information will be governed by Deck3 Privacy Policy for the
           applicable Services.
         </p>
         <h3>2.2 End Users</h3>
@@ -140,19 +139,19 @@ export default function TermsPage() {
           configured to allow Administrators or End Users to purchase additional
           End User Licenses. Customer is responsible for understanding the
           settings and controls of the Services for purchasing End User Licenses
-          and provisioning new End User Accounts. Papermark will charge Customer
-          the applicable pro-rated amount for additional End User Licenses based
-          on Customer’s then-current price unless otherwise set forth on the
-          Order Form.
+          and provisioning new End User Accounts. Deck3 will charge Customer the
+          applicable pro-rated amount for additional End User Licenses based on
+          Customer’s then-current price unless otherwise set forth on the Order
+          Form.
         </p>
         <h3>2.3 Customer Authentication</h3>
         <p>
           Customers are responsible for maintaining the confidentiality of the
           authentication methods they use to access the Services, including
           their Authentication Credentials. Customer and its End Users may not
-          share the Authentication Credentials or, without Papermark’s
-          permission, give others access to or transfer Customer’s account or
-          any End User Account.
+          share the Authentication Credentials or, without Deck3’s permission,
+          give others access to or transfer Customer’s account or any End User
+          Account.
         </p>
         <h3>2.4 Unauthorized Use or Access</h3>
         <p>
@@ -163,9 +162,9 @@ export default function TermsPage() {
           that it does not allow any person under 13 within the United States or
           16 outside the United States to use the Services. Customer is
           responsible for any activity using its account, whether or not
-          Customer authorized that activity. You should immediately notify
-          Papermark in writing of any unauthorized use of your account by
-          sending an email to support@papermark.io.
+          Customer authorized that activity. You should immediately notify Deck3
+          in writing of any unauthorized use of your account by sending an email
+          to support@deck3.xyz.
         </p>
         <h3>2.5 Restrictions</h3>
         <p>
@@ -185,13 +184,13 @@ export default function TermsPage() {
           Materials; or (e) copy, modify, create a derivative work of, reverse
           engineer, reverse assemble or otherwise attempt to discover any source
           code. Customer will comply with any codes of conduct, policies, or
-          other notices Papermark provides or publishes in connection with the
-          Services, and Customer will promptly notify Papermark if it learns of
-          a security breach related to the Services. Customer agrees not to
-          access the Services by any means other than through the interface that
-          is provided by Papermark for accessing the Services, unless otherwise
+          other notices Deck3 provides or publishes in connection with the
+          Services, and Customer will promptly notify Deck3 if it learns of a
+          security breach related to the Services. Customer agrees not to access
+          the Services by any means other than through the interface that is
+          provided by Deck3 for accessing the Services, unless otherwise
           specifically authorized by us in a separate written agreement signed
-          by a Papermark authorized signatory.
+          by a Deck3 authorized signatory.
         </p>
         <h3>2.6 Acceptable Use</h3>
         <p>
@@ -199,7 +198,7 @@ export default function TermsPage() {
           owns or has sufficient rights to upload Customer Data on or through
           the Services; (b) will not copy, upload, download, or share Customer
           Data unless it has the legal right to do so; (c) will not upload
-          content that violates Papermark’s rights or any third party’s rights,
+          content that violates Deck3’s rights or any third party’s rights,
           including rights of privacy or publicity, Intellectual Property
           Rights, or contract rights; (d) will fully comply with any third-party
           licenses relating to Customer Data, including paying all royalties,
@@ -219,54 +218,53 @@ export default function TermsPage() {
           electronic or any other means for the purpose of sending unsolicited
           email or other electronic communications, or engaging in unauthorized
           framing of, or linking to, the Services without prior express written
-          consent signed by a Papermark authorized signatory; (g) will not
-          upload or submit content that constitutes, contains, installs or
-          attempts to install or promotes spyware, malware or other computer
-          code, whether on Papermark’s or others’ computers or equipment,
-          designated to enable you or others to gather information about or
-          monitor the on-line or other activities of another party; (h) will not
-          transmit chain letters, bulk or junk email or interfere with, disrupt,
-          or create an undue burden on the Services or the networks or systems
-          connected to the Services, including hacking into the Services, or
-          using the Services to send unsolicited or commercial emails,
-          bulletins, comments or other communications; and (i) will not
-          impersonate any other person or entity, provide false or misleading
-          identification, payment or address information, or invade the privacy,
-          or violate the personal or proprietary right, of any person or entity.
+          consent signed by a Deck3 authorized signatory; (g) will not upload or
+          submit content that constitutes, contains, installs or attempts to
+          install or promotes spyware, malware or other computer code, whether
+          on Deck3’s or others’ computers or equipment, designated to enable you
+          or others to gather information about or monitor the on-line or other
+          activities of another party; (h) will not transmit chain letters, bulk
+          or junk email or interfere with, disrupt, or create an undue burden on
+          the Services or the networks or systems connected to the Services,
+          including hacking into the Services, or using the Services to send
+          unsolicited or commercial emails, bulletins, comments or other
+          communications; and (i) will not impersonate any other person or
+          entity, provide false or misleading identification, payment or address
+          information, or invade the privacy, or violate the personal or
+          proprietary right, of any person or entity.
         </p>
         <h2>3. Data</h2>
         <h3>3.1 Limitations</h3>
         <p>
-          These Terms constitute Customer’s instructions to Papermark to process
-          Customer Data. Papermark, Papermark personnel and its Subcontractors
-          will only process, access, use, store, and transfer Customer Data as
-          Customer instructs in order to deliver the Services and as specified
-          in these Terms.
+          These Terms constitute Customer’s instructions to Deck3 to process
+          Customer Data. Deck3, Deck3 personnel and its Subcontractors will only
+          process, access, use, store, and transfer Customer Data as Customer
+          instructs in order to deliver the Services and as specified in these
+          Terms.
         </p>
         <h3>3.2 Backup and Retention</h3>
         <p>
           Customer is responsible for retaining and backing up Customer Data.
-          Papermark will not be liable for any loss or corruption of Customer
-          Data, or for any costs or expenses associated with backing up or
-          restoring any Customer Data. Accordingly, Customer acknowledges that
-          it bears sole responsibility for adequate backup and retention of
-          Customer Data, and that it is Customer’s sole responsibility to use a
-          secure encrypted connection to communicate with the Services if it
-          wishes to protect transmission of data or files to Papermark.
-          Papermark will have no liability to you for any corruption, deletion,
-          destruction or loss of any of Customer Data.
+          Deck3 will not be liable for any loss or corruption of Customer Data,
+          or for any costs or expenses associated with backing up or restoring
+          any Customer Data. Accordingly, Customer acknowledges that it bears
+          sole responsibility for adequate backup and retention of Customer
+          Data, and that it is Customer’s sole responsibility to use a secure
+          encrypted connection to communicate with the Services if it wishes to
+          protect transmission of data or files to Deck3. Deck3 will have no
+          liability to you for any corruption, deletion, destruction or loss of
+          any of Customer Data.
         </p>
         <h3>3.3 Aggregate/Anonymous Data</h3>
         <p>
-          Papermark may generate data that has been de-identified, anonymized
-          and aggregated with other de-identified, anonymized data (including
-          from other customers) based on Customer’s use of the Services and use
-          such data for any of the following purposes: internal research and
+          Deck3 may generate data that has been de-identified, anonymized and
+          aggregated with other de-identified, anonymized data (including from
+          other customers) based on Customer’s use of the Services and use such
+          data for any of the following purposes: internal research and
           development; development of tools, methodologies, algorithms and
           processes; machine learning; risk management; fraud prevention;
           enhancing products, services and features; developing new products,
-          services and features; and conducting and furthering Papermark
-          business.
+          services and features; and conducting and furthering Deck3 business.
         </p>
         <h3>3.4 Compliance</h3>
         <p>
@@ -277,21 +275,21 @@ export default function TermsPage() {
         </p>
         <h3>3.5 Data Transfer</h3>
         <p>
-          Papermark may transfer Customer Data to and access, use, and store
+          Deck3 may transfer Customer Data to and access, use, and store
           Customer Data in locations other than Customer’s country. To the
           extent Customer Data includes Personal Data that is subject to the
-          CCPA or the GDPR that Papermark is Processing on Customer’s behalf,
-          Customer and Papermark agree to the Papermark Data Processing
-          Addendum, which is incorporated by reference into these Terms. The
-          terms “CCPA”, “GDPR”, “Personal Data”, and “Processing” will have the
-          meanings defined in the Papermark Data Processing Addendum.
+          CCPA or the GDPR that Deck3 is Processing on Customer’s behalf,
+          Customer and Deck3 agree to the Deck3 Data Processing Addendum, which
+          is incorporated by reference into these Terms. The terms “CCPA”,
+          “GDPR”, “Personal Data”, and “Processing” will have the meanings
+          defined in the Deck3 Data Processing Addendum.
         </p>
         <h2>4. Intellectual Property</h2>
         <h3>4.1 Reservation of Rights</h3>
         <p>
-          Except as set forth herein, these Terms do not grant: (a) Papermark
-          any Intellectual Property Rights in Customer Data; or (b) Customer any
-          Intellectual Property Rights in the Services, Materials, or Papermark
+          Except as set forth herein, these Terms do not grant: (a) Deck3 any
+          Intellectual Property Rights in Customer Data; or (b) Customer any
+          Intellectual Property Rights in the Services, Materials, or Deck3
           trademarks and brand features. Customer acknowledges that it is
           obtaining only a limited right to use the Services and that
           irrespective of any use of the words “purchase”, “sale” or similar
@@ -300,62 +298,62 @@ export default function TermsPage() {
         </p>
         <h3>4.2 Limited Permission</h3>
         <p>
-          Customer grants Papermark only the limited rights that are reasonably
-          necessary for Papermark to deliver the Services in accordance with
-          these Terms. This limited permission also extends to Subcontractors or
+          Customer grants Deck3 only the limited rights that are reasonably
+          necessary for Deck3 to deliver the Services in accordance with these
+          Terms. This limited permission also extends to Subcontractors or
           Sub-processors.
         </p>
         <h3>4.3 Feedback</h3>
         <p>
           Please be aware that we may use any Feedback sent to us in any form or
           any manner without any obligation to Customer. By submitting Feedback
-          to us, Customer: (i) assigns to Papermark all of its right, title and
+          to us, Customer: (i) assigns to Deck3 all of its right, title and
           interest in and to all such Feedback; and (ii) agrees to provide any
-          reasonable assistance necessary to document and maintain Papermark’s
+          reasonable assistance necessary to document and maintain Deck3’s
           rights in the Feedback. In the event that such assignment is not
-          valid, Customer agrees and grants to Papermark a royalty-free,
-          worldwide, perpetual license to use or incorporate into the Services
-          any Feedback.
+          valid, Customer agrees and grants to Deck3 a royalty-free, worldwide,
+          perpetual license to use or incorporate into the Services any
+          Feedback.
         </p>
 
         <h2>6. Pricing and Payment</h2>
         <h3>6.1 Fees</h3>
         <p>
-          Customer will pay Papermark or Customer’s reseller all applicable Fees
-          in the currency and pursuant to the payment terms indicated on the
-          Order Form or in the applicable agreement between Customer and
-          Customer’s reseller. Customer authorizes Papermark, or Customer’s
-          reseller, to charge Customer for all applicable Fees using Customer’s
-          selected payment method, and Customer will issue the required
-          purchasing documentation, if any. Fees are non-refundable except as
-          required by law or as otherwise specifically permitted in the Terms.
+          Customer will pay Deck3 or Customer’s reseller all applicable Fees in
+          the currency and pursuant to the payment terms indicated on the Order
+          Form or in the applicable agreement between Customer and Customer’s
+          reseller. Customer authorizes Deck3, or Customer’s reseller, to charge
+          Customer for all applicable Fees using Customer’s selected payment
+          method, and Customer will issue the required purchasing documentation,
+          if any. Fees are non-refundable except as required by law or as
+          otherwise specifically permitted in the Terms.
         </p>
         <h3>6.2 Payment</h3>
         <p>
-          Customer will pay Papermark invoices on the payment interval set forth
-          in the Order Form. Papermark may suspend or terminate the Services if
-          Fees are past due. Customer will provide complete and accurate billing
-          and contact information to Papermark or to Customer’s reseller.
+          Customer will pay Deck3 invoices on the payment interval set forth in
+          the Order Form. Deck3 may suspend or terminate the Services if Fees
+          are past due. Customer will provide complete and accurate billing and
+          contact information to Deck3 or to Customer’s reseller.
         </p>
         <h3>6.3 Taxes</h3>
         <p>
           Fees are exclusive of taxes and Customer is responsible for all Taxes.
-          Papermark, or Customer’s reseller, will charge Taxes when required to
-          do so. If Customer provides Papermark or its reseller with a valid
-          exemption certificate, Papermark will not collect the taxes covered by
-          that certificate.
+          Deck3, or Customer’s reseller, will charge Taxes when required to do
+          so. If Customer provides Deck3 or its reseller with a valid exemption
+          certificate, Deck3 will not collect the taxes covered by that
+          certificate.
         </p>
         <h3>6.4 Withholding Taxes</h3>
         <p>
-          Customer will pay Papermark or its reseller net of any applicable
-          Withholding Taxes. Customer and Papermark, or Customer’s reseller if
+          Customer will pay Deck3 or its reseller net of any applicable
+          Withholding Taxes. Customer and Deck3, or Customer’s reseller if
           applicable, will work together to avoid any Withholding Tax if
           exemptions, or a reduced treaty withholding rate, are available. If
-          Papermark or Customer’s reseller qualifies for a tax exemption, or a
-          reduced treaty withholding rate, Papermark or Customer’s reseller will
+          Deck3 or Customer’s reseller qualifies for a tax exemption, or a
+          reduced treaty withholding rate, Deck3 or Customer’s reseller will
           provide Customer with reasonable documentary proof. Customer will
-          provide Papermark or Customer’s reseller reasonable evidence that it
-          has paid the relevant authority for the sum withheld or deducted.
+          provide Deck3 or Customer’s reseller reasonable evidence that it has
+          paid the relevant authority for the sum withheld or deducted.
         </p>
         <h3>6.5 Auto-renewals and Trials</h3>
         <p>
@@ -365,7 +363,7 @@ export default function TermsPage() {
           AUTOMATICALLY AT THE END OF THE TRIAL OR FOR THE RENEWAL, UNLESS
           CUSTOMER NOTIFIES PAPERMARK (OR CUSTOMER’S RESELLER, AS APPLICABLE)
           THAT CUSTOMER WANTS TO DISABLE AUTO-RENEWAL OR CANCEL THE SERVICES IN
-          ACCORDANCE WITH SECTION 7.2. Papermark may revise Services rates by
+          ACCORDANCE WITH SECTION 7.2. Deck3 may revise Services rates by
           providing the Customer at least thirty days’ notice prior to the next
           charge.
         </p>
@@ -384,11 +382,11 @@ export default function TermsPage() {
         <h3>7.1 Services Term</h3>
         <p>
           Unless otherwise set forth on the Order Form, the Services are sold on
-          a subscription basis. Papermark will deliver the Services to Customer
-          for the Services Term. Unless the parties agree otherwise in writing,
-          any increases in quantities of Services purchased during any Services
-          Term will have a prorated term ending on the last day of the
-          pre-existing Services Term.
+          a subscription basis. Deck3 will deliver the Services to Customer for
+          the Services Term. Unless the parties agree otherwise in writing, any
+          increases in quantities of Services purchased during any Services Term
+          will have a prorated term ending on the last day of the pre-existing
+          Services Term.
         </p>
         <h3>7.2 Automatic Renewals</h3>
         <p>
@@ -397,22 +395,22 @@ export default function TermsPage() {
           subscription to the Services will automatically renew for a Renewal
           Term at the then-current quantity, unless either party gives the other
           written notice of termination to the other (in the case of Customer,
-          via email to support@papermark.io) at least thirty days prior to the
+          via email to support@deck3.xyz) at least thirty days prior to the
           expiration of the then-current Services Term for subscriptions less
           than one year and at least sixty days prior to the expiration of the
           then-current Services Term for subscriptions of one year or more. If
           Customer has purchased the Services online via a self-serve mechanism
-          and provided a payment method to Papermark for recurring charges,
-          Customer may elect to terminate the Terms via the Admin Console prior
-          to the day a Renewal Term begins. Papermark reserves the right to
-          change our prices for any renewal subscription.
+          and provided a payment method to Deck3 for recurring charges, Customer
+          may elect to terminate the Terms via the Admin Console prior to the
+          day a Renewal Term begins. Deck3 reserves the right to change our
+          prices for any renewal subscription.
         </p>
         <h3>7.3 Additional Subscriptions</h3>
         <p>
           The Services may be configured to allow Administrators or End Users to
           purchase additional subscriptions or quantities of Services. Customer
           is responsible for understanding the settings and controls of the
-          Services for purchasing additional Services. Papermark will charge
+          Services for purchasing additional Services. Deck3 will charge
           Customer the applicable pro-rated amount for additional Services for
           the remainder of the then-current Services Term based on Customer’s
           then-current price unless otherwise set forth on the Order Form.
@@ -423,17 +421,17 @@ export default function TermsPage() {
         <h3>8.2 Termination by Customer</h3>
         <p>
           You may terminate your account by sending a cancellation request to
-          support@papermark.io or by following the notice procedures for
+          support@deck3.xyz or by following the notice procedures for
           Subscription Services provided in Section 6.5 or Section 7.2, as
           applicable. Termination of your Account and these Terms will take
-          effect after Papermark processes the cancellation at the conclusion of
-          the then-current Services Term.
+          effect after Deck3 processes the cancellation at the conclusion of the
+          then-current Services Term.
         </p>
-        <h3>8.3 Termination by Papermark</h3>
+        <h3>8.3 Termination by Deck3</h3>
         <p>
-          Papermark may, in its sole discretion, immediately terminate these
-          Terms and suspend Customer’s access to the Services if required to do
-          so by law or for an egregious violation by Customer of Section 2.5 or
+          Deck3 may, in its sole discretion, immediately terminate these Terms
+          and suspend Customer’s access to the Services if required to do so by
+          law or for an egregious violation by Customer of Section 2.5 or
           Section 2.6 of the Terms.
         </p>
         <h3>8.4 Termination for Cause</h3>
@@ -448,22 +446,21 @@ export default function TermsPage() {
         <h3>8.5 Effect of Termination</h3>
         <p>
           If these Terms terminate, except as set forth in this Section, the
-          rights and licenses granted by Papermark to Customer will cease
+          rights and licenses granted by Deck3 to Customer will cease
           immediately. For a period of up to 30 days following termination,
-          Papermark may, in its sole discretion, permit Customer to retrieve
-          Customer Data from the Services. Papermark may delete Customer Data
-          from the Services and Papermark will have no obligation to continue to
-          store or permit Customer to retrieve Customer Data. Post-termination
-          assistance from Papermark is subject to the mutual agreement of the
-          parties, including fees and terms Papermark specifies for such
-          assistance.
+          Deck3 may, in its sole discretion, permit Customer to retrieve
+          Customer Data from the Services. Deck3 may delete Customer Data from
+          the Services and Deck3 will have no obligation to continue to store or
+          permit Customer to retrieve Customer Data. Post-termination assistance
+          from Deck3 is subject to the mutual agreement of the parties,
+          including fees and terms Deck3 specifies for such assistance.
         </p>
         <h2>9. Representations and Warranties</h2>
         <p>
-          Customer represents and warrants to Papermark that: (a) it has full
-          power and authority to enter into these Terms, including, if you are
-          using the Services on behalf of a business or entity, the authority to
-          bind that business or entity to these Terms; (b) Customer’s use of the
+          Customer represents and warrants to Deck3 that: (a) it has full power
+          and authority to enter into these Terms, including, if you are using
+          the Services on behalf of a business or entity, the authority to bind
+          that business or entity to these Terms; (b) Customer’s use of the
           Services does not violate any applicable law or regulation; and (c)
           Customer’s collection, use, and disclosure of Customer Data through
           the Services will not violate third-party rights, including
@@ -473,7 +470,7 @@ export default function TermsPage() {
         <h3>10.1 Maintenance</h3>
         <p>
           The Service may be temporarily unavailable for scheduled maintenance
-          or for unscheduled emergency maintenance, either by Papermark or by
+          or for unscheduled emergency maintenance, either by Deck3 or by
           third-party providers, or because of other causes beyond our
           reasonable control.
         </p>
@@ -512,24 +509,23 @@ export default function TermsPage() {
         </p>
         <h4>10.3.2 Feedback</h4>
         <p>
-          Papermark offers Beta Services in order to get user feedback. In
-          exchange for using Beta Services, Customer Agrees that Papermark may
-          contact Customer and its End Users to obtain Feedback regarding Beta
-          Services.
+          Deck3 offers Beta Services in order to get user feedback. In exchange
+          for using Beta Services, Customer Agrees that Deck3 may contact
+          Customer and its End Users to obtain Feedback regarding Beta Services.
         </p>
         <h4>10.3.3 Confidential</h4>
         <p>
-          Beta Services are confidential until officially launched by Papermark.
+          Beta Services are confidential until officially launched by Deck3.
           Customer will take reasonable measures to keep information regarding
           the Beta Services confidential, including at least those measures
           Customer takes to protect its own confidential information of a
           similar nature. Customer will not disclose information regarding Beta
           Services to any third parties, and will keep new features and
-          functionality confidential until officially launched by Papermark.
+          functionality confidential until officially launched by Deck3.
           Customer may disclose information regarding Beta Services to the
-          extent required by law or regulation if Customer gives Papermark
-          reasonable advance written notice, to the extent permitted, so
-          Papermark can seek to prevent or limit the disclosure.
+          extent required by law or regulation if Customer gives Deck3
+          reasonable advance written notice, to the extent permitted, so Deck3
+          can seek to prevent or limit the disclosure.
         </p>
         <h2>11. Limitation of Liability</h2>
         <h3>11.1 Limitation on Indirect Liability</h3>
@@ -564,7 +560,7 @@ export default function TermsPage() {
         </p>
         <h2>12. Indemnification</h2>
         <p>
-          Customer will indemnify and hold Papermark and its Affiliates harmless
+          Customer will indemnify and hold Deck3 and its Affiliates harmless
           from and against any loss, liability, damage, penalty, fine, cost,
           fee, expense, claim, action or demand, including reasonable legal and
           accounting fees, arising or resulting from: (a) Customer’s breach of
@@ -572,17 +568,17 @@ export default function TermsPage() {
           warranties set forth above; (b) Customer Data; or (c) Customer’s other
           access, contribution to, use or misuse of the Services, including,
           without limitation the Materials. Customer will cooperate with any
-          reasonable requests to assist Papermark’s defense of such claim, suit
-          or demand.
+          reasonable requests to assist Deck3’s defense of such claim, suit or
+          demand.
         </p>
         <h2>13. Copyright</h2>
         <p>
-          Papermark will terminate the account and access rights of any
-          copyright infringer in appropriate circumstances. If you are a
-          copyright owner or the legal agent of a copyright owner, and you
-          believe that any content on the Service infringes upon your
-          copyrights, you may send us an email pursuant to our Digital
-          Millennium Copyright Act Notice at dmca@papermark.io.
+          Deck3 will terminate the account and access rights of any copyright
+          infringer in appropriate circumstances. If you are a copyright owner
+          or the legal agent of a copyright owner, and you believe that any
+          content on the Service infringes upon your copyrights, you may send us
+          an email pursuant to our Digital Millennium Copyright Act Notice at
+          dmca@deck3.xyz.
         </p>
         <h2>14. Disputes</h2>
         <h3>14.1 Informal Resolution</h3>
@@ -590,23 +586,23 @@ export default function TermsPage() {
           Before filing a claim, each party agrees to try to resolve the dispute
           by contacting the other party through the notice procedures in Section
           14.2. If a dispute is not resolved within sixty days of notice,
-          Customer or Papermark may bring a formal proceeding.
+          Customer or Deck3 may bring a formal proceeding.
         </p>
         <h3>14.2 Arbitration</h3>
         <p>
-          Customer and Papermark agree to resolve any claims relating to the
-          Terms or the Services through final and binding individual
-          arbitration, except as set forth below. This includes disputes arising
-          out of or relating to the interpretation or application of this
-          “Arbitration” subsection, including its scope, enforceability,
-          revocability, or validity. The arbitration will be held in a location
-          both parties agree to in writing. The arbitrator may award relief only
-          individually and only to the extent necessary to redress Customer’s or
-          Papermark’s individual claim(s); the arbitrator may not award relief
-          on behalf of others or the general public. Our past, present and
-          future affiliates and agents may invoke our rights under this
-          “Disputes” Section in the event they become involved in a dispute with
-          you; otherwise, these Terms do not give rights to any third parties.
+          Customer and Deck3 agree to resolve any claims relating to the Terms
+          or the Services through final and binding individual arbitration,
+          except as set forth below. This includes disputes arising out of or
+          relating to the interpretation or application of this “Arbitration”
+          subsection, including its scope, enforceability, revocability, or
+          validity. The arbitration will be held in a location both parties
+          agree to in writing. The arbitrator may award relief only individually
+          and only to the extent necessary to redress Customer’s or Deck3’s
+          individual claim(s); the arbitrator may not award relief on behalf of
+          others or the general public. Our past, present and future affiliates
+          and agents may invoke our rights under this “Disputes” Section in the
+          event they become involved in a dispute with you; otherwise, these
+          Terms do not give rights to any third parties.
         </p>
         <h3>14.3 Exception to Arbitration</h3>
         <p>
@@ -614,16 +610,15 @@ export default function TermsPage() {
           Munich, Germany solely for injunctive relief to stop unauthorized use
           or abuse of the Services or infringement of Intellectual Property
           Rights without first engaging in the informal dispute notice process
-          described above. Both Customer and Papermark consent to venue and
-          personal jurisdiction there.
+          described above. Both Customer and Deck3 consent to venue and personal
+          jurisdiction there.
         </p>
         <h3>14.4 NO CLASS OR REPRESENTATIVE ACTIONS</h3>
         <p>
-          Customer may only resolve disputes with Papermark on an individual
-          basis and may not bring a claim in a class, consolidated or
-          representative action. Class arbitrations, class actions, private
-          attorney general actions and consolidation with other arbitrations are
-          not allowed.
+          Customer may only resolve disputes with Deck3 on an individual basis
+          and may not bring a claim in a class, consolidated or representative
+          action. Class arbitrations, class actions, private attorney general
+          actions and consolidation with other arbitrations are not allowed.
         </p>
         <h3>14.5 Severability</h3>
         <p>
@@ -643,27 +638,27 @@ export default function TermsPage() {
         <h2>16. Miscellaneous</h2>
         <h3>16.1 Changes</h3>
         <p>
-          Papermark may change these Terms from time to time. Customers can
-          review the most current version of these Terms at any time at
-          https://www.papermark.io/terms. The revised provisions will become
-          effective once posted or on any effective date indicated in the
-          posting, and you accept the revised provisions by accessing or using
-          the Service after that date.
+          Deck3 may change these Terms from time to time. Customers can review
+          the most current version of these Terms at any time at
+          https://deck3.xyz/terms. The revised provisions will become effective
+          once posted or on any effective date indicated in the posting, and you
+          accept the revised provisions by accessing or using the Service after
+          that date.
         </p>
         <h3>16.2 Assignment</h3>
         <p>
           Customer may not assign these Terms without the prior written consent
-          of Papermark. Papermark may assign or transfer these Terms, in whole
-          or in part, without restriction.
+          of Deck3. Deck3 may assign or transfer these Terms, in whole or in
+          part, without restriction.
         </p>
         <h3>16.3 Notices</h3>
         <p>
-          Notices must be sent via email. Notices to Papermark must be sent to
-          Papermark at support@papermark.io.
+          Notices must be sent via email. Notices to Deck3 must be sent to Deck3
+          at support@deck3.xyz.
         </p>
         <h3>16.4 Force Majeure</h3>
         <p>
-          Except for payment obligations, neither Papermark nor Customer will be
+          Except for payment obligations, neither Deck3 nor Customer will be
           liable for inadequate performance to the extent caused by a condition
           that was beyond the party’s reasonable control (for example, natural
           disaster, act of war or terrorism, riot, labor condition, governmental
@@ -681,12 +676,12 @@ export default function TermsPage() {
         <p>
           No agency, partnership, joint venture, or employment is created as a
           result of these Terms and Customer does not have any authority of any
-          kind to bind Papermark in any respect whatsoever; instead, our
+          kind to bind Deck3 in any respect whatsoever; instead, our
           relationship is that of independent contractors.
         </p>
         <h3>16.7 No Third Party Beneficiaries</h3>
         <p>
-          These Terms create no third party beneficiary rights to the Papermark
+          These Terms create no third party beneficiary rights to the Deck3
           product or to any third party product made available through the
           Service.
         </p>
@@ -694,15 +689,15 @@ export default function TermsPage() {
         <p>Section headings are for ease of reference only.</p>
         <h3>16.9 Customer Reference</h3>
         <p>
-          Papermark reserves the right to use Customer’s name and logo for
-          marketing or promotional purposes on Papermark’s website and in other
-          communication with existing or potential Papermark customers.
+          Deck3 reserves the right to use Customer’s name and logo for marketing
+          or promotional purposes on Deck3’s website and in other communication
+          with existing or potential Deck3 customers.
         </p>
         <h3>16.10 Governing Law</h3>
         <p>
           These Terms will be governed by the law of the Germany. exclusive of
           its choice of law and conflicts of law provisions. Unless otherwise
-          elected by Papermark in a particular instance, you expressly agree to
+          elected by Deck3 in a particular instance, you expressly agree to
           submit to the exclusive personal jurisdiction of the federal and state
           courts located in Munich, Germany, for the purpose of resolving any
           dispute relating to your access to or use of the Service, subject to
@@ -713,7 +708,7 @@ export default function TermsPage() {
         <p>
           Customer acknowledges that information you share with us may be
           collected, used, and disclosed as described in the Privacy Policy.
-          Please carefully review our Privacy Policy to understand how Papermark
+          Please carefully review our Privacy Policy to understand how Deck3
           collects and uses personal information.
         </p>
         <h3>16.12 Entire Agreement</h3>
@@ -742,8 +737,8 @@ export default function TermsPage() {
           tiers.
         </p>
         <p>
-          “Admin Console” means the online tool provided by Papermark to
-          Customer for use in administering the Services.
+          “Admin Console” means the online tool provided by Deck3 to Customer
+          for use in administering the Services.
         </p>
         <p>
           “Affiliate” means any entity that controls, is controlled by or is
@@ -814,8 +809,8 @@ export default function TermsPage() {
           comments, suggestions, error reports, and analysis.
         </p>
         <p>
-          “Fees” means the amounts invoiced to Customer or charged by Papermark
-          in accordance with the Order Form.
+          “Fees” means the amounts invoiced to Customer or charged by Deck3 in
+          accordance with the Order Form.
         </p>
         <p>
           “Initial Services Term” means the term for the applicable Services
@@ -839,12 +834,12 @@ export default function TermsPage() {
           registers for the Services.
         </p>
         <p>
-          “Privacy Policy” means the Papermark Privacy Policy available at
-          https://www.papermark.io/privacy.
+          “Privacy Policy” means the Deck3 Privacy Policy available at
+          https://deck3.xyz/privacy.
         </p>
         <p>
-          “Provisioning Date” is the date upon which Papermark makes the
-          Services available to Customer.
+          “Provisioning Date” is the date upon which Deck3 makes the Services
+          available to Customer.
         </p>
         <p>
           “Renewal Term” means, unless otherwise agreed to in writing by the
@@ -858,37 +853,36 @@ export default function TermsPage() {
           enables the applicable Services.
         </p>
         <p>
-          “Services” means the Papermark services, which include: (a) the
-          Papermark website (https://www.papermark.io); (b) the communication
-          and information sharing services and related technologies, including
-          the interactive features and features for communication with others,
-          available through the website; (c) other services we make available to
-          you as described in an Order Form; (d) Software; and (e) the
-          Materials.
+          “Services” means the Deck3 services, which include: (a) the Deck3
+          website (https://deck3.xyz); (b) the communication and information
+          sharing services and related technologies, including the interactive
+          features and features for communication with others, available through
+          the website; (c) other services we make available to you as described
+          in an Order Form; (d) Software; and (e) the Materials.
         </p>
         <p>
           “Services Term” means the Initial Services Term and all Renewal Terms
           for the applicable Services.
         </p>
         <p>
-          “Software” means any software provided by Papermark as part of the
-          Services, either directly by Papermark or through third party
-          distribution channels such as app stores.
+          “Software” means any software provided by Deck3 as part of the
+          Services, either directly by Deck3 or through third party distribution
+          channels such as app stores.
         </p>
         <p>
-          “Subcontractor” means an entity to whom Papermark subcontracts any of
-          its obligations under the Agreement.
+          “Subcontractor” means an entity to whom Deck3 subcontracts any of its
+          obligations under the Agreement.
         </p>
         <p>
           “Sub-processor” means an entity who agrees to process Customer Data on
-          Papermark’s behalf, or on behalf of another Papermark sub-processor,
-          in order to deliver the Services.
+          Deck3’s behalf, or on behalf of another Deck3 sub-processor, in order
+          to deliver the Services.
         </p>
         <p>
           “Taxes” means any sales, use, value added, goods and services,
           consumption, excise, local stamp, or other tax, (including but not
           limited to ISS, CIDE, PIS, CONFINS), duty or other charge of any kind
-          or nature excluding tax that is based on Papermark’s net income,
+          or nature excluding tax that is based on Deck3’s net income,
           associated with the Services or Software, including any related
           penalties or interest.
         </p>
@@ -907,10 +901,9 @@ export default function TermsPage() {
           services made available through a Third Party Service.
         </p>
         <p>
-          “Withholding Taxes” mean any income taxes that are imposed on
-          Papermark or Customer’s reseller in which Customer is required by law
-          to withhold or deduct on the payment to Papermark or Customer’s
-          reseller.
+          “Withholding Taxes” mean any income taxes that are imposed on Deck3 or
+          Customer’s reseller in which Customer is required by law to withhold
+          or deduct on the payment to Deck3 or Customer’s reseller.
         </p>
       </article>
     </div>

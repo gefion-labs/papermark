@@ -1,18 +1,18 @@
 export default function Section() {
   return (
-    <div className="bg-white py-10 sm:py-10">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+    <div className="py-10 bg-white sm:py-10">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <div className="grid items-start max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
-            <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+            <div className="relative px-6 pt-64 overflow-hidden bg-gray-900 shadow-2xl rounded-3xl pb-9 sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
               <img
-                className="absolute inset-0 h-full w-full object-cover  "
-                src="https://www.papermark.io/_static/michael.webp"
+                className="absolute inset-0 object-cover w-full h-full"
+                src="https://deck3.xyz/_static/michael.webp"
                 alt=""
               />
 
               <div
-                className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                className="absolute -ml-16 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 transform-gpu blur-3xl"
                 aria-hidden="true"
               ></div>
               <figure className="relative isolate">
@@ -20,13 +20,13 @@ export default function Section() {
                   viewBox="0 0 162 128"
                   fill="none"
                   aria-hidden="true"
-                  className="absolute -left-2 -top-4 -z-10 h-32 stroke-white/20"
+                  className="absolute h-32 -left-2 -top-4 -z-10 stroke-white/20"
                 >
                   <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x={86} />
                 </svg>
 
-                <blockquote className="mt-6 text-xl font-semibold leading-none text-white ">
-                  <p className="m-0 py-1">
+                <blockquote className="mt-6 text-xl font-semibold leading-none text-white">
+                  <p className="py-1 m-0">
                     “ I will make them remember me, I will ”
                   </p>
                 </blockquote>

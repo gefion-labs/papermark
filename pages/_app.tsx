@@ -27,42 +27,42 @@ export default function App({
   return (
     <>
       <Head>
-        <title>Papermark | The Open Source DocSend Alternative</title>
+        <title>Deck3 | The Open Source DocSend Alternative</title>
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Papermark is an open-source document sharing alternative to DocSend with built-in analytics."
+          content="Deck3 is an open-source document sharing alternative to DocSend with built-in analytics."
           key="description"
         />
         <meta
           property="og:title"
-          content="Papermark | The Open Source DocSend Alternative"
+          content="Deck3 | The Open Source DocSend Alternative"
           key="og-title"
         />
         <meta
           property="og:description"
-          content="Papermark is an open-source document sharing alternative to DocSend with built-in analytics."
+          content="Deck3 is an open-source document sharing alternative to DocSend with built-in analytics."
           key="og-description"
         />
         <meta
           property="og:image"
-          content="https://deck3.xyzo/_static/meta-image.png"
+          content="https://deck3.xyz/_static/meta-image.png"
           key="og-image"
         />
         <meta property="og:url" content="https://deck3.xyz" key="og-url" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@papermarkio" />
-        <meta name="twitter:creator" content="@papermarkio" />
-        <meta name="twitter:title" content="Papermark" key="tw-title" />
+        <meta name="twitter:site" content="@deck3" />
+        <meta name="twitter:creator" content="@deck3" />
+        <meta name="twitter:title" content="Deck3" key="tw-title" />
         <meta
           name="twitter:description"
-          content="Papermark is an open-source document sharing alternative to DocSend with built-in analytics."
+          content="Deck3 is an open-source document sharing alternative to DocSend with built-in analytics."
           key="tw-description"
         />
         <meta
           name="twitter:image"
-          content="https://www.papermark.io/_static/meta-image.png"
+          content="https://deck3.xyz/_static/meta-image.png"
           key="tw-image"
         />
         <link rel="icon" href="/favicon.ico" />

@@ -1,6 +1,9 @@
 import Link from "next/link";
 
+
+
 import { ArrowRightIcon, CheckCircle2Icon, MinusIcon } from "lucide-react";
+
 
 const featureGroups: {
   name: string;
@@ -277,7 +280,7 @@ const featureGroups: {
         },
       },
       {
-        name: "Remove Papermark branding",
+        name: "Remove Deck3 branding",
         id: "feature-user",
         tiers: {
           free: false,
@@ -533,7 +536,7 @@ export function PricingComparison() {
     } else {
       return (
         <MinusIcon
-          className="h-6 w-6 flex-none text-black"
+          className="flex-none w-6 h-6 text-black"
           aria-hidden="true"
         />
       );
@@ -545,63 +548,63 @@ export function PricingComparison() {
         Compare features
       </h2>
       <div className="sticky top-[158px] z-40">
-        <div className="grid grid-cols-16 overflow-hidden rounded-t-xl border border-black">
+        <div className="grid overflow-hidden border border-black grid-cols-16 rounded-t-xl">
           <ul className="col-[span_16_/_span_16] grid grid-cols-16 overflow-hidden bg-gray-100 text-gray-900">
-            <li className="col-span-4 list-none border-r border-black p-6 text-xl leading-8 ">
+            <li className="col-span-4 p-6 text-xl leading-8 list-none border-r border-black ">
               Features
             </li>
-            <li className="col-span-3 list-none border-r border-black p-6 text-xl leading-8">
+            <li className="col-span-3 p-6 text-xl leading-8 list-none border-r border-black">
               Free
             </li>
-            <li className="col-span-3 list-none border-r border-black p-6 text-xl leading-8">
+            <li className="col-span-3 p-6 text-xl leading-8 list-none border-r border-black">
               Pro
             </li>
-            <li className="col-span-3 list-none border-r border-black p-6 text-xl leading-8">
+            <li className="col-span-3 p-6 text-xl leading-8 list-none border-r border-black">
               Business
             </li>
-            <li className="col-span-3 list-none border-r-0 p-6 text-xl leading-8">
+            <li className="col-span-3 p-6 text-xl leading-8 list-none border-r-0">
               Data Rooms
             </li>
           </ul>
         </div>
-        <div className="grid grid-cols-16 border-x border-black">
+        <div className="grid border-black grid-cols-16 border-x">
           <ul className="col-[span_16_/_span_16] grid grid-cols-16 overflow-hidden">
-            <li className="col-span-4 list-none border-r border-black bg-white px-6 py-4 text-sm"></li>
-            <li className="col-span-3 list-none border-r border-black bg-white px-6 py-4 text-sm hover:bg-black hover:text-white">
-              <Link href="/login" className="group flex items-center gap-x-1">
-                Start sharing <ArrowRightIcon className="h-4 w-4" />
+            <li className="col-span-4 px-6 py-4 text-sm list-none bg-white border-r border-black"></li>
+            <li className="col-span-3 px-6 py-4 text-sm list-none bg-white border-r border-black hover:bg-black hover:text-white">
+              <Link href="/login" className="flex items-center group gap-x-1">
+                Start sharing <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </li>
-            <li className="col-span-3 list-none border-r border-black bg-white px-6 py-4 text-sm hover:bg-black hover:text-white">
+            <li className="col-span-3 px-6 py-4 text-sm list-none bg-white border-r border-black hover:bg-black hover:text-white">
               <Link
                 href="/login?next=/settings/billing"
-                className="group flex items-center gap-x-1"
+                className="flex items-center group gap-x-1"
               >
-                Choose Pro <ArrowRightIcon className="h-4 w-4" />
+                Choose Pro <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </li>
             <li className="col-span-3 list-none border-r border-black bg-white px-6 py-4 text-sm hover:bg-[#fb7a00] ">
               <Link
                 href="/login?next=/settings/billing"
-                className="group flex items-center gap-x-1"
+                className="flex items-center group gap-x-1"
               >
-                Choose Business <ArrowRightIcon className="h-4 w-4" />
+                Choose Business <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </li>
-            <li className="col-span-3 list-none border-r-0 bg-white px-6 py-4 text-sm hover:bg-black hover:text-white">
+            <li className="col-span-3 px-6 py-4 text-sm list-none bg-white border-r-0 hover:bg-black hover:text-white">
               <Link
                 href="/login?next=/settings/billing"
                 target="_blank"
-                className="group flex items-center gap-x-1"
+                className="flex items-center group gap-x-1"
               >
-                Create Data Rooms <ArrowRightIcon className="h-4 w-4" />
+                Create Data Rooms <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="relative z-0">
-        <div className="w-full border-collapse overflow-visible rounded-b-xl border border-black bg-none">
+        <div className="w-full overflow-visible border border-collapse border-black rounded-b-xl bg-none">
           <div>
             {featureGroups.map((group) => (
               <>

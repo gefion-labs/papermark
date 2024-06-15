@@ -13,7 +13,7 @@ export default function EmailSection({
 
   useEffect(() => {
     // Load email from localStorage when the component mounts
-    const storedEmail = window.localStorage.getItem("papermark.email");
+    const storedEmail = window.localStorage.getItem("deck3.email");
     if (storedEmail) {
       setData((prevData) => ({
         ...prevData,
@@ -25,7 +25,7 @@ export default function EmailSection({
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newEmail = e.target.value.toLowerCase();
     // Store the new email in localStorage
-    window.localStorage.setItem("papermark.email", newEmail);
+    window.localStorage.setItem("deck3.email", newEmail);
     // Update the state
     setData({ ...data, email: newEmail });
   };

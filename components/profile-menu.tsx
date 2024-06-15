@@ -31,17 +31,17 @@ const ProfileMenu = ({ className, size }: ProfileMenuProps) => {
   return (
     <div className="flex items-center justify-between space-x-2">
       {status === "loading" ? (
-        <div className="flex w-full items-center gap-x-3 rounded-md p-2">
-          <Skeleton className="h-8 w-8 rounded-full" />
+        <div className="flex items-center w-full p-2 rounded-md gap-x-3">
+          <Skeleton className="w-8 h-8 rounded-full" />
           {isSize && <Skeleton className="h-7 w-[90%]" />}
         </div>
       ) : (
         <DropdownMenu>
           <DropdownMenuTrigger asChild className="w-full">
-            <div className="group flex w-full items-center rounded-full text-sm font-semibold leading-6 text-foreground hover:bg-gray-200 hover:dark:bg-secondary lg:gap-x-3 lg:rounded-md lg:p-2">
+            <div className="flex items-center w-full text-sm font-semibold leading-6 rounded-full group text-foreground hover:bg-gray-200 hover:dark:bg-secondary lg:gap-x-3 lg:rounded-md lg:p-2">
               {session?.user?.image ? (
                 <Image
-                  className="h-7 w-7 rounded-full bg-secondary"
+                  className="rounded-full h-7 w-7 bg-secondary"
                   src={session?.user?.image}
                   width={30}
                   height={30}
@@ -49,10 +49,10 @@ const ProfileMenu = ({ className, size }: ProfileMenuProps) => {
                   loading="lazy"
                 />
               ) : (
-                <UserRound className="h-7 w-7 rounded-full bg-secondary p-1 ring-1 ring-muted-foreground/50" />
+                <UserRound className="p-1 rounded-full h-7 w-7 bg-secondary ring-1 ring-muted-foreground/50" />
               )}
               {isSize && (
-                <span className="flex w-full items-center justify-between">
+                <span className="flex items-center justify-between w-full">
                   <span className="sr-only">Your profile</span>
                   <span aria-hidden="true" className="line-clamp-2">
                     {session?.user?.name
@@ -60,7 +60,7 @@ const ProfileMenu = ({ className, size }: ProfileMenuProps) => {
                       : session?.user?.email?.split("@")[0]}
                   </span>
                   <ChevronUp
-                    className="ml-2 h-5 w-5 shrink-0 text-muted-foreground"
+                    className="w-5 h-5 ml-2 shrink-0 text-muted-foreground"
                     aria-hidden="true"
                   />
                 </span>
@@ -77,10 +77,10 @@ const ProfileMenu = ({ className, size }: ProfileMenuProps) => {
                 <ModeToggle />
 
                 <a
-                  href="mailto:support@papermark.io"
-                  className="my-1 flex items-center px-3 py-2 text-sm duration-200 hover:bg-gray-200 dark:hover:bg-muted"
+                  href="mailto:support@deck3.xyz"
+                  className="flex items-center px-3 py-2 my-1 text-sm duration-200 hover:bg-gray-200 dark:hover:bg-muted"
                 >
-                  <HelpCircle className="mr-2 h-4 w-4" />
+                  <HelpCircle className="w-4 h-4 mr-2" />
                   Need Help?
                 </a>
 
@@ -93,7 +93,7 @@ const ProfileMenu = ({ className, size }: ProfileMenuProps) => {
                   className="flex items-center px-3 py-2 text-sm duration-200 hover:bg-gray-200 dark:hover:bg-muted"
                   href={""}
                 >
-                  <LogOut className="mr-2 h-4 w-4" />
+                  <LogOut className="w-4 h-4 mr-2" />
                   Sign Out
                 </Link>
               </>

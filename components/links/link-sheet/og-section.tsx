@@ -190,10 +190,10 @@ export default function OGSection({
                     dragActive ? "scale-110" : "scale-100"
                   } h-7 w-7 text-gray-500 transition-all duration-75 group-hover:scale-110 group-active:scale-95`}
                 />
-                <p className="mt-2 text-center text-sm text-gray-500">
+                <p className="mt-2 text-sm text-center text-gray-500">
                   Drag and drop or click to upload.
                 </p>
-                <p className="mt-2 text-center text-sm text-gray-500">
+                <p className="mt-2 text-sm text-center text-gray-500">
                   Recommended: 1200 x 630 pixels (max 5MB)
                 </p>
                 <span className="sr-only">OG image upload</span>
@@ -202,11 +202,11 @@ export default function OGSection({
                 <img
                   src={metaImage}
                   alt="Preview"
-                  className="h-full w-full rounded-md object-cover"
+                  className="object-cover w-full h-full rounded-md"
                 />
               )}
             </label>
-            <div className="mt-1 flex rounded-md shadow-sm">
+            <div className="flex mt-1 rounded-md shadow-sm">
               <input
                 id="image"
                 name="image"
@@ -225,9 +225,9 @@ export default function OGSection({
                 {metaTitle?.length || 0}/120
               </p>
             </div>
-            <div className="relative mt-1 flex rounded-md shadow-sm">
+            <div className="relative flex mt-1 rounded-md shadow-sm">
               {false && (
-                <div className="absolute flex h-full w-full items-center justify-center rounded-md border border-gray-300 bg-white">
+                <div className="absolute flex items-center justify-center w-full h-full bg-white border border-gray-300 rounded-md">
                   <LoadingSpinner />
                 </div>
               )}
@@ -236,7 +236,7 @@ export default function OGSection({
                 id="title"
                 maxLength={120}
                 className="flex w-full rounded-md border-0 bg-background py-1.5 text-foreground shadow-sm ring-1 ring-inset ring-input placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
-                placeholder={`Papermark - open-source document sharing infrastructure.`}
+                placeholder={`Deck3 - open-source document sharing infrastructure.`}
                 value={metaTitle || ""}
                 onChange={(e) => {
                   setData({ ...data, metaTitle: e.target.value });
@@ -255,9 +255,9 @@ export default function OGSection({
                 {metaDescription?.length || 0}/240
               </p>
             </div>
-            <div className="relative mt-1 flex rounded-md shadow-sm">
+            <div className="relative flex mt-1 rounded-md shadow-sm">
               {false && (
-                <div className="absolute flex h-full w-full items-center justify-center rounded-md border border-gray-300 bg-white">
+                <div className="absolute flex items-center justify-center w-full h-full bg-white border border-gray-300 rounded-md">
                   <LoadingSpinner />
                 </div>
               )}
@@ -267,7 +267,7 @@ export default function OGSection({
                 rows={3}
                 maxLength={240}
                 className="flex w-full rounded-md border-0 bg-background py-1.5 text-foreground shadow-sm ring-1 ring-inset ring-input placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6"
-                placeholder={`Papermark is an open-source document sharing infrastructure for modern teams.`}
+                placeholder={`Deck3 is an open-source document sharing infrastructure for modern teams.`}
                 value={metaDescription || ""}
                 onChange={(e) => {
                   setData({

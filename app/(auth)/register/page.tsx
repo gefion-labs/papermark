@@ -20,9 +20,9 @@ export default function Register() {
   const [email, setEmail] = useState<string>("");
 
   return (
-    <div className="flex h-screen w-full justify-center">
+    <div className="flex justify-center w-full h-screen">
       <div
-        className="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+        className="absolute inset-x-0 flex justify-center overflow-hidden top-10 -z-10 transform-gpu blur-3xl"
         aria-hidden="true"
       >
         <div
@@ -34,13 +34,13 @@ export default function Register() {
         />
       </div>
       <div className="z-10 mx-5 mt-[calc(20vh)] h-fit w-full max-w-md overflow-hidden rounded-lg border border-border bg-gray-50 dark:bg-gray-900 sm:mx-0 sm:shadow-xl">
-        <div className="flex flex-col items-center justify-center space-y-3 px-4 py-6 pt-8 text-center sm:px-16">
+        <div className="flex flex-col items-center justify-center px-4 py-6 pt-8 space-y-3 text-center sm:px-16">
           <Link href="/">
             <Image
               src={PapermarkLogo}
               width={119}
               height={32}
-              alt="Papermark Logo"
+              alt="Deck3 Logo"
             />
           </Link>
           <h3 className="text-2xl font-medium text-foreground">
@@ -66,7 +66,7 @@ export default function Register() {
           }}
         >
           <Input
-            className=" border-4"
+            className="border-4"
             placeholder="jsmith@company.co"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -74,7 +74,7 @@ export default function Register() {
           <Button type="submit">Continue with Email</Button>
         </form>
         <p className="text-center">or</p>
-        <div className="flex flex-col space-y-2 px-4 py-8 sm:px-16">
+        <div className="flex flex-col px-4 py-8 space-y-2 sm:px-16">
           <Button
             onClick={() => {
               signIn("google", {
@@ -87,7 +87,7 @@ export default function Register() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 488 512"
               fill="currentColor"
-              className="h-4 w-4"
+              className="w-4 h-4"
             >
               <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
             </svg>

@@ -5,13 +5,13 @@ import {
   Button,
   Container,
   Head,
-  Text,
   Hr,
   Html,
   Link,
   Preview,
   Section,
   Tailwind,
+  Text,
 } from "@react-email/components";
 
 interface WelcomeEmailProps {
@@ -26,17 +26,17 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
       <Head />
       <Preview>{previewText}</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 w-[465px] p-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
               Welcome to{" "}
-              <span className="font-bold tracking-tighter">Papermark</span>
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
             <Text className="text-sm">
               Thanks for signing up{name && `, ${name}`}!
             </Text>
             <Text className="text-sm">
-              My name is Marc, and I&apos;m the creator of Papermark – the
+              My name is Marc, and I&apos;m the creator of Deck3 – the
               open-source DocSend alternative! I&apos;m excited to have you on
               board!
             </Text>
@@ -44,7 +44,7 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
               Here are a few things you can do to get started:
             </Text>
             <Text className="text-sm">
-              <ul className="list-inside list-disc text-sm">
+              <ul className="text-sm list-disc list-inside">
                 <li>Upload a document</li>
                 <li>
                   Share a link{" "}
@@ -55,7 +55,7 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
             </Text>
             <Section className="mb-[32px] mt-[32px] text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
                 href={`${process.env.NEXT_PUBLIC_BASE_URL}/welcome`}
                 style={{ padding: "12px 20px" }}
               >
@@ -67,11 +67,11 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
                 If you would like to keep up to date, you can do:
               </Text>
               <Text className="text-sm">
-                <ul className="list-inside list-disc text-sm">
+                <ul className="text-sm list-disc list-inside">
                   <li>
                     Star the repo on{" "}
                     <Link
-                      href="https://github.com/mfts/papermark"
+                      href="https://github.com/gefion-labs/papermark"
                       target="_blank"
                     >
                       GitHub
@@ -91,18 +91,18 @@ const WelcomeEmail = ({ name }: WelcomeEmailProps) => {
                 Let me know if you have any questions or feedback. I&apos;m
                 always happy to help!
               </Text>
-              <Text className="text-sm text-gray-400">Marc from Papermark</Text>
+              <Text className="text-sm text-gray-400">Logan from Deck3</Text>
             </Section>
             <Hr />
             <Section className="mt-8 text-gray-400">
               <Text className="text-xs">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   className="text-gray-400 no-underline visited:text-gray-400 hover:text-gray-400"
                   target="_blank"
                 >
-                  papermark.io
+                  deck3.xyz
                 </a>
               </Text>
               <Text className="text-xs">

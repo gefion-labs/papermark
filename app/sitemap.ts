@@ -1,11 +1,9 @@
 import { MetadataRoute } from "next";
 
-import {
-  getAlternatives,
-  getHelpArticles,
-  getPages,
-  getPosts,
-} from "@/lib/content";
+
+
+import { getAlternatives, getHelpArticles, getPages, getPosts } from "@/lib/content";
+
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getPosts();
@@ -13,77 +11,77 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const alternatives = await getAlternatives();
   const helpArticles = await getHelpArticles();
   const blogLinks = posts.map((post) => ({
-    url: `https://www.papermark.io/blog/${post?.data.slug}`,
+    url: `https://deck3.xyz/blog/${post?.data.slug}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
   const solutionLinks = solutions.map((solution) => ({
-    url: `https://www.papermark.io/solutions/${solution?.slug}`,
+    url: `https://deck3.xyz/solutions/${solution?.slug}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
   const alternativeLinks = alternatives.map((alternative) => ({
-    url: `https://www.papermark.io/alternatives/${alternative?.slug}`,
+    url: `https://deck3.xyz/alternatives/${alternative?.slug}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
   const helpArticleLinks = helpArticles.map((article) => ({
-    url: `https://www.papermark.io/help/article/${article?.data.slug}`,
+    url: `https://deck3.xyz/help/article/${article?.data.slug}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
 
   return [
     {
-      url: "https://www.papermark.io",
+      url: "https://deck3.xyz",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/pricing",
+      url: "https://deck3.xyz/pricing",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/privacy",
+      url: "https://deck3.xyz/privacy",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/terms",
+      url: "https://deck3.xyz/terms",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/open-source-investors",
+      url: "https://deck3.xyz/open-source-investors",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/docsend-alternatives",
+      url: "https://deck3.xyz/docsend-alternatives",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/oss-friends",
+      url: "https://deck3.xyz/oss-friends",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://vc.papermark.io",
+      url: "https://vc.deck3.xyz",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/investors",
+      url: "https://deck3.xyz/investors",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/data-room",
+      url: "https://deck3.xyz/data-room",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/share-notion-page",
+      url: "https://deck3.xyz/share-notion-page",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/ai",
+      url: "https://deck3.xyz/ai",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/ai-pitch-deck-generator",
+      url: "https://deck3.xyz/ai-pitch-deck-generator",
       lastModified: new Date().toISOString().split("T")[0],
     },
     {
-      url: "https://www.papermark.io/blog",
+      url: "https://deck3.xyz/blog",
       lastModified: new Date().toISOString().split("T")[0],
     },
     ...blogLinks,

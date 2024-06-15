@@ -35,7 +35,7 @@ export const generateMetadata = async ({
   const { title, summary: description, image } = article?.data || {};
 
   return constructMetadata({
-    title: `${title} - Papermark`,
+    title: `${title} - Deck3`,
     description,
     image,
   });
@@ -53,8 +53,8 @@ export default async function BlogPage({
 
   return (
     <>
-      <div className="mx-auto mb-10 w-full max-w-7xl px-4 md:px-8">
-        <div className="flex max-w-screen-sm flex-col space-y-4 pt-16">
+      <div className="w-full px-4 mx-auto mb-10 max-w-7xl md:px-8">
+        <div className="flex flex-col max-w-screen-sm pt-16 space-y-4">
           <div className="flex items-center space-x-4">
             <Breadcrumb>
               <BreadcrumbList>
@@ -74,15 +74,15 @@ export default async function BlogPage({
               </BreadcrumbList>
             </Breadcrumb>
           </div>
-          <h1 className="text-balance text-4xl md:text-5xl">
+          <h1 className="text-4xl text-balance md:text-5xl">
             {article.data.title}
           </h1>
           <p className="text-lg text-gray-600">{article.data.summary}</p>
 
-          <div className="flex flex-col items-center space-x-4 self-start">
+          <div className="flex flex-col items-center self-start space-x-4">
             <Link
               href={`https://twitter.com/mfts0`}
-              className="group flex items-center space-x-3"
+              className="flex items-center space-x-3 group"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -91,7 +91,7 @@ export default async function BlogPage({
                 alt={`Marc Seitz`}
                 width={40}
                 height={40}
-                className="rounded-full transition-all group-hover:brightness-90"
+                className="transition-all rounded-full group-hover:brightness-90"
               />
               <div className="flex flex-col">
                 <p className="font-semibold text-gray-700">Marc Seitz</p>
@@ -108,8 +108,8 @@ export default async function BlogPage({
       </div>
 
       <div className="relative">
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-4 gap-10 px-4 py-10 md:px-8">
-          <div className="relative col-span-4 mb-10 flex flex-col space-y-8 bg-white sm:border-r sm:border-orange-500 md:col-span-3">
+        <div className="grid w-full grid-cols-4 gap-10 px-4 py-10 mx-auto max-w-7xl md:px-8">
+          <div className="relative flex flex-col col-span-4 mb-10 space-y-8 bg-white sm:border-r sm:border-orange-500 md:col-span-3">
             <div
               data-mdx-container
               className="prose prose-headings:font-medium prose-h2:mb-2 prose-h2:mt-10 first:prose-h2:mt-0 sm:max-w-screen-md sm:pr-2 md:pr-0"
@@ -118,7 +118,7 @@ export default async function BlogPage({
             </div>
           </div>
 
-          <div className="sticky top-14 col-span-1 hidden flex-col divide-y divide-gray-200 self-start sm:flex">
+          <div className="sticky flex-col self-start hidden col-span-1 divide-y divide-gray-200 top-14 sm:flex">
             <div className="flex flex-col space-y-4">
               <TableOfContents items={article.toc} />
             </div>

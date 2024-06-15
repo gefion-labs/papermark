@@ -276,9 +276,9 @@ export default function PagesViewer({
           )}
         >
           <span className="sr-only">Previous</span>
-          <div className="relative flex items-center justify-center rounded-full bg-gray-950/50 p-1 hover:bg-gray-950/75">
+          <div className="relative flex items-center justify-center p-1 rounded-full bg-gray-950/50 hover:bg-gray-950/75">
             <ChevronLeftIcon
-              className="h-10 w-10 text-white"
+              className="w-10 h-10 text-white"
               aria-hidden="true"
             />
           </div>
@@ -292,23 +292,23 @@ export default function PagesViewer({
           )}
         >
           <span className="sr-only">Next</span>
-          <div className="relative flex items-center justify-center rounded-full bg-gray-950/50 p-1 hover:bg-gray-950/75">
+          <div className="relative flex items-center justify-center p-1 rounded-full bg-gray-950/50 hover:bg-gray-950/75">
             <ChevronRightIcon
-              className="h-10 w-10 text-white"
+              className="w-10 h-10 text-white"
               aria-hidden="true"
             />
           </div>
         </button>
 
         <div
-          className="relative mx-auto flex h-full w-full justify-center"
+          className="relative flex justify-center w-full h-full mx-auto"
           onContextMenu={handleContextMenu}
         >
           {pageNumber <= numPages &&
             (pages && loadedImages[pageNumber - 1] ? (
               pages.map((page, index) => {
                 // served from cloudfront, then use img tag otherwise use next/image
-                if (page.file.toLowerCase().includes("files.papermark.io")) {
+                if (page.file.toLowerCase().includes("files.deck3.xyz")) {
                   return (
                     <img
                       key={index}
@@ -318,7 +318,7 @@ export default function PagesViewer({
                       src={
                         loadedImages[index]
                           ? page.file
-                          : "https://www.papermark.io/_static/blank.gif"
+                          : "https://deck3.xyz/_static/blank.gif"
                       }
                       alt={`Page ${index + 1}`}
                       fetchPriority={loadedImages[index] ? "high" : "auto"}
@@ -342,10 +342,10 @@ export default function PagesViewer({
                 );
               })
             ) : (
-              <LoadingSpinner className="h-20 w-20 text-foreground" />
+              <LoadingSpinner className="w-20 h-20 text-foreground" />
             ))}
           {enableQuestion && feedback && pageNumber === numPagesWithFeedback ? (
-            <div className="flex w-full items-center justify-center">
+            <div className="flex items-center justify-center w-full">
               <Question
                 feedback={feedback}
                 viewId={viewId}

@@ -37,11 +37,11 @@ export default function Sidebar() {
         {/* move main screen to the right by width of the sidebar on desktop */}
         <div className="lg:pl-72"></div>
         {/* sidebar for mobile */}
-        <div className="sticky top-0 z-40 mb-1 flex h-14 shrink-0 items-center border-b border-gray-50/90 bg-gray-50 px-6 dark:border-none dark:border-black/10 dark:bg-black/95 sm:px-12 lg:hidden">
+        <div className="sticky top-0 z-40 flex items-center px-6 mb-1 border-b h-14 shrink-0 border-gray-50/90 bg-gray-50 dark:border-none dark:border-black/10 dark:bg-black/95 sm:px-12 lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <button className="mt-1 p-0.5 text-muted-foreground lg:hidden">
-                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                <MenuIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             </SheetTrigger>
             <SheetContent
@@ -51,7 +51,7 @@ export default function Sidebar() {
               <SidebarComponent className="flex" />
             </SheetContent>
           </Sheet>
-          <div className="flex flex-1 items-center justify-end gap-x-4 self-stretch lg:gap-x-6">
+          <div className="flex items-center self-stretch justify-end flex-1 gap-x-4 lg:gap-x-6">
             <ProfileMenu size="small" className="mr-3 mt-1.5" />
           </div>
         </div>
@@ -149,9 +149,9 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
       >
         {/* Sidebar component, swap this element with another sidebar if you like */}
 
-        <div className="flex h-16 shrink-0 items-center space-x-3">
-          <p className="flex items-center text-2xl font-bold  tracking-tighter text-black dark:text-white">
-            Papermark{" "}
+        <div className="flex items-center h-16 space-x-3 shrink-0">
+          <p className="flex items-center text-2xl font-bold tracking-tighter text-black dark:text-white">
+            Deck3{" "}
             {userPlan && userPlan != "free" ? (
               <span className="ml-4 rounded-full bg-background px-2.5 py-1 text-xs tracking-normal text-foreground ring-1 ring-gray-800">
                 {userPlan.charAt(0).toUpperCase() + userPlan.slice(1)}
@@ -170,10 +170,10 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
         {/* <div className="flex items-center gap-x-1">
           <AddDocumentModal>
             <Button
-              className="flex-1 text-left group flex gap-x-3 items-center justify-start px-3"
+              className="flex items-center justify-start flex-1 px-3 text-left group gap-x-3"
               title="Add New Document"
             >
-              <PlusIcon className="h-5 w-5 shrink-0" aria-hidden="true" />
+              <PlusIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
               <span>Add New Document</span>
             </Button>
           </AddDocumentModal>
@@ -181,7 +181,7 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
             <Button
               size="icon"
               variant="outline"
-              className="bg-gray-50 dark:bg-black border-gray-500 hover:bg-gray-200 hover:dark:bg-muted"
+              className="border-gray-500 bg-gray-50 dark:bg-black hover:bg-gray-200 hover:dark:bg-muted"
             >
               <FolderPlusIcon className="w-5 h-5 shrink-0" aria-hidden="true" />
             </Button>
@@ -189,7 +189,7 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
         </div> */}
 
         <ScrollArea className="flex-grow" showScrollbar>
-          <section className="flex flex-1 flex-col gap-y-6">
+          <section className="flex flex-col flex-1 gap-y-6">
             <div className="space-y-2">
               {navigation.map((item) => {
                 if (item.name === "Documents") {
@@ -206,7 +206,7 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
                         )}
                       >
                         <item.icon
-                          className="h-5 w-5 shrink-0"
+                          className="w-5 h-5 shrink-0"
                           aria-hidden="true"
                         />
                         {item.name}
@@ -227,9 +227,9 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
                       clickedPlan={"Business"}
                       trigger={"datarooms"}
                     >
-                      <div className="group flex w-full items-center gap-x-2 rounded-md px-3 py-2 text-sm leading-6 text-muted-foreground hover:bg-transparent">
+                      <div className="flex items-center w-full px-3 py-2 text-sm leading-6 rounded-md group gap-x-2 text-muted-foreground hover:bg-transparent">
                         <item.icon
-                          className="h-5 w-5 shrink-0"
+                          className="w-5 h-5 shrink-0"
                           aria-hidden="true"
                         />
                         {item.name}
@@ -250,7 +250,7 @@ export const SidebarComponent = ({ className }: { className?: string }) => {
                     )}
                   >
                     <item.icon
-                      className="h-5 w-5 shrink-0"
+                      className="w-5 h-5 shrink-0"
                       aria-hidden="true"
                     />
                     {item.name}

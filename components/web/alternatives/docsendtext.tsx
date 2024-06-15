@@ -7,8 +7,8 @@ const DocSendAlternatives = () => {
   return (
     <>
       <div className="relative">
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-4 gap-10 px-4 py-10 md:px-8">
-          <div className="relative col-span-4 mb-10 flex flex-col space-y-8 bg-white sm:border-r sm:border-orange-500/50 md:col-span-3">
+        <div className="grid w-full grid-cols-4 gap-10 px-4 py-10 mx-auto max-w-7xl md:px-8">
+          <div className="relative flex flex-col col-span-4 mb-10 space-y-8 bg-white sm:border-r sm:border-orange-500/50 md:col-span-3">
             <div className="prose prose-headings:font-medium prose-h2:mb-2 prose-h2:mt-10 first:prose-h2:mt-0 sm:max-w-screen-md sm:pr-2 md:pr-0">
               <>
                 <h2 id="quick-recap-of-alternatives-to-docsend">
@@ -17,7 +17,7 @@ const DocSendAlternatives = () => {
                 <ul>
                   <li>
                     <p>
-                      <strong>Papermark: </strong>Open-Source and modern Docsend
+                      <strong>Deck3: </strong>Open-Source and modern Docsend
                       alternative
                     </p>
                   </li>
@@ -81,12 +81,12 @@ const DocSendAlternatives = () => {
                   <li>
                     <p>
                       <strong>Cost Savings</strong>: Many alternatives like
-                      Papermark, offers more affordable pricing compared to
-                      DocSend, especially for teams, as it is
+                      Deck3, offers more affordable pricing compared to DocSend,
+                      especially for teams, as it is
                       <a
                         target="_blank"
                         rel="nofollow"
-                        href="https://www.papermark.io/pricing"
+                        href="https://deck3.xyz/pricing"
                       >
                         {" "}
                         included in the plan. In addition, all custom
@@ -95,9 +95,9 @@ const DocSendAlternatives = () => {
                   </li>
                   <li>
                     <p>
-                      <strong>Self-hosted and Open Source </strong>: Papermark
-                      is an open-source platform, allowing customization and
-                      community contributions.
+                      <strong>Self-hosted and Open Source </strong>: Deck3 is an
+                      open-source platform, allowing customization and community
+                      contributions.
                     </p>
                   </li>
                   <li>
@@ -148,35 +148,35 @@ const DocSendAlternatives = () => {
                   <a
                     target="_blank"
                     rel="nofollow"
-                    href="papermark.io/docsend-pricing"
+                    href="deck3.xyz/docsend-pricing"
                   >
                     article
                   </a>
                 </p>
-                <h2 id="papermark-docsend-alternative">
-                  Papermark - Docsend Alternative
+                <h2 id="deck3-docsend-alternative">
+                  Deck3 - Docsend Alternative
                 </h2>
                 <p>
                   Website:{" "}
-                  <a target="_blank" rel="nofollow" href="https://papermark.io">
-                    papermark.io
+                  <a target="_blank" rel="nofollow" href="https://deck3.xyz">
+                    deck3.xyz
                   </a>
                 </p>
                 <p>
                   <img
                     style={{ maxWidth: "100%" }}
                     src="https://aicontentfy-customer-images.s3.eu-central-1.amazonaws.com/papermark_b36392fc-dec4-4146-95e6-fac4c397cfbc.jpeg"
-                    alt="papermark.io website"
+                    alt="deck3.xyz website"
                   />
                 </p>
                 <p>
                   <span style={{ color: "rgb(19, 52, 59)" }}>
-                    Papermark - Open-Source DocSend Alternative Papermark is an
+                    Deck3 - Open-Source DocSend Alternative Deck3 is an
                     open-source document sharing platform offering:
                   </span>
                 </p>
 
-                <h3 id="papermark-features">Papermark Features</h3>
+                <h3 id="deck3-features">Deck3 Features</h3>
                 <ul>
                   <li>
                     <p>Secure document sharing with access controls</p>
@@ -207,10 +207,10 @@ const DocSendAlternatives = () => {
                 <p>
                   {" "}
                   <a target="_blank" rel="nofollow" href="/pricing">
-                    All Papermark features
+                    All Deck3 features
                   </a>
                 </p>
-                <h3 id="papermark-pricing">Papermark Pricing</h3>
+                <h3 id="deck3-pricing">Deck3 Pricing</h3>
                 <ul>
                   <li>
                     <p>Free: $0</p>
@@ -234,12 +234,12 @@ const DocSendAlternatives = () => {
                     <p>Self-hosted/Open Source: Available</p>
                   </li>
                 </ul>
-                <h3 id="papermark-ratings-and-reviews">
-                  Papermark Ratings and Reviews
+                <h3 id="deck3-ratings-and-reviews">
+                  Deck3 Ratings and Reviews
                 </h3>
                 <p>
-                  Papermark loved by over 5000 customers and users, who actively
-                  use it for:
+                  Deck3 loved by over 5000 customers and users, who actively use
+                  it for:
                 </p>
                 <ul>
                   <li>
@@ -288,11 +288,11 @@ const DocSendAlternatives = () => {
                 </p>
 
                 <Link
-                  href="https://papermark.io/login"
+                  href="https://deck3.xyz/login"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="orange" className="rounded-3xl text-base">
+                  <Button variant="orange" className="text-base rounded-3xl">
                     Start with Docsend alternative for free
                   </Button>
                 </Link>
@@ -1356,59 +1356,58 @@ const DocSendAlternatives = () => {
               </>
 
               <Link
-                href="https://papermark.io/login"
+                href="https://deck3.xyz/login"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="orange" className="rounded-3xl text-base">
+                <Button variant="orange" className="text-base rounded-3xl">
                   Start with Docsend alternative for free
                 </Button>
               </Link>
               <h2>What is better than Docsend?</h2>
               <ul>
                 <p>
-                  Papermark is a modern alternative to DocSend, offering much
-                  more flexibility, control, and cost savings and custom
-                  branding.
+                  Deck3 is a modern alternative to DocSend, offering much more
+                  flexibility, control, and cost savings and custom branding.
                 </p>
                 <li>
                   <strong>Open Source:</strong> Being open source means that
-                  Papermark.io is constantly improved by a community of
-                  developers. You can trust that it is secure and up-to-date
-                  with the latest features.
+                  deck3.xyz is constantly improved by a community of developers.
+                  You can trust that it is secure and up-to-date with the latest
+                  features.
                 </li>
                 <li>
                   <strong>Cost-Effective:</strong> Unlike DocSend, which
-                  requires a subscription, Papermark.io is free to use. This
-                  makes it a great option for individuals and businesses looking
-                  to reduce costs.
+                  requires a subscription, deck3.xyz is free to use. This makes
+                  it a great option for individuals and businesses looking to
+                  reduce costs.
                 </li>
                 <li>
                   <strong>Customizable:</strong> With its open-source nature,
-                  you have the flexibility to customize Papermark.io to suit
-                  your specific needs. You can add features, modify existing
-                  ones, and integrate it seamlessly into your workflow.
+                  you have the flexibility to customize deck3.xyz to suit your
+                  specific needs. You can add features, modify existing ones,
+                  and integrate it seamlessly into your workflow.
                 </li>
                 <li>
-                  <strong>User-Friendly:</strong> Papermark is designed to be
+                  <strong>User-Friendly:</strong> Deck3 is designed to be
                   intuitive and easy to use, by founders and investors who focus
                   on UX first products. Its clean interface ensures that you can
                   manage your documents efficiently without any hassle.
                 </li>
                 <li>
                   <strong>Privacy and Control:</strong> You have full control
-                  over your documents and data with Papermark.In self hosted
+                  over your documents and data with Deck3. In self hosted
                   version, there are no third-party servers involved, ensuring
                   your sensitive information remains private.
                 </li>
               </ul>
 
               <Link
-                href="https://papermark.io/login"
+                href="https://deck3.xyz/login"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="orange" className="rounded-3xl text-base">
+                <Button variant="orange" className="text-base rounded-3xl">
                   Start with Docsend alternative for free
                 </Button>
               </Link>
@@ -1417,8 +1416,8 @@ const DocSendAlternatives = () => {
                 DocSend Alternatives listed in this article
               </h1>
 
-              <ul className="list-disc list-inside mb-4">
-                <li className="">Papermark</li>
+              <ul className="mb-4 list-disc list-inside">
+                <li className="">Deck3</li>
                 <li className="">Brieflink</li>
                 <li className="">PandaDoc</li>
                 <li className="">Google Drive</li>
@@ -1437,7 +1436,7 @@ const DocSendAlternatives = () => {
                 management and sharing, it iss likely you are seeking for
                 someting more modern dn flexible.
               </p>
-              <ul className="list-disc list-inside mb-4">
+              <ul className="mb-4 list-disc list-inside">
                 <li className="">Founder Friendly</li>
                 <li className="">Budget Friendly</li>
                 <li className="">With Advanced Analytics</li>
@@ -1448,11 +1447,11 @@ const DocSendAlternatives = () => {
                 comparing their features, pricing, and user reviews to DocSend.
                 If you would like start with the free alternative to Docsend
                 already
-                <Link href="/login" className="text-orange-600 underline px-2">
+                <Link href="/login" className="px-2 text-orange-600 underline">
                   Start Now
                 </Link>
               </p>
-              <h2 className="text-2xl font-bold mb-4">What is DocSend?</h2>
+              <h2 className="mb-4 text-2xl font-bold">What is DocSend?</h2>
               <p>
                 Most probably if you land on this page, you know what is
                 Docsend. DocSend is a document sharing and tracking platform
@@ -1467,13 +1466,13 @@ const DocSendAlternatives = () => {
                 alt="DocSend Product"
                 className="my-4"
               />
-              <h2 className="text-2xl font-bold mb-4">Docsend reviews</h2>
+              <h2 className="mb-4 text-2xl font-bold">Docsend reviews</h2>
               <p>
                 Expectations and needs for document sharing platform in 2023
                 changed and evolved, so more advanced solutions are needed
               </p>
               <p>So you would expect from it:</p>
-              <ul className="list-disc list-inside mb-4">
+              <ul className="mb-4 list-disc list-inside">
                 <li className="">Advanced tracking</li>
                 <li className="">AI-capabilities </li>
                 <li className="">Self Hosting</li>
@@ -1484,7 +1483,7 @@ const DocSendAlternatives = () => {
                 met. Here the most recent Docsend reviews found on Twitter, G2
                 and other platforms.
               </p>
-              <h3 className="text-1xl font-bold mb-4">Charging problems </h3>
+              <h3 className="mb-4 font-bold text-1xl">Charging problems </h3>
               <p>
                 Users suffer from being wrongly charged, where the plans are not
                 cheap for essential features.
@@ -1497,21 +1496,21 @@ const DocSendAlternatives = () => {
               <p>
                 Disclaimer: Currently Jaski supports
                 <a
-                  href="http://papermark.io/login"
-                  className="text-orange-600 underline px-2"
+                  href="http://deck3.xyz/login"
+                  className="px-2 text-orange-600 underline"
                 >
-                  Papermark
+                  Deck3
                 </a>
                 to build more better Docsend alternative
               </p>
-              <h3 className="text-1xl font-bold mb-4">Confusing UI</h3>
+              <h3 className="mb-4 font-bold text-1xl">Confusing UI</h3>
               <p> Customers find the Docsend UI confusing and outdated.</p>
               <img
                 src="https://assets.papermark.io/alterantives/n0id8nfbhq0geo7feqqu-3.png"
                 alt="DocSend Review #2"
                 className="my-4"
               />
-              <h3 className="text-1xl font-bold mb-4">Poor customer support</h3>
+              <h3 className="mb-4 font-bold text-1xl">Poor customer support</h3>
               <p>
                 Many of the DocSend customers suffer from lack of customer
                 support with waiting time over two weeks.
@@ -1522,7 +1521,7 @@ const DocSendAlternatives = () => {
                 className="my-4"
               />
 
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="mb-4 text-2xl font-bold">
                 DocSend Plans and Pricing
               </h2>
               <img
@@ -1543,14 +1542,14 @@ const DocSendAlternatives = () => {
               <p>
                 <strong>Enterprise Plan</strong> - contact the team for pricing
               </p>
-              <h2 className="text-4xl font-bold ">DocSend vs Papermark</h2>
+              <h2 className="text-4xl font-bold ">DocSend vs Deck3</h2>
               <p className="mb-4">
-                Papermark emphasizes security and user interface, offering
+                Deck3 emphasizes security and user interface, offering
                 features like watermarking, password protection, and custom
                 branding.
               </p>
 
-              <ul className="list-disc list-inside mb-4">
+              <ul className="mb-4 list-disc list-inside">
                 <li className="">Founder First</li>
                 <li className="">Budget Friendly</li>
                 <li className="">Open Source</li>
@@ -1559,74 +1558,74 @@ const DocSendAlternatives = () => {
               <p className="mb-4">
                 <a
                   href="https://github.com/mfts/papermark"
-                  className="text-orange-600 underline px-2"
+                  className="px-2 text-orange-600 underline"
                 >
-                  Self-host Papermark
+                  Self-host Deck3
                 </a>
                 or let us host it for you
-                <Link href="/login" className="text-orange-600 underline px-2">
+                <Link href="/login" className="px-2 text-orange-600 underline">
                   for free
                 </Link>
               </p>
-              <h2 className="text-2xl font-bold mt-4">Papermark reviews</h2>
+              <h2 className="mt-4 text-2xl font-bold">Deck3 reviews</h2>
 
               <p>⭐️⭐️⭐️⭐️⭐️</p>
 
-              <h3 className="text-xl font-semi-bold mt-4">
+              <h3 className="mt-4 text-xl font-semi-bold">
                 Users love our customer support
               </h3>
               <img
                 src="https://assets.papermark.io/alterantives/ptam9dpuu627c1hmsttz.png"
-                alt="Papermark reviews"
+                alt="Deck3 reviews"
                 className="my-4"
               />
-              <h3 className="text-xl font-semi-bold mt-4">
-                Papermark focuses on UI and core features
+              <h3 className="mt-4 text-xl font-semi-bold">
+                Deck3 focuses on UI and core features
               </h3>
               <img
                 src="https://assets.papermark.io/alterantives/rukw13d22o50hfrdqa1y.png"
-                alt="Papermark reviews"
+                alt="Deck3 reviews"
                 className="my-4"
               />
-              <h3 className="text-xl font-semi-bold mt-4">
+              <h3 className="mt-4 text-xl font-semi-bold">
                 Actively used by founders, VC funds and developers
               </h3>
               <img
                 src="https://assets.papermark.io/alterantives/6gsr6kfo84srtzgu6nhe.png"
-                alt="Papermark reviews"
+                alt="Deck3 reviews"
                 className="my-4"
               />
-              <h2 className="text-2xl font-bold mt-4">
-                Papermark plans and pricing
+              <h2 className="mt-4 text-2xl font-bold">
+                Deck3 plans and pricing
               </h2>
               <p>
-                Papermark has a simple pricing structure. You can use Papermark
+                Deck3 has a simple pricing structure. You can use Deck3
                 for free or get the the subscribtion to your team for more
                 advanced features. Including custom domain. We also respond on
-                custom requests. As Papermark is open source first you can host
+                custom requests. As Deck3 is open source first you can host
                 it yourself.
               </p>
 
               <img
                 src="https://assets.papermark.io/alterantives/fibyns1yrayocc2pkydk.png"
-                alt="Papermark plans and pricing"
+                alt="Deck3 plans and pricing"
                 className="my-4"
               />
 
               <p>
-                Papermark is a founder frinedly alternative to Docsend. Our team
+                Deck3 is a founder frinedly alternative to Docsend. Our team
                 focuses on delivering value fast and supporting each customer.
               </p> */}
             </div>
           </div>
 
-          <div className="sticky top-14 col-span-1 hidden flex-col divide-y divide-gray-200 self-start sm:flex">
+          <div className="sticky flex-col self-start hidden col-span-1 divide-y divide-gray-200 top-14 sm:flex">
             <div className="flex flex-col space-y-4">
               <p className="text-sm text-gray-500">Written by</p>
               {/* <Author username={data.author} /> */}
               <Link
                 href={`https://twitter.com/mfts0`}
-                className="group flex items-center space-x-3"
+                className="flex items-center space-x-3 group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1635,7 +1634,7 @@ const DocSendAlternatives = () => {
                   alt={`Marc Seitz`}
                   width={40}
                   height={40}
-                  className="rounded-full transition-all group-hover:brightness-90"
+                  className="transition-all rounded-full group-hover:brightness-90"
                 />
                 <div className="flex flex-col">
                   <p className="font-semibold text-gray-700">Marc Seitz</p>

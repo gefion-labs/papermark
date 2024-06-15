@@ -19,27 +19,27 @@ interface TrialEndFinalReminderEmail {
 }
 
 const TrialEndFinalReminderEmail = ({ name }: TrialEndFinalReminderEmail) => {
-  const previewText = `Upgrade to Papermark Pro`;
+  const previewText = `Upgrade to Deck3 Pro`;
 
   return (
     <Html>
       <Head />
       <Preview>{previewText}</Preview>
       <Tailwind>
-        <Body className="mx-auto my-auto bg-white font-sans">
+        <Body className="mx-auto my-auto font-sans bg-white">
           <Container className="mx-auto my-10 w-[465px] p-5">
-            <Text className="mx-0 mb-8 mt-4 p-0 text-center text-2xl font-normal">
-              <span className="font-bold tracking-tighter">Papermark</span>
+            <Text className="p-0 mx-0 mt-4 mb-8 text-2xl font-normal text-center">
+              <span className="font-bold tracking-tighter">Deck3</span>
             </Text>
-            <Text className="font-seminbold mx-0 mb-8 mt-4 p-0 text-center text-xl">
+            <Text className="p-0 mx-0 mt-4 mb-8 text-xl text-center font-seminbold">
               Your pro trial expires in 24 hours
             </Text>
             <Text className="text-sm leading-6 text-black">
               Hey{name && ` ${name}`}!
             </Text>
             <Text className="text-sm leading-6 text-black">
-              Your Papermark Pro trial expires in 24 hours.{" "}
-              <Link href={`https://www.papermark.io/settings/billing`}>
+              Your Deck3 Pro trial expires in 24 hours.{" "}
+              <Link href={`https://deck3.xyz/settings/billing`}>
                 Upgrade now
               </Link>{" "}
               to:
@@ -59,8 +59,8 @@ const TrialEndFinalReminderEmail = ({ name }: TrialEndFinalReminderEmail) => {
             </Text>
             <Section className="mb-[32px] mt-[32px] text-center">
               <Button
-                className="rounded bg-black text-center text-xs font-semibold text-white no-underline"
-                href={`https://www.papermark.io/settings/billing`}
+                className="text-xs font-semibold text-center text-white no-underline bg-black rounded"
+                href={`https://deck3.xyz/settings/billing`}
                 style={{ padding: "12px 20px" }}
               >
                 Upgrade now
@@ -76,11 +76,11 @@ const TrialEndFinalReminderEmail = ({ name }: TrialEndFinalReminderEmail) => {
               <Text className="text-xs">
                 © {new Date().getFullYear()}{" "}
                 <a
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   className="text-gray-400 no-underline visited:text-gray-400 hover:text-gray-400"
                   target="_blank"
                 >
-                  papermark.io
+                  deck3.xyz
                 </a>
               </Text>
               <Text className="text-xs">

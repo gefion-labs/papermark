@@ -171,18 +171,18 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.papermark.io/_static/papermarkai.png"
+          content="https://deck3.xyz/_static/papermarkai.png"
         />
-        <meta property="og:url" content="https://www.papermark.io" />
+        <meta property="og:url" content="https://deck3.xyz" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar />
 
       <main>
         {/* Hero section */}
-        <div className="relative isolate overflow-hidden bg-white pb-16 pt-14 dark:bg-black sm:pb-20">
+        <div className="relative pb-16 overflow-hidden bg-white isolate pt-14 dark:bg-black sm:pb-20">
           <div
-            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            className="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
             aria-hidden="true"
           >
             <div
@@ -193,11 +193,11 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl py-8 sm:py-12 lg:py-24 ">
+          <div className="px-6 mx-auto max-w-7xl lg:px-8">
+            <div className="max-w-2xl py-8 mx-auto sm:py-12 lg:py-24">
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative flex items-center rounded-full px-3 py-1 text-sm leading-6 text-black ring-1 ring-black/10 hover:ring-white/20 dark:text-white dark:ring-white/10">
-                  <PapermarkSparkle className="mr-1 h-4 w-4" />
+                <div className="relative flex items-center px-3 py-1 text-sm leading-6 text-black rounded-full ring-1 ring-black/10 hover:ring-white/20 dark:text-white dark:ring-white/10">
+                  <PapermarkSparkle className="w-4 h-4 mr-1" />
                   Papermark AI
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function Home() {
                   Powerful Ai-assistant for your shared and received documents
                 </p>
 
-                <div className="mt-10 flex items-center justify-center gap-x-6">
+                <div className="flex items-center justify-center mt-10 gap-x-6">
                   <button
                     className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 dark:bg-white dark:text-black"
                     onClick={scrollDown}
@@ -223,7 +223,7 @@ export default function Home() {
             <div className="relative bg-background">
               <ChatPage />
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="flex items-center justify-center mt-10 gap-x-6">
               <Link
                 className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 dark:bg-white dark:text-black"
                 href="/login"
@@ -234,9 +234,9 @@ export default function Home() {
             </div>
 
             {/* Pricing section */}
-            <div className="relative isolate mt-32  px-6 sm:mt-36 lg:px-8">
+            <div className="relative px-6 mt-32 isolate sm:mt-36 lg:px-8">
               <div
-                className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
+                className="absolute inset-x-0 overflow-hidden -top-3 -z-10 transform-gpu px-36 blur-3xl"
                 aria-hidden="true"
               >
                 <div
@@ -247,7 +247,7 @@ export default function Home() {
                   }}
                 />
               </div>
-              <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
+              <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
                 {/* <h2 className="text-base font-semibold leading-7 text-black dark:text-white">
                   Feature comparison
                 </h2> */}
@@ -255,19 +255,19 @@ export default function Home() {
                   Use AI assistant in both cases
                 </p>
               </div>
-              <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-500 dark:text-gray-400">
+              <p className="max-w-2xl mx-auto mt-6 text-lg leading-8 text-center text-gray-500 dark:text-gray-400">
                 AI-powered platform revolutionizing document sharing and
                 collaboration. It enables secure document sharing, advanced
                 tracking, and storage, providing users with real-time analytics.
               </p>
-              <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-x-6 gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+              <div className="grid items-center max-w-lg grid-cols-1 mx-auto mt-16 gap-x-6 gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
                 {tiers.map((tier, tierIdx) => (
                   <div
                     key={tier.id}
                     className={classNames(
                       tier.featured
-                        ? " relative text-gray-800 shadow-2xl dark:text-white"
-                        : " bg-white dark:bg-transparent sm:mx-8 lg:mx-0",
+                        ? "relative text-gray-800 shadow-2xl dark:text-white"
+                        : "bg-white dark:bg-transparent sm:mx-8 lg:mx-0",
                       tier.featured
                         ? ""
                         : tierIdx === 0
@@ -276,7 +276,7 @@ export default function Home() {
                       "rounded-3xl p-8 ring-1 ring-gray-900/10 dark:ring-gray-200/10 sm:p-10",
                     )}
                   >
-                    <p className="mt-4 flex items-baseline gap-x-2">
+                    <p className="flex items-baseline mt-4 gap-x-2">
                       <span
                         className={classNames(
                           tier.featured
@@ -340,8 +340,8 @@ export default function Home() {
 
             {/* Feature section */}
             <div className="mt-32 sm:mt-56">
-              <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl sm:text-center">
+              <div className="px-6 mx-auto max-w-7xl lg:px-8">
+                <div className="max-w-2xl mx-auto sm:text-center">
                   {/* <h2 className="text-base font-semibold leading-7 text-black dark:texxt-white">
                     Share docs with ease
                   </h2> */}
@@ -355,10 +355,10 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="relative overflow-hidden pt-16">
-                <div className="mx-auto max-w-2xl px-6 lg:px-8">
+              <div className="relative pt-16 overflow-hidden">
+                <div className="max-w-2xl px-6 mx-auto lg:px-8">
                   <img
-                    src="https://www.papermark.io/_static/upload2.png"
+                    src="https://deck3.xyz/_static/upload2.png"
                     alt="App screenshot"
                     className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
                     width={2432}
@@ -366,13 +366,13 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-                <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-500 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+              <div className="px-6 mx-auto mt-16 max-w-7xl sm:mt-20 md:mt-24 lg:px-8">
+                <dl className="grid max-w-2xl grid-cols-1 mx-auto text-base leading-7 text-gray-500 gap-x-6 gap-y-10 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
                       <dt className="inline font-semibold text-gray-600 dark:text-gray-200">
                         <feature.icon
-                          className="absolute left-1 top-1 h-5 w-5 text-black dark:text-white"
+                          className="absolute w-5 h-5 text-black left-1 top-1 dark:text-white"
                           aria-hidden="true"
                         />
                         {feature.name}
@@ -385,7 +385,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial section */}
-            <div className="relative z-10 mt-32 bg-white pb-20 dark:bg-gray-900 sm:mt-56 sm:pb-24 xl:pb-0">
+            <div className="relative z-10 pb-20 mt-32 bg-white dark:bg-gray-900 sm:mt-56 sm:pb-24 xl:pb-0">
               <div
                 className="absolute inset-0 overflow-hidden"
                 aria-hidden="true"
@@ -400,24 +400,24 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-                <div className="-mt-8 flex w-full max-w-2xl items-center justify-center xl:-mb-8 xl:w-96 xl:flex-none">
-                  <div className="relative h-64 w-64">
+              <div className="flex flex-col items-center px-6 mx-auto max-w-7xl gap-x-8 gap-y-10 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
+                <div className="flex items-center justify-center w-full max-w-2xl -mt-8 xl:-mb-8 xl:w-96 xl:flex-none">
+                  <div className="relative w-64 h-64">
                     {" "}
                     <img
-                      className="absolute inset-0 rounded-2xl bg-gray-800 object-cover  shadow-2xl"
+                      className="absolute inset-0 object-cover bg-gray-800 shadow-2xl rounded-2xl"
                       src="https://pbs.twimg.com/profile_images/1506792347840888834/dS-r50Je_400x400.jpg"
                       alt=""
                     />
                   </div>
                 </div>
                 <div className="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
-                  <figure className="relative isolate pt-6 sm:pt-12">
+                  <figure className="relative pt-6 isolate sm:pt-12">
                     <svg
                       viewBox="0 0 162 128"
                       fill="none"
                       aria-hidden="true"
-                      className="absolute left-0 top-0 -z-10 h-32 stroke-white/20"
+                      className="absolute top-0 left-0 h-32 -z-10 stroke-white/20"
                     >
                       <path
                         id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb"
@@ -448,7 +448,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className=" mx-auto w-full max-w-5xl">
+            <div className="w-full max-w-5xl mx-auto">
               <video
                 width="100%"
                 id="video1"
@@ -467,8 +467,8 @@ export default function Home() {
             </div>
 
             {/* FAQ section */}
-            <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:px-8">
-              <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+            <div className="px-6 mx-auto mt-24 max-w-7xl sm:mt-32 lg:px-8">
+              <div className="max-w-4xl mx-auto divide-y divide-gray-900/10">
                 <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
                   Frequently asked questions
                 </h2>
@@ -478,26 +478,26 @@ export default function Home() {
                       {({ open }) => (
                         <>
                           <dt>
-                            <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900 dark:text-gray-200">
+                            <Disclosure.Button className="flex items-start justify-between w-full text-left text-gray-900 dark:text-gray-200">
                               <span className="text-base font-semibold leading-7">
                                 {faq.question}
                               </span>
-                              <span className="ml-6 flex h-7 items-center">
+                              <span className="flex items-center ml-6 h-7">
                                 {open ? (
                                   <MinusSmallIcon
-                                    className="h-6 w-6"
+                                    className="w-6 h-6"
                                     aria-hidden="true"
                                   />
                                 ) : (
                                   <PlusSmallIcon
-                                    className="h-6 w-6"
+                                    className="w-6 h-6"
                                     aria-hidden="true"
                                   />
                                 )}
                               </span>
                             </Disclosure.Button>
                           </dt>
-                          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                          <Disclosure.Panel as="dd" className="pr-12 mt-2">
                             <p className="text-base leading-7 text-gray-500">
                               {faq.answer}
                             </p>

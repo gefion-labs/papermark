@@ -90,7 +90,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
             metaTitle: link.metaTitle,
             metaDescription: link.metaDescription,
             metaImage: link.metaImage,
-            metaUrl: `https://www.papermark.io/view/${linkId}`,
+            metaUrl: `https://deck3.xyz/view/${linkId}`,
           },
           showPoweredByBanner: teamPlan === "free",
         },
@@ -135,7 +135,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
             metaTitle: link.metaTitle,
             metaDescription: link.metaDescription,
             metaImage: link.metaImage,
-            metaUrl: `https://www.papermark.io/view/${linkId}`,
+            metaUrl: `https://deck3.xyz/view/${linkId}`,
           },
           showPoweredByBanner: false,
         },
@@ -180,8 +180,8 @@ export default function ViewPage({
 
   if (router.isFallback) {
     return (
-      <div className="flex h-screen items-center justify-center bg-black">
-        <LoadingSpinner className="h-20 w-20" />
+      <div className="flex items-center justify-center h-screen bg-black">
+        <LoadingSpinner className="w-20 h-20" />
       </div>
     );
   }
@@ -208,8 +208,8 @@ export default function ViewPage({
             imageUrl={meta.metaImage ?? null}
             url={meta.metaUrl ?? ""}
           />
-          <div className="flex h-screen items-center justify-center">
-            <LoadingSpinner className="h-20 w-20" />
+          <div className="flex items-center justify-center h-screen">
+            <LoadingSpinner className="w-20 h-20" />
           </div>
         </>
       );
@@ -310,8 +310,8 @@ export default function ViewPage({
             imageUrl={meta.metaImage ?? null}
             url={meta.metaUrl ?? ""}
           />
-          <div className="flex h-screen items-center justify-center">
-            <LoadingSpinner className="h-20 w-20" />
+          <div className="flex items-center justify-center h-screen">
+            <LoadingSpinner className="w-20 h-20" />
           </div>
         </>
       );

@@ -1,30 +1,21 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
-
-
 import { Suspense } from "react";
-
-
 
 import Stats from "@/components/investors/stats";
 import InvestorTable from "@/components/investors/table";
 
-
-
 import { cn } from "@/lib/utils";
 
-
-
 import Dashboard from "./ClientPage";
-
 
 export const revalidate = 3600; // revalidate the data at most every 24 hours
 
 const data = {
   description:
-    "List of 100 open-source investors. Open-source VC, open-source angel investors, created and powered by Papermark",
-  title: "Open Source Investors | Papermark",
+    "List of 100 open-source investors. Open-source VC, open-source angel investors, created and powered by Deck3",
+  title: "Open Source Investors | Deck3",
   url: "/open-source-investors",
 };
 
@@ -36,7 +27,7 @@ export const metadata: Metadata = {
     title: data.title,
     description: data.description,
     url: data.url,
-    siteName: "Papermark",
+    siteName: "Deck3",
     images: [
       {
         url: "/_static/meta-image.png",
@@ -51,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: data.title,
     description: data.description,
-    creator: "@papermarkio",
+    creator: "@deck3",
     images: ["/_static/meta-image.png"],
   },
 };

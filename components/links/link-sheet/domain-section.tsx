@@ -58,18 +58,18 @@ export default function DomainSection({
       <Label htmlFor="link-domain">Domain</Label>
       <div className="flex">
         <select
-          value={data.domain || "papermark.io"}
+          value={data.domain || "deck3.xyz"}
           onChange={handleDomainChange}
           onFocus={handleSelectFocus}
           className={cn(
             "w-full rounded-l-md border border-r-0 border-border bg-secondary px-5 text-sm text-secondary-foreground focus:border-border focus:outline-none focus:ring-0",
-            data.domain && data.domain !== "papermark.io"
+            data.domain && data.domain !== "deck3.xyz"
               ? ""
               : "border-r-1 rounded-r-md",
           )}
         >
-          <option key="papermark.io" value="papermark.io">
-            papermark.io
+          <option key="deck3.xyz" value="deck3.xyz">
+            deck3.xyz
           </option>
           {linkType === "DOCUMENT_LINK" &&
             (plan === "business" || (limits && limits.customDomainOnPro)) && (
@@ -103,7 +103,7 @@ export default function DomainSection({
           </option>
         </select>
 
-        {data.domain && data.domain !== "papermark.io" ? (
+        {data.domain && data.domain !== "deck3.xyz" ? (
           <input
             type="text"
             name="key"
@@ -127,7 +127,7 @@ export default function DomainSection({
             autoComplete="off"
             className={cn(
               "hidden w-full rounded-r-md border-0 bg-background py-1.5 text-foreground shadow-sm ring-1 ring-inset ring-input placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6",
-              data.domain && data.domain !== "papermark.io" ? "flex" : "",
+              data.domain && data.domain !== "deck3.xyz" ? "flex" : "",
             )}
             placeholder="deck"
             onChange={(e) => {
@@ -148,7 +148,7 @@ export default function DomainSection({
         ) : null}
       </div>
 
-      {data.domain && data.domain !== "papermark.io" && !isDomainVerified ? (
+      {data.domain && data.domain !== "deck3.xyz" && !isDomainVerified ? (
         <div className="mt-4 text-sm text-red-500">
           Your domain is not verified yet!{" "}
           <Link

@@ -11,10 +11,10 @@ import { ChatMessageActions } from "./chat-message-actions";
 const mapMessageRole = {
   user: { icon: <UserRound />, name: "You" },
   system: { icon: <AlertCircle />, name: "System" },
-  assistant: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
-  function: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
-  data: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
-  tool: { icon: <PapermarkSparkle />, name: "Papermark Assistant" },
+  assistant: { icon: <PapermarkSparkle />, name: "Deck3 Assistant" },
+  function: { icon: <PapermarkSparkle />, name: "Deck3 Assistant" },
+  data: { icon: <PapermarkSparkle />, name: "Deck3 Assistant" },
+  tool: { icon: <PapermarkSparkle />, name: "Deck3 Assistant" },
 };
 
 export interface ChatMessageProps {
@@ -42,12 +42,12 @@ export function ChatMessage({ message, ...props }: ChatMessageProps) {
       >
         {mapMessageRole[message.role].icon}
       </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">
+      <div className="flex-1 px-1 ml-4 space-y-2 overflow-hidden">
         <div className="group relative flex w-[calc(100%-50px)] flex-col">
-          <div className="select-none font-semibold">
+          <div className="font-semibold select-none">
             {mapMessageRole[message.role].name}
           </div>
-          <div className="prose break-words font-light dark:prose-invert prose-p:leading-relaxed prose-pre:p-0">
+          <div className="font-light prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0">
             <p className="mb-2 last:mb-0">{message.content}</p>
           </div>
         </div>

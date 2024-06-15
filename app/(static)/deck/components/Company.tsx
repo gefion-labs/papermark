@@ -13,8 +13,8 @@ export const Company = ({ company, setCompany }: CompanyProps) => {
         maxLength={20}
         value={company}
         onChange={(e) => setCompany(e.target.value)}
-        placeholder="Papermark"
-        className="text-black w-full p-2 text-s bg-white border border-gray-300 rounded-md font-light"
+        placeholder="Deck3"
+        className="w-full p-2 font-light text-black bg-white border border-gray-300 rounded-md text-s"
       />
     </div>
   );

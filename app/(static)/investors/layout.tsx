@@ -4,19 +4,19 @@ import Script from "next/script";
 const data = {
   description:
     "The largest investors database. This list of investors includes ten thousand of different venture funds based on stage, sector and location.",
-  title: "Investor Search | Papermark",
+  title: "Investor Search | Deck3",
   url: "/investors",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.papermark.io"),
+  metadataBase: new URL("https://deck3.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {
     title: data.title,
     description: data.description,
     url: data.url,
-    siteName: "Papermark",
+    siteName: "Deck3",
     images: [
       {
         url: "/_static/investor-meta.png",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: data.title,
     description: data.description,
-    creator: "@papermarkio",
+    creator: "@deck3",
     images: ["/_static/investor-meta.png"],
   },
 };

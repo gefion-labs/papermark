@@ -9,12 +9,12 @@ export default function Navbar() {
   return (
     <>
       <div className="sticky top-0 z-50">
-        <div className="mx-auto flex h-14 w-full items-center justify-center bg-white/75 backdrop-blur-lg">
-          <div className="mx-auto flex w-full max-w-7xl items-center justify-between self-center px-4 md:px-8">
+        <div className="flex items-center justify-center w-full mx-auto h-14 bg-white/75 backdrop-blur-lg">
+          <div className="flex items-center self-center justify-between w-full px-4 mx-auto max-w-7xl md:px-8">
             <div className="flex items-center space-x-10">
               <Link
                 aria-label="Return home"
-                className="flex h-full flex-none items-center rounded-md text-black ring-0"
+                className="flex items-center flex-none h-full text-black rounded-md ring-0"
                 href="/"
               >
                 <div className="flex items-center space-x-2">
@@ -22,11 +22,11 @@ export default function Navbar() {
                     src={PapermarkLogo}
                     width={119}
                     height={32}
-                    alt="Papermark Logo"
+                    alt="Deck3 Logo"
                   />
                 </div>
               </Link>
-              <div className="hidden items-center gap-2 md:flex">
+              <div className="items-center hidden gap-2 md:flex">
                 <Link
                   className="group inline-flex h-10 w-max items-center justify-center rounded-md px-2.5 py-1 font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                   href="/data-room"
@@ -50,9 +50,9 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex h-10 w-max items-center justify-center rounded-md px-2.5 py-1 font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                href="https://github.com/mfts/papermark"
+                href="https://github.com/gefion-labs/papermark"
               >
-                <GitHubIcon className="mr-2 h-6 w-6" /> 2.3k
+                <GitHubIcon className="w-6 h-6 mr-2" /> 2.3k
               </Link>
               <Link
                 className="group inline-flex h-10 w-max items-center justify-center rounded-md px-2.5 py-1 font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"

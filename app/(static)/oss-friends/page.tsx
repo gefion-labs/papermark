@@ -5,20 +5,20 @@ import { Button } from "@/components/ui/button";
 
 const data = {
   description:
-    "Meet our fellow open source projects. Papermark is an open-source document infrastructure for sharing and collaboration.",
-  title: "Open Source Friends | Papermark",
+    "Meet our fellow open source projects. Deck3 is an open-source document infrastructure for sharing and collaboration.",
+  title: "Open Source Friends | Deck3",
   url: "/oss-friends",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.papermark.io"),
+  metadataBase: new URL("https://deck3.xyz"),
   title: data.title,
   description: data.description,
   openGraph: {
     title: data.title,
     description: data.description,
     url: data.url,
-    siteName: "Papermark",
+    siteName: "Deck3",
     images: [
       {
         url: "/_static/meta-image.png",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: data.title,
     description: data.description,
-    creator: "@papermarkio",
+    creator: "@deck3",
     images: ["/_static/meta-image.png"],
   },
 };
@@ -175,7 +175,7 @@ const friends = [
 
 export default function Friends() {
   return (
-    <div className="bg-white px-6 py-24 sm:py-32 lg:px-8 ">
+    <div className="bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Open Source Friends
@@ -186,7 +186,7 @@ export default function Friends() {
       </div>
       <ul
         role="list"
-        className=" mt-12 grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8"
+        className="mt-12 grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8"
       >
         {friends.map((friend) => (
           <li
@@ -206,7 +206,7 @@ export default function Friends() {
               <div className="px-6 pb-1 text-xl font-medium leading-6 text-gray-900">
                 {friend.name}
               </div>
-              <p className="mt-2 px-6 text-sm text-gray-600 ">
+              <p className="mt-2 px-6 text-sm text-gray-600">
                 {friend.description}
               </p>
             </div>

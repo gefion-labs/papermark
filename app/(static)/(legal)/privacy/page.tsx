@@ -1,23 +1,23 @@
 export default function PrivacyPage() {
   return (
-    <div className="relative mx-auto bg-white px-4  pb-14 pt-48 text-black lg:px-8">
-      <article className="prose prose-slate mx-auto">
+    <div className="relative px-4 pt-48 mx-auto text-black bg-white pb-14 lg:px-8">
+      <article className="mx-auto prose prose-slate">
         <h1>Privacy Policy</h1>
         <p>Effective date: 09/04/2023</p>
         <h3>1. Introduction</h3>
         <p>
-          Welcome to <strong>Papermark</strong>.
+          Welcome to <strong>Deck3</strong>.
         </p>
         <p>
-          Papermark (“us”, “we”, or “our”) operates{" "}
-          <a href="https://papermark.io">https://papermark.io</a> (hereinafter
+          Deck3 (“us”, “we”, or “our”) operates{" "}
+          <a href="https://deck3.xyz">https://deck3.xyz</a> (hereinafter
           referred to as “<strong>Service</strong>”).
         </p>
         <p>
           Our Privacy Policy governs your visit to{" "}
-          <a href="https://papermark.io">https://papermark.io</a>, and explains
-          how we collect, safeguard and disclose information that results from
-          your use of our Service.
+          <a href="https://deck3.xyz">https://deck3.xyz</a>, and explains how we
+          collect, safeguard and disclose information that results from your use
+          of our Service.
         </p>
         <p>
           We use your data to provide and improve Service. By using Service, you
@@ -33,8 +33,8 @@ export default function PrivacyPage() {
         </p>
         <h3>2. Definitions</h3>
         <p>
-          <strong>SERVICE</strong> means the https://papermark.io website
-          operated by Papermark.
+          <strong>SERVICE</strong> means the https://deck3.xyz website operated
+          by Deck3.
         </p>
         <p>
           <strong>PERSONAL DATA</strong> means data about a living individual
@@ -161,7 +161,7 @@ export default function PrivacyPage() {
           </li>
         </ol>
         <h3>5. Use of Data</h3>
-        <p>Papermark uses the collected data for various purposes:</p>
+        <p>Deck3 uses the collected data for various purposes:</p>
         <ol>
           <li>to provide and maintain our Service;</li>
           <li>to notify you about changes to our Service;</li>
@@ -230,9 +230,9 @@ export default function PrivacyPage() {
           such information represents your agreement to that transfer.
         </p>
         <p>
-          Papermark will take all the steps reasonably necessary to ensure that
-          your data is treated securely and in accordance with this Privacy
-          Policy and no transfer of your Personal Data will take place to an
+          Deck3 will take all the steps reasonably necessary to ensure that your
+          data is treated securely and in accordance with this Privacy Policy
+          and no transfer of your Personal Data will take place to an
           organisation or a country unless there are adequate controls in place
           including the security of your data and other personal information.
         </p>
@@ -295,7 +295,7 @@ export default function PrivacyPage() {
         <p>
           If you wish to be informed what Personal Data we hold about you and if
           you want it to be removed from our systems, please email us at
-          support@papermark.io.
+          support@deck3.xyz.
         </p>
         <p>
           In certain circumstances, you have the following data protection
@@ -373,7 +373,7 @@ export default function PrivacyPage() {
           </li>
           <li>
             users are able to change their personal information by emailing us
-            at support@papermark.io.
+            at support@deck3.xyz.
           </li>
         </ol>
         <p>Our Policy on “Do Not Track” Signals:</p>
@@ -476,7 +476,7 @@ export default function PrivacyPage() {
           To exercise your California data protection rights described above,
           please send your request(s) by one of the following means:
         </p>
-        <p>By email: support@papermark.io</p>
+        <p>By email: support@deck3.xyz</p>
         <p>
           Your data protection rights, described above, are covered by the CCPA,
           short for the California Consumer Privacy Act. To find out more, visit
@@ -604,7 +604,7 @@ export default function PrivacyPage() {
           If you have any questions about this Privacy Policy, please contact
           us:
         </p>
-        <p>By email: support@papermark.io.</p>
+        <p>By email: support@deck3.xyz.</p>
       </article>
     </div>
   );

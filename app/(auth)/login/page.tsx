@@ -30,21 +30,21 @@ export default function Login() {
   );
 
   return (
-    <div className="flex h-screen w-full flex-wrap ">
+    <div className="flex flex-wrap w-full h-screen">
       {/* Left part */}
-      <div className="flex w-full justify-center bg-white md:w-1/2 lg:w-2/5">
+      <div className="flex justify-center w-full bg-white md:w-1/2 lg:w-2/5">
         <div
-          className="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+          className="absolute inset-x-0 flex justify-center overflow-hidden top-10 -z-10 transform-gpu blur-3xl"
           aria-hidden="true"
         ></div>
         <div className="z-10 mx-5 mt-[calc(20vh)] h-fit w-full max-w-md overflow-hidden rounded-lg sm:mx-0">
-          <div className="flex flex-col items-center justify-center space-y-3 px-4 py-6 pt-8 text-center sm:px-16">
+          <div className="flex flex-col items-center justify-center px-4 py-6 pt-8 space-y-3 text-center sm:px-16">
             <Link href="/">
-              <span className=" text-balance text-2xl font-semibold text-gray-800 ">
-                Welcome to Papermark
+              <span className="text-2xl font-semibold text-gray-800 text-balance">
+                Welcome to Deck3
               </span>
             </Link>
-            <h3 className="text-balance text-sm text-gray-800 ">
+            <h3 className="text-sm text-gray-800 text-balance">
               Share documents. Not attachments.
             </h3>
           </div>
@@ -71,7 +71,7 @@ export default function Login() {
             }}
           >
             {/* <Input
-              className="border-1 bg-white border-gray-200 hover:border-gray-200 text-gray-800"
+              className="text-gray-800 bg-white border-gray-200 border-1 hover:border-gray-200"
               placeholder="jsmith@company.co"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -89,11 +89,11 @@ export default function Login() {
               disabled={isLoginWithEmail}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex h-10 w-full rounded-md border-0 bg-background bg-white px-3 py-2 text-sm text-gray-900 ring-1 ring-gray-200 transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex w-full h-10 px-3 py-2 text-sm text-gray-900 transition-colors bg-white border-0 rounded-md bg-background ring-1 ring-gray-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
             />
             {/* <Button type="submit" disabled={isLoginWithEmail}>
               {isLoginWithEmail && (
-                <Loader className="h-5 w-5 mr-2 animate-spin bg-gray-800 hover:bg-gray-900" />
+                <Loader className="w-5 h-5 mr-2 bg-gray-800 animate-spin hover:bg-gray-900" />
               )}
               Continue with Email
             </Button> */}
@@ -101,14 +101,14 @@ export default function Login() {
               type="submit"
               loading={isLoginWithEmail}
               className={`${
-                isLoginWithEmail ? "bg-black" : "bg-gray-800 hover:bg-gray-900 "
+                isLoginWithEmail ? "bg-black" : "bg-gray-800 hover:bg-gray-900"
               } focus:shadow-outline transform rounded px-4 py-2 text-white transition-colors duration-300 ease-in-out focus:outline-none`}
             >
               {emailButtonText}
             </Button>
           </form>
           <p className="py-4 text-center">or</p>
-          <div className="flex flex-col space-y-2 px-4 sm:px-16">
+          <div className="flex flex-col px-4 space-y-2 sm:px-16">
             <Button
               onClick={() => {
                 setIsLoginWithGoogle(true);
@@ -121,12 +121,12 @@ export default function Login() {
                 });
               }}
               disabled={isLoginWithGoogle}
-              className="flex items-center justify-center space-x-2  border border-gray-200 bg-gray-100 font-normal text-gray-900 hover:bg-gray-200 "
+              className="flex items-center justify-center space-x-2 font-normal text-gray-900 bg-gray-100 border border-gray-200 hover:bg-gray-200"
             >
               {isLoginWithGoogle ? (
-                <Loader className="mr-2 h-5 w-5 animate-spin" />
+                <Loader className="w-5 h-5 mr-2 animate-spin" />
               ) : (
-                <Google className="h-5 w-5" />
+                <Google className="w-5 h-5" />
               )}
               <span>Continue with Google</span>
             </Button>
@@ -142,10 +142,10 @@ export default function Login() {
                 });
               }}
               disabled={isLoginWithLinkedIn}
-              className="flex items-center justify-center space-x-2 border border-gray-200 bg-gray-100 font-normal text-gray-900 hover:bg-gray-200"
+              className="flex items-center justify-center space-x-2 font-normal text-gray-900 bg-gray-100 border border-gray-200 hover:bg-gray-200"
             >
               {isLoginWithLinkedIn ? (
-                <Loader className="mr-2 h-5 w-5 animate-spin " />
+                <Loader className="w-5 h-5 mr-2 animate-spin" />
               ) : (
                 <LinkedIn />
               )}
@@ -158,15 +158,15 @@ export default function Login() {
                 })
               }
               variant="outline"
-              className="flex items-center justify-center space-x-2 border border-gray-200 bg-gray-100  font-normal text-gray-900 hover:bg-gray-200 hover:text-gray-900"
+              className="flex items-center justify-center space-x-2 font-normal text-gray-900 bg-gray-100 border border-gray-200 hover:bg-gray-200 hover:text-gray-900"
             >
-              <Passkey className="h-4 w-4 " />
+              <Passkey className="w-4 h-4" />
               <span>Continue with a passkey</span>
             </Button>
           </div>
-          <p className=" mt-10 w-full max-w-md px-4 text-xs text-muted-foreground sm:px-16">
+          <p className="w-full max-w-md px-4 mt-10 text-xs text-muted-foreground sm:px-16">
             By clicking continue, you acknowledge that you have read and agree
-            to Papermark&apos;s{" "}
+            to Deck3&apos;s{" "}
             <Link href="/terms" className="underline">
               Terms of Service
             </Link>{" "}
@@ -178,24 +178,24 @@ export default function Login() {
           </p>
         </div>
       </div>
-      <div className="hidden w-full justify-center bg-gray-800 md:flex md:w-1/2 lg:w-3/5">
+      <div className="justify-center hidden w-full bg-gray-800 md:flex md:w-1/2 lg:w-3/5">
         <div className="flex w-full max-w-5xl px-4 py-20 md:px-8">
           <div
-            className="mx-auto flex w-full max-w-5xl justify-center rounded-3xl bg-gray-800 px-4 py-20  md:px-8"
+            className="flex justify-center w-full max-w-5xl px-4 py-20 mx-auto bg-gray-800 rounded-3xl md:px-8"
             id="features"
           >
             <div className="flex flex-col items-center">
               {/* Image container */}
-              <div className="mb-4 h-64 w-64">
+              <div className="w-64 h-64 mb-4">
                 <img
-                  className="h-full w-full rounded-2xl object-cover shadow-2xl"
-                  src="https://www.papermark.io/_static/testimonials/jaski.jpeg"
+                  className="object-cover w-full h-full shadow-2xl rounded-2xl"
+                  src="https://deck3.xyz/_static/testimonials/jaski.jpeg"
                   alt="Jaski"
                 />
               </div>
               {/* Text content */}
               <div className="max-w-xl text-center">
-                <blockquote className="text-l text-balance leading-8 text-gray-100 sm:text-xl sm:leading-9">
+                <blockquote className="leading-8 text-gray-100 text-l text-balance sm:text-xl sm:leading-9">
                   <p>
                     True builders listen to their users and build what they
                     need. Thanks Papermark team for solving a big pain point.
@@ -203,10 +203,10 @@ export default function Login() {
                   </p>
                 </blockquote>
                 <figcaption className="mt-4">
-                  <div className="text-balance font-semibold text-white ">
+                  <div className="font-semibold text-white text-balance">
                     Jaski
                   </div>
-                  <div className="text-balance text-gray-400 ">
+                  <div className="text-gray-400 text-balance">
                     Founder, Townhall Network
                   </div>
                 </figcaption>

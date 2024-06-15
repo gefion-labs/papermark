@@ -80,10 +80,10 @@ export default function DataroomNav({
         backgroundColor: brand && brand.brandColor ? brand.brandColor : "black",
       }}
     >
-      <div className="mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-          <div className="flex flex-1 items-center justify-start">
-            <div className="relative flex h-16 w-36 flex-shrink-0 items-center">
+      <div className="px-2 mx-auto sm:px-6 lg:px-8">
+        <div className="relative flex items-center justify-between h-16">
+          <div className="flex items-center justify-start flex-1">
+            <div className="relative flex items-center flex-shrink-0 h-16 w-36">
               {brand && brand.logo ? (
                 <Image
                   className="object-contain"
@@ -95,11 +95,11 @@ export default function DataroomNav({
                 />
               ) : (
                 <Link
-                  href="https://www.papermark.io"
+                  href="https://deck3.xyz"
                   target="_blank"
                   className="text-2xl font-bold tracking-tighter text-white"
                 >
-                  Papermark
+                  Deck3
                 </Link>
               )}
             </div>
@@ -115,11 +115,11 @@ export default function DataroomNav({
               </div>
             ) : null}
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center space-x-4 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 space-x-4 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {embeddedLinks && embeddedLinks.length > 0 ? (
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className="bg-gray-900 text-sm font-medium text-white hover:bg-gray-900/80">
+                  <Button className="text-sm font-medium text-white bg-gray-900 hover:bg-gray-900/80">
                     Links on Page
                   </Button>
                 </DropdownMenuTrigger>
@@ -133,7 +133,7 @@ export default function DataroomNav({
                       rel="noopener noreferrer"
                       key={index}
                     >
-                      <DropdownMenuItem className="group h-10">
+                      <DropdownMenuItem className="h-10 group">
                         <span className="w-[200px] truncate group-focus:overflow-x-auto group-focus:text-clip">
                           {link}
                         </span>
@@ -149,7 +149,7 @@ export default function DataroomNav({
             {assistantEnabled ? (
               <Link href={`/view/${linkId}/chat`}>
                 <Button
-                  className="m-1 bg-gray-900 text-white hover:bg-gray-900/80"
+                  className="m-1 text-white bg-gray-900 hover:bg-gray-900/80"
                   variant={"special"}
                   size={"icon"}
                   style={{
@@ -157,22 +157,22 @@ export default function DataroomNav({
                   }}
                   title="Open AI Document Assistant"
                 >
-                  <PapermarkSparkle className="h-5 w-5" />
+                  <PapermarkSparkle className="w-5 h-5" />
                 </Button>
               </Link>
             ) : null}
             {allowDownload ? (
               <Button
                 onClick={downloadFile}
-                className="m-1 bg-gray-900 text-white hover:bg-gray-900/80"
+                className="m-1 text-white bg-gray-900 hover:bg-gray-900/80"
                 size="icon"
                 title="Download document"
               >
-                <Download className="h-5 w-5" />
+                <Download className="w-5 h-5" />
               </Button>
             ) : null}
             {pageNumber && numPages ? (
-              <div className="flex h-10 items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white">
+              <div className="flex items-center h-10 px-4 py-2 text-sm font-medium text-white bg-gray-900 rounded-md">
                 <span>{pageNumber}</span>
                 <span className="text-gray-400"> / {numPages}</span>
               </div>

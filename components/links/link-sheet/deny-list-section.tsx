@@ -112,13 +112,13 @@ export default function DenyListSection({
         </div>
         {enabled && (
           <motion.div
-            className="mt-1 block w-full"
+            className="block w-full mt-1"
             {...FADE_IN_ANIMATION_SETTINGS}
           >
             <textarea
               className="form-textarea w-full rounded-md border-0 bg-background py-1.5 text-sm leading-6 text-foreground shadow-sm ring-1 ring-inset ring-input placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-gray-400"
               rows={5}
-              placeholder="Enter blocked emails/domains, one per line, e.g.                                      marc@papermark.io                                                                             @example.org"
+              placeholder="Enter blocked emails/domains, one per line, e.g.                                      logan@deck3.xyz                                                                             @example.org"
               value={denyListInput}
               onChange={handleDenyListChange}
             />

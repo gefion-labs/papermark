@@ -114,8 +114,8 @@ export default function Dashboard({ data }: any) {
 
   return (
     <>
-      <div className="mt-4 flex-col justify-between sm:flex md:flex-row">
-        <span className="isolate mt-5 inline-flex w-fit rounded-md px-2 shadow-sm md:px-0">
+      <div className="flex-col justify-between mt-4 sm:flex md:flex-row">
+        <span className="inline-flex px-2 mt-5 rounded-md shadow-sm isolate w-fit md:px-0">
           {stages.map((stage) => (
             <Link
               href={
@@ -135,9 +135,9 @@ export default function Dashboard({ data }: any) {
             </Link>
           ))}
         </span>
-        <div className="relative mt-5 px-2 md:px-0">
+        <div className="relative px-2 mt-5 md:px-0">
           <SearchIcon
-            className="absolute bottom-2 left-3 z-20 ml-1 h-5 w-5 md:ml-0"
+            className="absolute z-20 w-5 h-5 ml-1 bottom-2 left-3 md:ml-0"
             aria-hidden="true"
           />
           <input
@@ -146,12 +146,12 @@ export default function Dashboard({ data }: any) {
             name="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="xs:pl-12 relative inline-flex w-full items-center rounded-xl border border-gray-300 px-4 py-2 pl-10 text-sm text-gray-700 shadow-sm placeholder:text-gray-400 focus:z-10 focus:outline-none focus:ring-gray-500 md:w-72"
+            className="relative inline-flex items-center w-full px-4 py-2 pl-10 text-sm text-gray-700 border border-gray-300 shadow-sm xs:pl-12 rounded-xl placeholder:text-gray-400 focus:z-10 focus:outline-none focus:ring-gray-500 md:w-72"
             placeholder="Search by name or country"
           />
         </div>
       </div>
-      <div className="mt-8 flex flex-col">
+      <div className="flex flex-col mt-8">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full px-6 py-2 align-middle lg:px-8">
             <div className="py-2">
@@ -159,7 +159,7 @@ export default function Dashboard({ data }: any) {
               investors
             </div>
             <div className="overflow-hidden rounded-lg md:shadow md:ring-1 md:ring-black md:ring-opacity-5">
-              <table className="min-w-full divide-gray-300 overflow-hidden rounded-lg bg-gray-100 md:divide-y md:rounded-none md:bg-transparent">
+              <table className="min-w-full overflow-hidden bg-gray-100 divide-gray-300 rounded-lg md:divide-y md:rounded-none md:bg-transparent">
                 <thead className="hidden bg-gray-50 md:table-header-group">
                   <tr>
                     <th
@@ -201,14 +201,14 @@ export default function Dashboard({ data }: any) {
 
                     <tr
                       key={investor.id}
-                      className="group grid grid-cols-3 gap-1 rounded-lg border border-gray-200 bg-white px-2 py-3 shadow hover:bg-gray-100 md:table-row md:rounded-none md:border-x-0 md:bg-transparent md:p-0 md:shadow-none"
+                      className="grid grid-cols-3 gap-1 px-2 py-3 bg-white border border-gray-200 rounded-lg shadow group hover:bg-gray-100 md:table-row md:rounded-none md:border-x-0 md:bg-transparent md:p-0 md:shadow-none"
                     >
-                      <td className="col-span-3 whitespace-nowrap pl-3 text-sm sm:pl-6 md:h-24 md:py-2 md:pl-6">
+                      <td className="col-span-3 pl-3 text-sm whitespace-nowrap sm:pl-6 md:h-24 md:py-2 md:pl-6">
                         <div className="flex items-center space-x-2">
-                          <div className="h-10 w-10 flex-shrink-0">
+                          <div className="flex-shrink-0 w-10 h-10">
                             {investor.imageUrl ? (
                               <img
-                                className="h-10 w-10 rounded-full object-contain"
+                                className="object-contain w-10 h-10 rounded-full"
                                 width={40}
                                 height={40}
                                 src={
@@ -220,7 +220,7 @@ export default function Dashboard({ data }: any) {
                               />
                             ) : (
                               <Image
-                                className="h-10 w-10 rounded-full object-contain"
+                                className="object-contain w-10 h-10 rounded-full"
                                 width={40}
                                 height={40}
                                 src={PlaceholderImg}
@@ -236,22 +236,22 @@ export default function Dashboard({ data }: any) {
                               {investor.website && (
                                 <a
                                   className="text-black"
-                                  href={`${investor.website}?ref=papermark.io`}
+                                  href={`${investor.website}?ref=deck3.xyz`}
                                   target="_blank"
                                   rel="noopener"
                                 >
                                   <span className="sr-only">Website</span>
-                                  <GlobeIcon className="h-4 w-4" />
+                                  <GlobeIcon className="w-4 h-4" />
                                 </a>
                               )}
                               <Link
-                                href={`https://www.papermark.io?ref=investors-list`}
+                                href={`https://deck3.xyz?ref=investors-list`}
                               >
                                 <Image
                                   src={PapermarkPImg}
                                   width={18}
                                   height={18}
-                                  alt="Papermark"
+                                  alt="Deck3"
                                   className="block rounded-full ring-1 ring-gray-300"
                                 />
                               </Link>
@@ -259,16 +259,16 @@ export default function Dashboard({ data }: any) {
                           </div>
                         </div>
                       </td>
-                      <td className="col-span-1 row-start-2 whitespace-nowrap px-3 text-sm font-bold text-gray-500 md:px-2 md:py-3 md:font-normal">
+                      <td className="col-span-1 row-start-2 px-3 text-sm font-bold text-gray-500 whitespace-nowrap md:px-2 md:py-3 md:font-normal">
                         {investor.round ? investor.round : "Unknown"}
                       </td>
-                      <td className="col-span-3 whitespace-nowrap px-3 text-sm text-gray-500 md:mt-0 md:px-2 md:py-3">
+                      <td className="col-span-3 px-3 text-sm text-gray-500 whitespace-nowrap md:mt-0 md:px-2 md:py-3">
                         {investor.location ? investor.location : "Unknown"}
                       </td>
-                      <td className="col-span-3 w-40 truncate px-3 text-sm text-gray-500 md:max-w-xs md:px-2 md:py-3">
+                      <td className="w-40 col-span-3 px-3 text-sm text-gray-500 truncate md:max-w-xs md:px-2 md:py-3">
                         {investor.sector ? investor.sector : "Unknown"}
                       </td>
-                      <td className="col-span-3 w-40 truncate px-3 text-sm text-gray-500 md:max-w-xs md:px-2 md:py-3">
+                      <td className="w-40 col-span-3 px-3 text-sm text-gray-500 truncate md:max-w-xs md:px-2 md:py-3">
                         <a
                           href={`/investors/${encodeURIComponent(investor.slug)}`}
                         >
@@ -281,21 +281,21 @@ export default function Dashboard({ data }: any) {
                   ))}
                 </tbody>
               </table>
-              <div className="my-4 flex w-full items-center justify-between px-4">
+              <div className="flex items-center justify-between w-full px-4 my-4">
                 <button
                   onClick={() => goToPage(currentPage - 1)}
                   disabled={currentPage === 1}
-                  className="rounded border px-2 py-2 text-xs"
+                  className="px-2 py-2 text-xs border rounded"
                 >
                   Previous
                 </button>
-                <div className="rounded px-2 py-2  text-xs">
+                <div className="px-2 py-2 text-xs rounded">
                   Page {currentPage} of {totalPages}
                 </div>
                 <button
                   onClick={() => goToPage(currentPage + 1)}
                   disabled={currentPage === totalPages}
-                  className="rounded border px-2 py-2 text-xs"
+                  className="px-2 py-2 text-xs border rounded"
                 >
                   Next
                 </button>

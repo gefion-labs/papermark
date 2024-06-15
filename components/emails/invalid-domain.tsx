@@ -58,7 +58,7 @@ export default function InvalidDomain({
               </Button>
             </Section>
             <Text className="text-sm leading-6 text-black">
-              If you do not want to keep this domain on Papermark, you can{" "}
+              If you do not want to keep this domain on Deck3, you can{" "}
               <Link
                 href={`https://deck3.xyz/settings/domains`}
                 className="font-medium text-blue-600 no-underline"

@@ -30,7 +30,7 @@ export const generateMetadata = async ({
   const { metatitle, metadescription } = alternative || {};
 
   return constructMetadata({
-    title: metatitle ? `${metatitle} - Papermark` : undefined,
+    title: metatitle ? `${metatitle} - Deck3` : undefined,
     description: metadescription ?? undefined,
   });
 };
@@ -44,10 +44,10 @@ export default async function AlternativePage({
   if (!alternative) return notFound();
 
   return (
-    <div className="flex flex-1 flex-col justify-center bg-white text-black">
-      <div className="mx-auto w-full max-w-5xl px-4 text-center md:px-8">
+    <div className="flex flex-col justify-center flex-1 text-black bg-white">
+      <div className="w-full max-w-5xl px-4 mx-auto text-center md:px-8">
         <div className="pt-32">
-          <div className=" pb-4">
+          <div className="pb-4 ">
             <img
               src={alternative.imageUrl!}
               alt="App screenshot"
@@ -56,22 +56,22 @@ export default async function AlternativePage({
               height={50}
             />
           </div>
-          {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-black ring-black/10  hover:ring-white/20">
+          {/* <div className="relative px-3 py-1 text-sm leading-6 text-black rounded-full ring-black/10 hover:ring-white/20">
             Free {alternative.name} alternative
           </div> */}
-          <h1 className="text-balance text-6xl">{alternative.title}</h1>
-          <p className="mx-auto mt-8 max-w-3xl text-balance  text-xl md:text-2xl">
+          <h1 className="text-6xl text-balance">{alternative.title}</h1>
+          <p className="max-w-3xl mx-auto mt-8 text-xl text-balance md:text-2xl">
             {alternative.description}
           </p>
-          <div className="space-x-2 pt-8">
+          <div className="pt-8 space-x-2">
             <Link href="/login">
-              <Button className="justify-center rounded-3xl bg-gray-900 text-white hover:bg-gray-500">
+              <Button className="justify-center text-white bg-gray-900 rounded-3xl hover:bg-gray-500">
                 Send Document
               </Button>
             </Link>
           </div>
         </div>
-        <div className="mx-auto mt-24 w-full">
+        <div className="w-full mx-auto mt-24">
           <video
             width="100%"
             id="video1"
@@ -91,74 +91,74 @@ export default async function AlternativePage({
         </div>
       </div>
       {/* Comparison section */}
-      <div className="mx-auto w-full max-w-5xl px-4 md:px-8">
-        <div className="pb-2 pt-32">
-          <h2 className="text-balance  text-5xl">
+      <div className="w-full max-w-5xl px-4 mx-auto md:px-8">
+        <div className="pt-32 pb-2">
+          <h2 className="text-5xl text-balance">
             {alternative.subtitlecompare}
           </h2>
-          <p className="mt-8 max-w-3xl text-balance text-xl">
+          <p className="max-w-3xl mt-8 text-xl text-balance">
             {alternative.descriptioncompare}
           </p>
         </div>
-        <div className="bg-white py-16">
-          <div className="mx-auto max-w-5xl ">
-            <div className="isolate grid  grid-cols-1  overflow-hidden  rounded-xl border border-black md:grid-cols-2">
-              {/* Column 1 - Papermark */}
+        <div className="py-16 bg-white">
+          <div className="max-w-5xl mx-auto ">
+            <div className="grid grid-cols-1 overflow-hidden border border-black isolate rounded-xl md:grid-cols-2">
+              {/* Column 1 - Deck3 */}
               <div className="flex flex-col justify-between border-r-0 border-black md:odd:border-r xl:last:!border-r-0 xl:even:border-r">
                 <div>
-                  <div className="border-b border-black bg-gray-100 p-6">
-                    <h3 className="text-balance text-xl leading-8 text-gray-800">
-                      Papermark
+                  <div className="p-6 bg-gray-100 border-b border-black">
+                    <h3 className="text-xl leading-8 text-gray-800 text-balance">
+                      Deck3
                     </h3>
                   </div>
                   <div className="p-6">
-                    <p className="mt-4 text-balance text-sm leading-6 text-gray-500">
-                      Papermark plans start from freemium
+                    <p className="mt-4 text-sm leading-6 text-gray-500 text-balance">
+                      Deck3 plans start from freemium
                     </p>
                     <div className="flex flex-col justify-between"></div>
 
-                    <p className="mt-4 text-balance text-2xl font-semibold leading-6 text-gray-900">
+                    <p className="mt-4 text-2xl font-semibold leading-6 text-gray-900 text-balance">
                       $0
                     </p>
                     <ul className="mt-8 space-y-3 text-sm leading-6 text-gray-500">
                       <li className="flex items-center gap-x-3">
                         <CheckIcon
-                          className="h-6 w-6 text-green-500"
+                          className="w-6 h-6 text-green-500"
                           aria-hidden="true"
                         />
                         Open Source & Self-hosted
                       </li>
                       <li className="flex items-center gap-x-3">
                         <CheckIcon
-                          className="h-6 w-6 text-green-500"
+                          className="w-6 h-6 text-green-500"
                           aria-hidden="true"
                         />
                         Analytics for each page
                       </li>
                       <li className="flex items-center gap-x-3">
                         <CheckIcon
-                          className="h-6 w-6 text-green-500"
+                          className="w-6 h-6 text-green-500"
                           aria-hidden="true"
                         />
                         Custom branding
                       </li>
                       <li className="flex items-center gap-x-3">
                         <CheckIcon
-                          className="h-6 w-6 text-green-500"
+                          className="w-6 h-6 text-green-500"
                           aria-hidden="true"
                         />
                         Custom domain
                       </li>
                       <li className="flex items-center gap-x-3">
                         <CheckIcon
-                          className="h-6 w-6 text-green-500"
+                          className="w-6 h-6 text-green-500"
                           aria-hidden="true"
                         />
                         Team access
                       </li>
                       <li className="flex items-center gap-x-3">
                         <CheckIcon
-                          className="h-6 w-6 text-green-500"
+                          className="w-6 h-6 text-green-500"
                           aria-hidden="true"
                         />
                         Data Room
@@ -186,7 +186,7 @@ export default async function AlternativePage({
               {/* Column 2 - Docsend */}
               <div className="flex flex-col justify-between">
                 <div>
-                  <div className="border-b border-black bg-gray-100 p-6">
+                  <div className="p-6 bg-gray-100 border-b border-black">
                     <h3 className="text-xl leading-8 text-gray-800">
                       {alternative.name}
                     </h3>
@@ -195,48 +195,48 @@ export default async function AlternativePage({
                     <p className="mt-4 text-sm leading-6 text-gray-500">
                       {`${alternative.name} feature description`}
                     </p>
-                    <p className="mt-4 text-balance text-2xl font-semibold leading-6 text-gray-900">
+                    <p className="mt-4 text-2xl font-semibold leading-6 text-gray-900 text-balance">
                       {alternative.price}
                     </p>
                     <ul className="mt-8 space-y-3 text-sm leading-6 text-gray-500">
                       <li className="flex items-center gap-x-3">
                         <XIcon
-                          className="h-6 w-6 text-red-500"
+                          className="w-6 h-6 text-red-500"
                           aria-hidden="true"
                         />
                         {alternative.feature1}
                       </li>
                       <li className="flex items-center gap-x-3">
                         <XIcon
-                          className="h-6 w-6 text-red-500"
+                          className="w-6 h-6 text-red-500"
                           aria-hidden="true"
                         />
                         {alternative.feature2}
                       </li>
                       <li className="flex items-center gap-x-3">
                         <XIcon
-                          className="h-6 w-6 text-red-500"
+                          className="w-6 h-6 text-red-500"
                           aria-hidden="true"
                         />
                         {alternative.feature3}
                       </li>
                       <li className="flex items-center gap-x-3">
                         <XIcon
-                          className="h-6 w-6 text-red-500"
+                          className="w-6 h-6 text-red-500"
                           aria-hidden="true"
                         />
                         {alternative.feature4}
                       </li>
                       <li className="flex items-center gap-x-3">
                         <XIcon
-                          className="h-6 w-6 text-red-500"
+                          className="w-6 h-6 text-red-500"
                           aria-hidden="true"
                         />
                         {alternative.feature5}
                       </li>
                       <li className="flex items-center gap-x-3">
                         <XIcon
-                          className="h-6 w-6 text-red-500"
+                          className="w-6 h-6 text-red-500"
                           aria-hidden="true"
                         />
                         {alternative.feature6}
@@ -254,7 +254,7 @@ export default async function AlternativePage({
                 >
                   <Button
                     variant="outline"
-                    className="text-balance rounded-3xl border-black bg-transparent"
+                    className="bg-transparent border-black text-balance rounded-3xl"
                   >
                     {`Start with ${alternative.name} alternative`}
                   </Button>
@@ -267,10 +267,10 @@ export default async function AlternativePage({
 
       {/* Features*/}
       <div
-        className="mx-auto w-full max-w-5xl px-4 py-20 md:px-8"
+        className="w-full max-w-5xl px-4 py-20 mx-auto md:px-8"
         id="features"
       >
-        <h2 className="max-w-3xl text-balance pb-20 pt-12 text-4xl">
+        <h2 className="max-w-3xl pt-12 pb-20 text-4xl text-balance">
           {alternative.subtitlefeatures}{" "}
           <span className="text-gray-500">
             {alternative.descriptionfeatures}
@@ -283,10 +283,10 @@ export default async function AlternativePage({
 
       {/* FAQ section */}
       <div
-        className="mx-auto w-full max-w-5xl px-4 py-32 md:px-8"
+        className="w-full max-w-5xl px-4 py-32 mx-auto md:px-8"
         id="features"
       >
-        <h2 className="max-w-3xl text-balance pt-6 text-4xl">
+        <h2 className="max-w-3xl pt-6 text-4xl text-balance">
           FAQ{" "}
           <span className="text-gray-500">{alternative.descriptionfaq}</span>
         </h2>
@@ -295,10 +295,10 @@ export default async function AlternativePage({
 
       {/* CTA */}
       <div className="bg-[#fb7a00]">
-        <div className="mx-auto w-full max-w-5xl px-4 py-32 md:px-8">
-          <h2 className="text-balance text-4xl">{alternative.subtitlecta}</h2>
+        <div className="w-full max-w-5xl px-4 py-32 mx-auto md:px-8">
+          <h2 className="text-4xl text-balance">{alternative.subtitlecta}</h2>
 
-          <div className="space-x-2 pt-8">
+          <div className="pt-8 space-x-2">
             <Link href="/login">
               <Button className="text-balance rounded-3xl">
                 Start sending documents for free

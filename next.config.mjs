@@ -27,7 +27,7 @@ const nextConfig = {
     return [
       {
         source: "/ai-pitch-deck-generator/:path*",
-        destination: "https://deck.papermark.io/:path*",
+        destination: "https://deck.deck3.xyz/:path*",
       },
     ];
   },

@@ -12,7 +12,7 @@ export function StatusWidget() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await getStatus("papermark");
+        const response = await getStatus("deck3");
 
         if (response) {
           setStatus(response.status);
@@ -71,8 +71,8 @@ export function StatusWidget() {
 
   return (
     <a
-      className="flex w-full items-center justify-between space-x-2 rounded-md border border-border px-3 py-1"
-      href="https://papermark.openstatus.dev"
+      className="flex items-center justify-between w-full px-3 py-1 space-x-2 border rounded-md border-border"
+      href="https://deck3.openstatus.dev"
       target="_blank"
       rel="noreferrer"
     >
@@ -80,7 +80,7 @@ export function StatusWidget() {
         <p className="text-sm">{level.label}</p>
       </div>
 
-      <span className="relative ml-auto flex h-2 w-2">
+      <span className="relative flex w-2 h-2 ml-auto">
         <span
           className={cn(
             "absolute inline-flex h-full w-full animate-ping rounded-full opacity-75",
