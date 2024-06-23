@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9f82a4f3fcc4d81500d97e872babf63ed630c6b5ed99d96526a674fc0cf325b8"
+            "sha256": "cc66168335ac666b7948edb82b78d888779351fe109225cb8b797a3d117ed0ba"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3"
+            "python_version": "3.11"
         },
         "sources": [
             {
@@ -568,9 +568,7 @@
             "version": "==2.32.3"
         },
         "shandy-sqlfmt": {
-            "extras": [
-                "jinjafmt"
-            ],
+            "extras": [],
             "hashes": [
                 "sha256:2f7be0509b505e59800f94da17f5fccee4ce282415fc5b3e964aa45b58624708",
                 "sha256:6b054443ad8a82839b15426250860d962c009c2a832f5d98eebe060e4a952e3b"
