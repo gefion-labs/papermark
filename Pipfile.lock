@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cc66168335ac666b7948edb82b78d888779351fe109225cb8b797a3d117ed0ba"
+            "sha256": "9f82a4f3fcc4d81500d97e872babf63ed630c6b5ed99d96526a674fc0cf325b8"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.11"
+            "python_version": "3"
         },
         "sources": [
             {
@@ -568,6 +568,9 @@
             "version": "==2.32.3"
         },
         "shandy-sqlfmt": {
+            "extras": [
+                "jinjafmt"
+            ],
             "hashes": [
                 "sha256:2f7be0509b505e59800f94da17f5fccee4ce282415fc5b3e964aa45b58624708",
                 "sha256:6b054443ad8a82839b15426250860d962c009c2a832f5d98eebe060e4a952e3b"
@@ -593,12 +596,19 @@
         },
         "tinybird-cli": {
             "hashes": [
-                "sha256:2a2c5a5d4ce757f488d4266fd48fdc368cf83975564947fea7fd982665cd542b",
-                "sha256:f088097f6d6c75dd962401959c436752d1fa963c6da44753341680003e3e230f"
+                "sha256:8502026ca892e5c7e1c295e575c6a102f1ef5c305db0571d8363589e2fef8ad6",
+                "sha256:b2f1615e096c3d9b078cdb53e1536a301e3dfb0d8a8c5254d01fd67e7b485541"
             ],
             "index": "pypi",
-            "markers": "python_version < '3.12' and python_version >= '3.8'",
-            "version": "==4.1.1"
+            "version": "==5.0.0"
+        },
+        "tomli": {
+            "hashes": [
+                "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
+                "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"
+            ],
+            "markers": "python_version < '3.11'",
+            "version": "==2.0.1"
         },
         "toposort": {
             "hashes": [
@@ -638,11 +648,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:34b97092d7e0a3a8cf7cd10e386f401b3737364026c45e622aa02903dffe0f07",
-                "sha256:f8ecc1bba5667413457c529ab955bf8c67b45db799d159066261719e328580a0"
+                "sha256:37a0344459b199fce0e80b0d3569837ec6b6937435c5244e7fd73fa6006830f3",
+                "sha256:3e3d753a8618b86d7de333b4223005f68720bcd6a7d2bcb9fbd2229ec7c1e429"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
-            "version": "==1.26.18"
+            "version": "==1.26.19"
         },
         "wheel": {
             "hashes": [
